@@ -620,8 +620,8 @@ async def process_answer(pa, bot):
     if meta:
         poll_id, _, run_id, key, sid, sname, year, sem, correct = meta
         task = PENDING.get(run_id)
-        if task and not task.done():  # لا نكتب الإجابة قبل ما ينحفظ الـ poll
-            await asyncio.wait([task], timeout=20)
+        if task and not task.done():  # ننتظر حفظ الـ polls وإنهاء المحاولة قبل حساب النتيجة
+            await task
         await safe(stats.insert_answer, poll_id, u.id, key, sid, sname, year, sem, chosen, correct)
         if run_id not in FINISHED:
             return  # لسا في أسئلة ما انرسلت؛ ما في داعي نسأل قاعدة البيانات
