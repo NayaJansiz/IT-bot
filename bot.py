@@ -46,10 +46,11 @@ def run_health_server():
 
 threading.Thread(target=run_health_server, daemon=True).start()
 
-from telegram import ReplyKeyboardMarkup, Update
+from telegram import InlineKeyboardButton, InlineKeyboardMarkup, ReplyKeyboardMarkup, Update
 from telegram.constants import PollType
 from telegram.ext import (
     Application,
+    CallbackQueryHandler,
     CommandHandler,
     ContextTypes,
     MessageHandler,
@@ -678,6 +679,42 @@ async def cmd_export(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.effective_message.reply_document(BytesIO(data), filename="answers.csv")
 
 
+async def cmd_reset(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    if not is_admin(update):
+        return
+    kb = InlineKeyboardMarkup([
+        [InlineKeyboardButton("🗑 مسح كل شي (مع قائمة الطلاب)", callback_data="reset:all")],
+        [InlineKeyboardButton("🧹 مسح الإجابات والتحليل فقط", callback_data="reset:data")],
+        [InlineKeyboardButton("❌ إلغاء", callback_data="reset:no")],
+    ])
+    await update.effective_message.reply_text(
+        "⚠️ <b>تأكيد المسح</b>\n\n"
+        "رح تنمسح بيانات الإحصائيات من قاعدة Neon، وما بتنرجع.\n"
+        "نصيحة: اكتب /export أول لتحفظ نسخة.\n\n"
+        "شو بدك تمسح؟",
+        parse_mode="HTML", reply_markup=kb,
+    )
+
+
+async def on_reset_button(update: Update, context: ContextTypes.DEFAULT_TYPE):
+    q = update.callback_query
+    if q.from_user.id not in ADMIN_IDS:
+        await q.answer("غير مسموح", show_alert=True)
+        return
+    await q.answer()
+    action = q.data.split(":", 1)[1]
+    if action == "no":
+        await q.edit_message_text("تم الإلغاء، ما انمسح شي.")
+        return
+    ok = await safe(stats.reset, action == "all", default=False)
+    if ok:
+        for coll in (POLLS, FINISHED, PENDING, RESULT_SENT, SEEN):
+            coll.clear()
+        await q.edit_message_text("✅ انمسحت الإحصائيات، والعد بلّش من الصفر.")
+    else:
+        await q.edit_message_text("❌ ما قدرت أمسح (تحقق من الاتصال بـ Neon). جرّب بعد شوي.")
+
+
 async def cmd_myid(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.effective_message.reply_text(f"رقمك: {update.effective_user.id}")
 
@@ -697,6 +734,8 @@ def main():
     app.add_handler(CommandHandler("stats", cmd_stats))
     app.add_handler(CommandHandler("export", cmd_export))
     app.add_handler(CommandHandler("myid", cmd_myid))
+    app.add_handler(CommandHandler("reset", cmd_reset))
+    app.add_handler(CallbackQueryHandler(on_reset_button, pattern=r"^reset:"))
     app.add_handler(PollAnswerHandler(on_poll_answer))
     app.add_handler(
         MessageHandler(filters.TEXT & ~filters.COMMAND, on_message)
