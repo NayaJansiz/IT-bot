@@ -665,7 +665,7 @@ async def cmd_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not is_admin(update):
         return
     text = await safe(stats.overview, default="تعذّر قراءة الإحصائيات (تحقق من DATABASE_URL).")
-    await update.effective_message.reply_text(text)
+    await update.effective_message.reply_text(text, parse_mode="HTML")
 
 
 async def cmd_export(update: Update, context: ContextTypes.DEFAULT_TYPE):
