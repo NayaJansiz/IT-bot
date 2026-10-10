@@ -643,7 +643,6 @@ async def process_answer(pa, bot):
             f"🏁 خلصت أسئلة «{si['name']}»\n\n"
             f"✅ صح: {right}\n"
             f"❌ غلط: {wrong}\n"
-            f"🎯 النسبة: {100 * right // total}%"
         )
         try:
             await bot.send_message(u.id, text)
