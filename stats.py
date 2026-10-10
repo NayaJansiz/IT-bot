@@ -205,20 +205,43 @@ def _pct(a, b):
     return f"{100 * a / b:.0f}%" if b else "-"
 
 
+YEAR_WORDS = {1: "الأولى", 2: "الثانية", 3: "الثالثة", 4: "الرابعة", 5: "الخامسة"}
+SEP = "───────────"
+
+
 def _bar(right, total, n=10):
-    """شريط نسبة بالإيموجي (ما بيتأثر باتجاه العربي): 🟩🟩🟩⬜⬜"""
-    if not total:
-        return "⬜" * n
-    g = round(n * right / total)
-    return "🟩" * g + "⬜" * (n - g)
+    """شريط نسبة بعرض 10: ▰▰▰▱▱▱▱▱▱▱"""
+    g = int(n * right / total + 0.5) if total else 0
+    return "▰" * g + "▱" * (n - g)
 
 
-def _medal(i):
-    return ["🥇", "🥈", "🥉"][i] if i < 3 else "▫️"
+def _plural(n, one, two, few, many):
+    """صيغة العدد بالعربي: واحد / اثنان / 3-10 / أكثر"""
+    if n == 1:
+        return one
+    if n == 2:
+        return two
+    return f"{n} {few if 3 <= n <= 10 else many}"
+
+
+def _answers(n):
+    return _plural(n, "إجابة واحدة", "إجابتان", "إجابات", "إجابة")
+
+
+def _times(n):
+    return _plural(n, "مرة واحدة", "مرتان", "مرات", "مرة")
+
+
+def _students(n):
+    return _plural(n, "طالب واحد", "طالبان", "طلاب", "طالب")
+
+
+def _year(y):
+    return "السنة " + YEAR_WORDS.get(y, str(y))
 
 
 def overview():
-    """تقرير HTML منسّق لتيليجرام (parse_mode=HTML). كل معلومة بسطر لحالها."""
+    """تقرير HTML مختصر لتيليجرام (parse_mode=HTML): b / i / code / blockquote فقط."""
     from html import escape as e
     week = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat(timespec="seconds")
     day = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat(timespec="seconds")
@@ -228,7 +251,7 @@ def overview():
     tot = fetch("SELECT COUNT(*), COALESCE(SUM(is_correct),0) FROM answers")[0]
     n, right = int(tot[0]), int(tot[1])
     by_year = fetch("SELECT year, COUNT(*), SUM(is_correct), COUNT(DISTINCT user_id) FROM answers "
-                    "GROUP BY year ORDER BY year")
+                    "GROUP BY year ORDER BY COUNT(*) DESC")
     opens_year = fetch("SELECT year, COUNT(*) FROM events WHERE kind='year' GROUP BY year ORDER BY COUNT(*) DESC")
     top_subj = fetch("SELECT subject_name, year, COUNT(*), SUM(is_correct), COUNT(DISTINCT user_id) FROM answers "
                      "GROUP BY subject_id, subject_name, year ORDER BY COUNT(*) DESC LIMIT 8")
@@ -237,55 +260,87 @@ def overview():
     hardest = fetch("SELECT question_key, subject_name, COUNT(*) n, SUM(is_correct) r FROM answers "
                     "GROUP BY question_key, subject_name HAVING COUNT(*) >= 5 "
                     "ORDER BY (1.0*SUM(is_correct)/COUNT(*)) ASC, COUNT(*) DESC LIMIT 5")
+    # أكتر مادة انفتحت بكل سنة، بعدد الطلاب الفريدين
+    uniq_open = fetch("SELECT year, subject_name, COUNT(DISTINCT user_id), COUNT(*) FROM events "
+                      "WHERE kind='subject' GROUP BY year, subject_id, subject_name")
 
-    L = ["📊 <b>إحصائيات البوت</b>", "━━━━━━━━━━━━━━", "",
-         "👥 <b>الطلاب</b>",
-         f"▫️ المجموع: <b>{users}</b>",
-         f"▫️ نشطين آخر 7 أيام: <b>{u7}</b>",
-         f"▫️ نشطين آخر 24 ساعة: <b>{u1}</b>", "",
-         "📝 <b>الإجابات</b>",
-         f"▫️ المجموع: <b>{n}</b>",
-         f"✅ صح: <b>{right}</b>",
-         f"❌ غلط: <b>{n - right}</b>",
-         f"🎯 النسبة العامة: <b>{_pct(right, n)}</b>",
-         _bar(right, n)]
+    sections = []
 
-    if by_year:
-        L += ["", "━━━━━━━━━━━━━━", "📅 <b>حسب السنة</b>"]
-        for y, c, r, u in by_year:
-            r = int(r or 0)
-            L += ["", f"📘 <b>السنة {y}</b>",
-                  f"{_bar(r, c)}  <b>{_pct(r, c)}</b>",
-                  f"✅ {r}   ❌ {c - r}   (المجموع {c})",
-                  f"👤 عدد الطلاب: {u}"]
+    # العنوان + الطلاب + الإجابات
+    head = ["📊 <b>إحصائيات البوت</b>", "<i>ملخص استخدام البنك</i>"]
+    sections.append("\n".join(head))
+    block = ["<b>الطلاب</b>",
+             f"{users} طالب · {u7} نشطاء هذا الأسبوع · {u1} خلال 24 ساعة"]
+    if n:
+        block += ["", "<b>الإجابات</b>",
+                  f"{n} إجابة · {right} صحيحة · {n - right} خاطئة",
+                  f"{_bar(right, n)}  <b>{_pct(right, n)}</b>"]
+    sections.append("\n".join(block))
 
-    if opens_year:
-        L += ["", "━━━━━━━━━━━━━━", "👆 <b>أكتر السنوات اختياراً</b>"]
-        for i, (y, c) in enumerate(opens_year):
-            L.append(f"{_medal(i)} السنة {y} — {c} مرة")
+    # السنوات الخمس مرتبة من الأكتر استخداماً (عدد الإجابات، ثم مرات الاختيار)
+    ans = {int(y): (int(c), int(r or 0)) for y, c, r, _u in by_year if y is not None}
+    opened = {int(y): int(c) for y, c in opens_year if y is not None}
+    best = {}
+    for y, name, u, t in uniq_open:
+        if y is None:
+            continue
+        key = (int(u), int(t))
+        if int(y) not in best or key > best[int(y)][0]:
+            best[int(y)] = (key, name, int(u))
+    years = sorted(YEAR_WORDS, key=lambda y: (-ans.get(y, (0, 0))[0], -opened.get(y, 0), y))
+    ylines = ["<b>حسب السنة</b>"]
+    for i, y in enumerate(years):
+        c, r = ans.get(y, (0, 0))
+        if i:
+            ylines.append("")
+        ylines.append(_year(y))
+        if c:
+            ylines.append(f"{_bar(r, c)}  <b>{_pct(r, c)}</b> · {_answers(c)}")
+        else:
+            ylines.append("لم تُستخدم بعد")
+        if y in best:
+            ylines.append(f"الأكثر فتحاً: {e(best[y][1])} · {_students(best[y][2])}")
+    sections.append("\n".join(ylines))
 
     if top_subj:
-        L += ["", "━━━━━━━━━━━━━━", "📚 <b>أكتر المواد حلاً</b>"]
-        for i, (name, y, c, r, u) in enumerate(top_subj):
+        L = ["<b>أكثر المواد حلاً</b>"]
+        for i, (name, y, c, r, _u) in enumerate(top_subj[:5], 1):
             r = int(r or 0)
-            L += ["", f"{_medal(i)} <b>{e(name)}</b> (سنة {y})",
-                  f"{_bar(r, c)}  <b>{_pct(r, c)}</b>",
-                  f"✅ {r}   ❌ {c - r}   👤 {u} طالب"]
+            if i > 1:
+                L.append("")
+            L += [f"{i}. <b>{e(name)}</b> — {_year(y)}",
+                  f"{_bar(r, c)}  <b>{_pct(r, c)}</b> · {_answers(c)}"]
+        sections.append("\n".join(L))
 
     if opens_subj:
-        L += ["", "━━━━━━━━━━━━━━", "🔎 <b>أكتر المواد فتحاً</b>"]
-        for i, (name, y, c) in enumerate(opens_subj):
-            L.append(f"{_medal(i)} {e(name)} (سنة {y}) — {c} مرة")
+        L = ["<b>أكثر المواد فتحاً</b>"]
+        for i, (name, y, c) in enumerate(opens_subj[:3], 1):
+            L.append(f"{i}. {e(name)} · {_times(c)}")
+        sections.append("\n".join(L))
 
     if hardest:
-        L += ["", "━━━━━━━━━━━━━━", "⚠️ <b>أصعب الأسئلة</b>",
-              "(نسبة صح قليلة، يمكن إجابتها بالبنك غلط، راجعها)"]
-        for key, name, c, r in hardest:
+        L = ["<b>أصعب الأسئلة</b>",
+             "<blockquote>نسبة الصواب فيها منخفضة، فقد تكون إجابتها في البنك خاطئة. راجعها.</blockquote>"]
+        for i, (key, name, c, r) in enumerate(hardest[:3]):
             r = int(r or 0)
-            L += ["", f"❓ {e(str(key))}", f"المادة: {e(name)}",
-                  f"{_bar(r, c)}  <b>{_pct(r, c)}</b> صح من {c} إجابة"]
-    text = "\n".join(L)
-    return text[:4000]
+            if i:
+                L.append("")
+            L += [f"{e(name)} · <code>{e(str(key))}</code>",
+                  f"{_bar(r, c)}  <b>{_pct(r, c)}</b> · {_answers(c)}"]
+        sections.append("\n".join(L))
+
+    return ("\n" + SEP + "\n").join(sections)[:4000]
+
+
+def reset(include_users=True):
+    """يمسح بيانات الإحصائيات (الجداول بتضل موجودة). include_users=False بيحتفظ بقائمة الطلاب."""
+    tables = ["answers", "events", "runs", "poll_map"] + (["users"] if include_users else [])
+
+    def go(con):
+        for t in tables:
+            con.execute(f"DELETE FROM {t}")
+    _run(go)
+    return True
 
 
 def export_csv():
