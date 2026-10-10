@@ -205,7 +205,21 @@ def _pct(a, b):
     return f"{100 * a / b:.0f}%" if b else "-"
 
 
+def _bar(right, total, n=10):
+    """شريط نسبة بالإيموجي (ما بيتأثر باتجاه العربي): 🟩🟩🟩⬜⬜"""
+    if not total:
+        return "⬜" * n
+    g = round(n * right / total)
+    return "🟩" * g + "⬜" * (n - g)
+
+
+def _medal(i):
+    return ["🥇", "🥈", "🥉"][i] if i < 3 else "▫️"
+
+
 def overview():
+    """تقرير HTML منسّق لتيليجرام (parse_mode=HTML). كل معلومة بسطر لحالها."""
+    from html import escape as e
     week = (datetime.now(timezone.utc) - timedelta(days=7)).isoformat(timespec="seconds")
     day = (datetime.now(timezone.utc) - timedelta(days=1)).isoformat(timespec="seconds")
     users = fetch("SELECT COUNT(*) FROM users")[0][0]
@@ -213,39 +227,65 @@ def overview():
     u1 = fetch("SELECT COUNT(*) FROM users WHERE last_seen >= ?", (day,))[0][0]
     tot = fetch("SELECT COUNT(*), COALESCE(SUM(is_correct),0) FROM answers")[0]
     n, right = int(tot[0]), int(tot[1])
-
     by_year = fetch("SELECT year, COUNT(*), SUM(is_correct), COUNT(DISTINCT user_id) FROM answers "
-                    "GROUP BY year ORDER BY COUNT(*) DESC")
+                    "GROUP BY year ORDER BY year")
     opens_year = fetch("SELECT year, COUNT(*) FROM events WHERE kind='year' GROUP BY year ORDER BY COUNT(*) DESC")
     top_subj = fetch("SELECT subject_name, year, COUNT(*), SUM(is_correct), COUNT(DISTINCT user_id) FROM answers "
-                     "GROUP BY subject_id, subject_name, year ORDER BY COUNT(*) DESC LIMIT 10")
+                     "GROUP BY subject_id, subject_name, year ORDER BY COUNT(*) DESC LIMIT 8")
     opens_subj = fetch("SELECT subject_name, year, COUNT(*) FROM events WHERE kind='subject' "
                        "GROUP BY subject_id, subject_name, year ORDER BY COUNT(*) DESC LIMIT 5")
     hardest = fetch("SELECT question_key, subject_name, COUNT(*) n, SUM(is_correct) r FROM answers "
                     "GROUP BY question_key, subject_name HAVING COUNT(*) >= 5 "
-                    "ORDER BY (1.0*SUM(is_correct)/COUNT(*)) ASC, COUNT(*) DESC LIMIT 8")
+                    "ORDER BY (1.0*SUM(is_correct)/COUNT(*)) ASC, COUNT(*) DESC LIMIT 5")
 
-    L = ["📊 إحصائيات البوت", "",
-         f"👥 المستخدمين: {users}  (آخر 7 أيام: {u7} | آخر 24 ساعة: {u1})",
-         f"📝 إجمالي الإجابات: {n}  —  ✅ {right}  ❌ {n - right}  ({_pct(right, n)} صح)", ""]
-    L.append("📅 حسب السنة (عدد الإجابات | نسبة الصح | طلاب):")
-    for y, c, r, u in by_year:
-        L.append(f"  • سنة {y}: {c} | {_pct(int(r or 0), c)} | {u}")
+    L = ["📊 <b>إحصائيات البوت</b>", "━━━━━━━━━━━━━━", "",
+         "👥 <b>الطلاب</b>",
+         f"▫️ المجموع: <b>{users}</b>",
+         f"▫️ نشطين آخر 7 أيام: <b>{u7}</b>",
+         f"▫️ نشطين آخر 24 ساعة: <b>{u1}</b>", "",
+         "📝 <b>الإجابات</b>",
+         f"▫️ المجموع: <b>{n}</b>",
+         f"✅ صح: <b>{right}</b>",
+         f"❌ غلط: <b>{n - right}</b>",
+         f"🎯 النسبة العامة: <b>{_pct(right, n)}</b>",
+         _bar(right, n)]
+
+    if by_year:
+        L += ["", "━━━━━━━━━━━━━━", "📅 <b>حسب السنة</b>"]
+        for y, c, r, u in by_year:
+            r = int(r or 0)
+            L += ["", f"📘 <b>السنة {y}</b>",
+                  f"{_bar(r, c)}  <b>{_pct(r, c)}</b>",
+                  f"✅ {r}   ❌ {c - r}   (المجموع {c})",
+                  f"👤 عدد الطلاب: {u}"]
+
     if opens_year:
-        L.append("")
-        L.append("👆 مرات اختيار السنة: " + "، ".join(f"سنة {y}: {c}" for y, c in opens_year))
-    L += ["", "📚 أكتر المواد حلاً:"]
-    for i, (name, y, c, r, u) in enumerate(top_subj, 1):
-        L.append(f"  {i}. {name} (سنة {y}) — {c} إجابة | {_pct(int(r or 0), c)} صح | {u} طالب")
+        L += ["", "━━━━━━━━━━━━━━", "👆 <b>أكتر السنوات اختياراً</b>"]
+        for i, (y, c) in enumerate(opens_year):
+            L.append(f"{_medal(i)} السنة {y} — {c} مرة")
+
+    if top_subj:
+        L += ["", "━━━━━━━━━━━━━━", "📚 <b>أكتر المواد حلاً</b>"]
+        for i, (name, y, c, r, u) in enumerate(top_subj):
+            r = int(r or 0)
+            L += ["", f"{_medal(i)} <b>{e(name)}</b> (سنة {y})",
+                  f"{_bar(r, c)}  <b>{_pct(r, c)}</b>",
+                  f"✅ {r}   ❌ {c - r}   👤 {u} طالب"]
+
     if opens_subj:
-        L += ["", "🔎 أكتر المواد فتحاً:"]
-        for name, y, c in opens_subj:
-            L.append(f"  • {name} (سنة {y}): {c}")
+        L += ["", "━━━━━━━━━━━━━━", "🔎 <b>أكتر المواد فتحاً</b>"]
+        for i, (name, y, c) in enumerate(opens_subj):
+            L.append(f"{_medal(i)} {e(name)} (سنة {y}) — {c} مرة")
+
     if hardest:
-        L += ["", "⚠️ أصعب الأسئلة (≥5 إجابات) — يمكن الجواب بالبنك غلط، راجعها:"]
+        L += ["", "━━━━━━━━━━━━━━", "⚠️ <b>أصعب الأسئلة</b>",
+              "(نسبة صح قليلة، يمكن إجابتها بالبنك غلط، راجعها)"]
         for key, name, c, r in hardest:
-            L.append(f"  • {key} [{name}]: {_pct(int(r or 0), c)} صح من {c}")
-    return "\n".join(L)
+            r = int(r or 0)
+            L += ["", f"❓ {e(str(key))}", f"المادة: {e(name)}",
+                  f"{_bar(r, c)}  <b>{_pct(r, c)}</b> صح من {c} إجابة"]
+    text = "\n".join(L)
+    return text[:4000]
 
 
 def export_csv():
