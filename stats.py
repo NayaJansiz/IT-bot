@@ -332,6 +332,95 @@ def overview():
     return ("\n" + SEP + "\n").join(sections)[:4000]
 
 
+SEM_WORDS = {1: "الفصل الأول", 2: "الفصل الثاني"}
+
+
+def _who(n):
+    return "لا أحد" if not n else _students(n)
+
+
+def semester_report(year, sem, subjects):
+    """
+    تقرير HTML لسنة + فصل محدّدين.
+    subjects: قائمة (subject_id, name, عدد_الأسئلة) لكل مواد الفصل (من bot.db).
+    "حلّها كاملة" = طالب أجاب على كل أسئلة المادة (عدد الأسئلة الفريدة المجابة >= عدد أسئلة المادة).
+    """
+    from html import escape as e
+    subjects = [(int(i), n, int(t)) for i, n, t in subjects]
+
+    head = ["📊 <b>إحصائيات " + _year(year) + " · " + SEM_WORDS.get(sem, f"الفصل {sem}") + "</b>",
+            "<i>استخدام البنك في هذا الفصل</i>"]
+
+    # طلاب السنة (الفصلين) وطلاب الفصل: كل من اختار شيئاً أو أجاب
+    year_users = fetch(
+        "SELECT COUNT(*) FROM (SELECT user_id FROM events WHERE year=? "
+        "UNION SELECT user_id FROM answers WHERE year=?) AS t", (year, year))[0][0]
+    opened_rows = fetch(
+        "SELECT subject_id, COUNT(*) FROM (SELECT subject_id, user_id FROM events "
+        "WHERE kind IN ('subject','next') AND year=? AND semester=? "
+        "UNION SELECT subject_id, user_id FROM answers WHERE year=? AND semester=?) AS t "
+        "GROUP BY subject_id", (year, sem, year, sem))
+    sem_users = fetch(
+        "SELECT COUNT(*) FROM (SELECT user_id FROM events WHERE kind IN ('subject','next') "
+        "AND year=? AND semester=? UNION SELECT user_id FROM answers WHERE year=? AND semester=?) AS t",
+        (year, sem, year, sem))[0][0]
+    solvers = fetch("SELECT COUNT(DISTINCT user_id) FROM answers WHERE year=? AND semester=?", (year, sem))[0][0]
+    tot = fetch("SELECT COUNT(*), COALESCE(SUM(is_correct),0) FROM answers WHERE year=? AND semester=?",
+                (year, sem))[0]
+    n, right = int(tot[0]), int(tot[1])
+    per_user = fetch(
+        "SELECT subject_id, user_id, COUNT(DISTINCT question_key) FROM answers "
+        "WHERE year=? AND semester=? GROUP BY subject_id, user_id", (year, sem))
+
+    opened = {int(s): int(c) for s, c in opened_rows if s is not None}
+    total_q = {i: t for i, _n, t in subjects}
+    done = {}
+    for sid, _uid, c in per_user:
+        if sid is not None and total_q.get(int(sid)) and int(c) >= total_q[int(sid)]:
+            done[int(sid)] = done.get(int(sid), 0) + 1
+
+    sections = ["\n".join(head)]
+    if not sem_users:
+        sections.append("لم يستخدم أي طالب هذا الفصل بعد.\n"
+                        f"على مستوى {_year(year)} بشكل عام: {_students(int(year_users))}.")
+        return ("\n" + SEP + "\n").join(sections)
+
+    block = ["<b>الطلاب</b>",
+             f"استخدموا هذا الفصل: {_students(int(sem_users))}",
+             f"حلّوا أسئلة: {_students(int(solvers))}",
+             f"على مستوى {_year(year)} (الفصلين): {_students(int(year_users))}"]
+    if n:
+        block += ["", "<b>الإجابات</b>",
+                  f"{n} إجابة · {right} صحيحة · {n - right} خاطئة",
+                  f"{_bar(right, n)}  <b>{_pct(right, n)}</b>"]
+    sections.append("\n".join(block))
+
+    used = sorted((s for s in subjects if opened.get(s[0])),
+                  key=lambda s: (-done.get(s[0], 0), -opened.get(s[0], 0), s[1]))
+    unused = [s[1] for s in subjects if not opened.get(s[0])]
+
+    text = ("\n" + SEP + "\n").join(sections)
+    if used:
+        L = ["<b>المواد</b>"]
+        for i, (sid, name, t) in enumerate(used, 1):
+            o, d = opened[sid], done.get(sid, 0)
+            item = ["" if i > 1 else None,
+                    f"{i}. <b>{e(name)}</b> · {t} سؤال",
+                    f"فتحها {_who(o)} · حلّها كاملة {_who(d)}",
+                    f"{_bar(d, o)}  <b>{_pct(d, o)}</b> من الفاتحين أكملوها"]
+            chunk = "\n".join(x for x in item if x is not None)
+            if len(text) + len("\n".join(L)) + len(chunk) + 120 > 4000:
+                L += ["", "…"]
+                break
+            L.append(chunk)
+        text += "\n" + SEP + "\n" + "\n".join(L)
+    if unused:
+        tail = "\n" + SEP + "\n<b>لم تُفتح بعد</b>\n" + " · ".join(e(x) for x in unused)
+        if len(text) + len(tail) <= 4000:
+            text += tail
+    return text
+
+
 def reset(include_users=True):
     """يمسح بيانات الإحصائيات (الجداول بتضل موجودة). include_users=False بيحتفظ بقائمة الطلاب."""
     tables = ["answers", "events", "runs", "poll_map"] + (["users"] if include_users else [])
