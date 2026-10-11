@@ -256,6 +256,8 @@ def set_state(context, state, **values):
 
 
 NEXT_LABEL = "➡️ التالي"
+BACK_LABEL = "⬅️ رجوع"
+HOME_LABEL = "🏠 القائمة الرئيسية"
 
 
 def save_in_background(run_id, rows, chat_id, subject_id, final):
@@ -363,7 +365,7 @@ async def send_batch(chat_id, context, subject_id, offset=0):
             f"المعروض: {sent_until} / {total} | "
             f"المتبقي: {remaining} | اختر «التالي» للمتابعة",
             reply_markup=reply_kb(
-                [NEXT_LABEL, "🏠 القائمة الرئيسية"], columns=1
+                [NEXT_LABEL, BACK_LABEL, HOME_LABEL], columns=1
             ),
         )
         set_state(
@@ -379,7 +381,7 @@ async def send_batch(chat_id, context, subject_id, offset=0):
     await context.bot.send_message(
         chat_id,
         "🎉 انتهت جميع الأسئلة",
-        reply_markup=reply_kb(["🏠 القائمة الرئيسية"], columns=1),
+        reply_markup=reply_kb([BACK_LABEL, HOME_LABEL], columns=2),
     )
     set_state(context, "questions_done")
 
@@ -578,6 +580,22 @@ async def on_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
             )
             return
 
+    # ---------------- رجوع لقائمة المواد (أثناء الأسئلة أو بعد انتهائها) ----------------
+    if state in ("questions", "questions_done") and text == BACK_LABEL:
+        year = context.user_data.get("year")
+        sem = context.user_data.get("sem")
+        if year is None or sem is None:
+            await show_years(message, context)
+            return
+        await show_subjects(
+            message,
+            context,
+            year,
+            sem,
+            context.user_data.get("track"),
+        )
+        return
+
     # ---------------- الدفعة التالية ----------------
     if state == "questions":
         if text == NEXT_LABEL:
@@ -620,8 +638,8 @@ async def process_answer(pa, bot):
     if meta:
         poll_id, _, run_id, key, sid, sname, year, sem, correct = meta
         task = PENDING.get(run_id)
-        if task and not task.done():  # ننتظر حفظ الـ polls وإنهاء المحاولة قبل حساب النتيجة
-            await task
+        if task and not task.done():  # لا نكتب الإجابة قبل ما ينحفظ الـ poll
+            await asyncio.wait([task], timeout=20)
         await safe(stats.insert_answer, poll_id, u.id, key, sid, sname, year, sem, chosen, correct)
         if run_id not in FINISHED:
             return  # لسا في أسئلة ما انرسلت؛ ما في داعي نسأل قاعدة البيانات
@@ -643,6 +661,7 @@ async def process_answer(pa, bot):
             f"🏁 خلصت أسئلة «{si['name']}»\n\n"
             f"✅ صح: {right}\n"
             f"❌ غلط: {wrong}\n"
+            f"🎯 النسبة: {100 * right // total}%"
         )
         try:
             await bot.send_message(u.id, text)
