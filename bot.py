@@ -687,6 +687,36 @@ async def cmd_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.effective_message.reply_text(text, parse_mode="HTML")
 
 
+def make_period_cmd(year, sem):
+    """أمر إحصائيات لسنة + فصل: /stats_y2_s1 ..."""
+
+    async def handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
+        if not is_admin(update):
+            return
+        with db() as con:
+            subs = [
+                (r[0], r[1], r[2])
+                for r in con.execute(
+                    f"""
+                    SELECT s.id, s.name, COUNT(q.id)
+                    FROM subjects s
+                    JOIN questions q ON q.subject_id = s.id
+                    WHERE s.year=? AND s.semester=? AND {OK}
+                    GROUP BY s.id
+                    ORDER BY s.name
+                    """,
+                    (year, sem),
+                )
+            ]
+        text = await safe(
+            stats.semester_report, year, sem, subs,
+            default="تعذّر قراءة الإحصائيات (تحقق من DATABASE_URL).",
+        )
+        await update.effective_message.reply_text(text, parse_mode="HTML")
+
+    return handler
+
+
 async def cmd_export(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not is_admin(update):
         return
@@ -750,6 +780,9 @@ def main():
 
     app.add_handler(CommandHandler(["start", "menu"], start))
     app.add_handler(CommandHandler("stats", cmd_stats))
+    for y in YEAR_NAMES:
+        for s in (1, 2):
+            app.add_handler(CommandHandler(f"stats_y{y}_s{s}", make_period_cmd(y, s)))
     app.add_handler(CommandHandler("export", cmd_export))
     app.add_handler(CommandHandler("myid", cmd_myid))
     app.add_handler(CommandHandler("reset", cmd_reset))
