@@ -755,7 +755,6 @@ async def cmd_myid(update: Update, context: ContextTypes.DEFAULT_TYPE):
 async def post_init(app):
     bg(safe(stats.warmup))  # يجهّز الاتصال والجداول بالخلفية بدون ما يعطّل تشغيل البوت
 
-
 def main():
     token = os.environ.get("BOT_TOKEN")
     if not token:
