@@ -6,6 +6,7 @@
 
 import asyncio
 import collections
+import html
 import json
 import re
 import uuid
@@ -318,7 +319,21 @@ async def send_batch(chat_id, context, subject_id, offset=0):
     new_rows = []
 
     # الترقيم يكمل من الدفعة السابقة (11، 12، ...).
+    last_pre = None  # ما نكرر نفس النص لأسئلة متتالية بنفس الدفعة
     for i, q in enumerate(rows, start=offset + 1):
+        # رسالة نصية (كود / مخرجات) تنبعت قبل السؤال مثل الصورة
+        pre = q["pre_text"] if "pre_text" in q.keys() else None
+        if pre and pre != last_pre:
+            try:
+                await context.bot.send_message(
+                    chat_id,
+                    "<pre>" + html.escape(pre[:3900]) + "</pre>",
+                    parse_mode="HTML",
+                )
+            except Exception as e:
+                log.warning("pre_text failed q=%s: %s", q["key"], e)
+        last_pre = pre
+
         if q["image"]:
             path = os.path.join(BASE, q["image"])
             if not os.path.exists(path):
@@ -687,36 +702,6 @@ async def cmd_stats(update: Update, context: ContextTypes.DEFAULT_TYPE):
     await update.effective_message.reply_text(text, parse_mode="HTML")
 
 
-def make_period_cmd(year, sem):
-    """أمر إحصائيات لسنة + فصل: /stats_y2_s1 ..."""
-
-    async def handler(update: Update, context: ContextTypes.DEFAULT_TYPE):
-        if not is_admin(update):
-            return
-        with db() as con:
-            subs = [
-                (r[0], r[1], r[2])
-                for r in con.execute(
-                    f"""
-                    SELECT s.id, s.name, COUNT(q.id)
-                    FROM subjects s
-                    JOIN questions q ON q.subject_id = s.id
-                    WHERE s.year=? AND s.semester=? AND {OK}
-                    GROUP BY s.id
-                    ORDER BY s.name
-                    """,
-                    (year, sem),
-                )
-            ]
-        text = await safe(
-            stats.semester_report, year, sem, subs,
-            default="تعذّر قراءة الإحصائيات (تحقق من DATABASE_URL).",
-        )
-        await update.effective_message.reply_text(text, parse_mode="HTML")
-
-    return handler
-
-
 async def cmd_export(update: Update, context: ContextTypes.DEFAULT_TYPE):
     if not is_admin(update):
         return
@@ -780,9 +765,6 @@ def main():
 
     app.add_handler(CommandHandler(["start", "menu"], start))
     app.add_handler(CommandHandler("stats", cmd_stats))
-    for y in YEAR_NAMES:
-        for s in (1, 2):
-            app.add_handler(CommandHandler(f"stats_y{y}_s{s}", make_period_cmd(y, s)))
     app.add_handler(CommandHandler("export", cmd_export))
     app.add_handler(CommandHandler("myid", cmd_myid))
     app.add_handler(CommandHandler("reset", cmd_reset))
