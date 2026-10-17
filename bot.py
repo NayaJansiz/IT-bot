@@ -1,9 +1,7 @@
 #!/usr/bin/env python3
 """
 بوت بنك أسئلة الامتحانات (هندسة معلوماتية - جامعة حمص)
-
 """
-
 import asyncio
 import collections
 import html
