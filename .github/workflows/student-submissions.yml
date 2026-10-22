@@ -224,6 +224,7 @@ jobs:
         working-directory: guide/IT-bot-guide-v2
         env:
           ROOT: ${{ github.workspace }}
+          MERGE_MESSAGE: ${{ github.event.head_commit.message }}
         run: |
           set -euo pipefail
           WORK="$ROOT/.bot-pipeline"
@@ -232,7 +233,7 @@ jobs:
           # reaches main, that merge is the explicit approval to replace it.
           APPROVAL_FLAGS=()
           if [ "$GITHUB_EVENT_NAME" = "push" ]; then
-            MERGE_MESSAGE="${GITHUB_EVENT_HEAD_COMMIT_MESSAGE:-}"
+            MERGE_MESSAGE="${MERGE_MESSAGE:-}"
             if [[ "$MERGE_MESSAGE" =~ Merge\ pull\ request\ #[0-9]+ ]] || [[ "$MERGE_MESSAGE" =~ \(\#[0-9]+\)$ ]]; then
               APPROVAL_FLAGS+=(--approved-lecture-overwrites)
               echo "A merged pull request was detected; verified lecture-answer conflicts may now be applied."
