@@ -254,10 +254,30 @@ jobs:
           else:
               print("No logical database changes; retained the existing bot.db file.")
           PY
+          # The builder may create stitched pictures for questions bound to multiple
+          # media files. Those files live beside the candidate DB until copied here;
+          # commit them with the DB, or Telegram would receive a broken image path.
+          python - "$WORK/build/media" "$ROOT/media" <<'PY'
+          import hashlib, os, shutil, sys
+
+          src, dst = sys.argv[1:3]
+          os.makedirs(dst, exist_ok=True)
+          copied = 0
+          for name in os.listdir(src):
+              if not (name.startswith("stitched-") and name.lower().endswith(".jpg")):
+                  continue
+              a, b = os.path.join(src, name), os.path.join(dst, name)
+              same = os.path.exists(b) and hashlib.sha256(open(a, "rb").read()).digest() == hashlib.sha256(open(b, "rb").read()).digest()
+              if not same:
+                  shutil.copy2(a, b)
+                  copied += 1
+          print(f"Stitched media files copied to the bot's root media/: {copied}")
+          PY
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add bot.db .bot-pipeline-state
           if [ -d "$ROOT/sources" ]; then git add -A -- sources; fi
+          if [ -d "$ROOT/media" ]; then git add -A -- media; fi
           if git diff --cached --quiet; then
             echo "No database/state/source changes to commit."
           else
