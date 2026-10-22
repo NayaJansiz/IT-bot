@@ -204,7 +204,61 @@ jobs:
           WORK="$ROOT/.bot-pipeline"
           mkdir -p "$WORK/build/media"
           if [ -d "$ROOT/media" ]; then cp -a "$ROOT/media/." "$WORK/build/media/"; fi
+
           python tools/bot_db_tool.py build "$WORK/data" "$WORK/build/bot.db" --force --media-dir "$ROOT/media"
+
+          # Repair the known duplicate-option problem in the candidate database.
+          # The live root bot.db is not modified until the commit step after a merge.
+          python - "$WORK/build/bot.db" <<'PY'
+          import json
+          import sqlite3
+          import sys
+
+          db = sqlite3.connect(sys.argv[1])
+          row = db.execute(
+              "SELECT options, correct_index FROM questions WHERE key = ?",
+              ("y3:p116",),
+          ).fetchone()
+
+          if row is None:
+              db.close()
+              raise SystemExit("Cannot find y3:p116; refusing automatic repair.")
+
+          options = json.loads(row[0])
+          original = [
+              "the layer's own business",
+              "defines how the layers above and below interact with it.",
+              "the layer's own business",
+              "None of the above",
+          ]
+          corrected = [
+              "the layer's own business",
+              "defines how the layers above and below interact with it.",
+              "None of the above",
+          ]
+
+          if options == original and row[1] == 1:
+              db.execute(
+                  "UPDATE questions SET options = ? WHERE key = ?",
+                  (
+                      json.dumps(corrected, ensure_ascii=False),
+                      "y3:p116",
+                  ),
+              )
+              db.commit()
+              print("Removed duplicate option from y3:p116; correct answer remains B.")
+          elif options == corrected and row[1] == 1:
+              print("y3:p116 is already fixed; no changes needed.")
+          else:
+              db.close()
+              raise SystemExit(
+                  "Unexpected y3:p116 data; refusing automatic repair. "
+                  f"Options={options!r}, correct_index={row[1]!r}"
+              )
+
+          db.close()
+          PY
+
           python tools/check_bot.py "$WORK/build/bot.db" --compare "$ROOT/bot.db" --media-json "$WORK/data/media.json" --strict | tee "$WORK/check-report.txt"
           cat "$WORK/check-report.txt" >> "$GITHUB_STEP_SUMMARY"
 
@@ -227,23 +281,42 @@ jobs:
             rm -rf "$STATE/provenance"
             cp -a "$DATA/provenance" "$STATE/provenance"
           fi
+
           python - "$ROOT/bot.db" "$WORK/build/bot.db" <<'PY'
-          import shutil, sqlite3, sys
+          import shutil
+          import sqlite3
+          import sys
 
           old_path, new_path = sys.argv[1:3]
+
           def snapshot(path):
               con = sqlite3.connect(path)
-              names = [r[0] for r in con.execute(
-                  "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name"
-              )]
+              names = [
+                  r[0] for r in con.execute(
+                      "SELECT name FROM sqlite_master "
+                      "WHERE type='table' AND name NOT LIKE 'sqlite_%' "
+                      "ORDER BY name"
+                  )
+              ]
               result = []
               for name in names:
                   quoted = '"' + name.replace('"', '""') + '"'
                   info = list(con.execute(f"PRAGMA table_info({quoted})"))
-                  pk = [r[1] for r in sorted((r for r in info if r[5]), key=lambda r: r[5])]
+                  pk = [
+                      r[1] for r in sorted(
+                          (r for r in info if r[5]),
+                          key=lambda r: r[5],
+                      )
+                  ]
                   order = pk or [r[1] for r in info]
-                  order_sql = ", ".join('"' + c.replace('"', '""') + '"' for c in order)
-                  rows = [tuple(r) for r in con.execute(f"SELECT * FROM {quoted} ORDER BY {order_sql}")]
+                  order_sql = ", ".join(
+                      '"' + c.replace('"', '""') + '"' for c in order
+                  )
+                  rows = [
+                      tuple(r) for r in con.execute(
+                          f"SELECT * FROM {quoted} ORDER BY {order_sql}"
+                      )
+                  ]
                   result.append((name, tuple(tuple(r) for r in info), rows))
               con.close()
               return result
@@ -254,33 +327,50 @@ jobs:
           else:
               print("No logical database changes; retained the existing bot.db file.")
           PY
-          # The builder may create stitched pictures for questions bound to multiple
-          # media files. Those files live beside the candidate DB until copied here;
-          # commit them with the DB, or Telegram would receive a broken image path.
+
+          # Copy generated stitched pictures to the bot's root media folder.
+          # Commit them together with the database so Telegram image paths remain valid.
           python - "$WORK/build/media" "$ROOT/media" <<'PY'
-          import hashlib, os, shutil, sys
+          import hashlib
+          import os
+          import shutil
+          import sys
 
           src, dst = sys.argv[1:3]
           os.makedirs(dst, exist_ok=True)
           copied = 0
+
           for name in os.listdir(src):
-              if not (name.startswith("stitched-") and name.lower().endswith(".jpg")):
+              if not (
+                  name.startswith("stitched-")
+                  and name.lower().endswith(".jpg")
+              ):
                   continue
-              a, b = os.path.join(src, name), os.path.join(dst, name)
-              same = os.path.exists(b) and hashlib.sha256(open(a, "rb").read()).digest() == hashlib.sha256(open(b, "rb").read()).digest()
+
+              a = os.path.join(src, name)
+              b = os.path.join(dst, name)
+              same = (
+                  os.path.exists(b)
+                  and hashlib.sha256(open(a, "rb").read()).digest()
+                  == hashlib.sha256(open(b, "rb").read()).digest()
+              )
               if not same:
                   shutil.copy2(a, b)
                   copied += 1
-          print(f"Stitched media files copied to the bot's root media/: {copied}")
+
+          print(f"Stitched media files copied to root media/: {copied}")
           PY
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add bot.db .bot-pipeline-state
           if [ -d "$ROOT/sources" ]; then git add -A -- sources; fi
           if [ -d "$ROOT/media" ]; then git add -A -- media; fi
+
           if git diff --cached --quiet; then
             echo "No database/state/source changes to commit."
           else
-            git commit -m "bot: apply approved student submissions" -m "$(head -n 18 "$WORK/report.md")"
+            git commit -m "bot: apply approved student submissions" \
+              -m "$(head -n 18 "$WORK/report.md")"
             git push origin HEAD:main
           fi
