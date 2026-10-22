@@ -1,0 +1,266 @@
+# Student contributions enter this repository as reviewable files.
+# Only after a PR is merged do we update root bot.db, the database loaded by bot.py.
+name: Student submissions to bot.db
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - 'intake/**'
+      - 'replies/**'
+      - 'sources/**'
+      - 'media/**'
+      - 'inbox/**/*.pdf'
+  push:
+    branches: [main]
+    paths:
+      - 'intake/**'
+      - 'replies/**'
+      - 'sources/**'
+      - 'media/**'
+      - 'inbox/**/*.pdf'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: student-submissions-bot-db
+  cancel-in-progress: false
+
+jobs:
+  process:
+    if: ${{ github.event_name == 'pull_request' || github.ref == 'refs/heads/main' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out IT-bot (the database source of truth)
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reject anything except new student-submission files
+        if: ${{ github.event_name == 'pull_request' }}
+        env:
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PR_HEAD_SHA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          python - <<'PY'
+          import os, subprocess, sys
+          from pathlib import PurePosixPath
+
+          base, head = os.environ["PR_BASE_SHA"], os.environ["PR_HEAD_SHA"]
+          raw = subprocess.check_output(
+              ["git", "diff", "--name-status", "-z", f"{base}...{head}"],
+              text=True,
+          )
+          tokens = raw.split("\\0")
+          changes, i = [], 0
+          while i < len(tokens) and tokens[i]:
+              status = tokens[i]
+              i += 1
+              if status.startswith(("R", "C")):
+                  old, new = tokens[i], tokens[i + 1]
+                  i += 2
+                  changes.append((status, old))
+                  changes.append((status, new))
+              else:
+                  changes.append((status, tokens[i]))
+                  i += 1
+
+          def allowed(path):
+              p = PurePosixPath(path).parts
+              if not p:
+                  return False
+              if p[0] in {"intake", "replies"} and len(p) == 3 and p[1].isdigit():
+                  name = p[2].lower()
+                  if p[0] == "intake":
+                      return name.endswith(".json")
+                  return name.endswith(".jsonl") or name.endswith(".summary.md")
+              if p[0] == "sources" and len(p) >= 3 and p[1].isdigit():
+                  if len(p) == 3:
+                      return p[2].lower().endswith(".md")
+                  if len(p) == 4 and p[2] == "figs":
+                      return p[3].lower().endswith((".jpg", ".jpeg", ".png"))
+              if p[0] == "media" and len(p) == 2:
+                  return p[1].lower().endswith((".jpg", ".jpeg", ".png", ".webp"))
+              if p[0] == "inbox" and len(p) == 3 and p[1].isdigit():
+                  return p[2].lower().endswith(".pdf")
+              return False
+
+          errors = []
+          if not changes:
+              errors.append("The PR contains no changed files to validate.")
+          for status, path in changes:
+              if status != "A":
+                  errors.append(f"{status} {path}: accepted submission files are immutable; add a new file instead.")
+              elif not allowed(path):
+                  errors.append(f"{path}: not an allowed student-submission path.")
+          if errors:
+              print("PR rejected by the submission path guard:")
+              print("\\n".join("- " + x for x in errors))
+              sys.exit(1)
+          print(f"Path guard passed: {len(changes)} new submission file(s); no existing files or bot code changed.")
+          PY
+
+      - name: Check out the website's trusted answer-processing tools
+        uses: actions/checkout@v4
+        with:
+          repository: NayaJansiz/ITbotHelp
+          ref: main
+          path: guide
+          persist-credentials: false
+
+      - name: Check out lecture text
+        uses: actions/checkout@v4
+        with:
+          repository: homs-uni/lecture-site-engine
+          path: guide/IT-bot-guide-v2/lectures
+          sparse-checkout: subjects
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install PDF and media tools
+        run: pip install pymupdf pillow beautifulsoup4
+
+      - name: Export the CURRENT bot.db and restore processing state
+        working-directory: guide/IT-bot-guide-v2
+        env:
+          ROOT: ${{ github.workspace }}
+        run: |
+          set -euo pipefail
+          WORK="$ROOT/.bot-pipeline"
+          STATE="$ROOT/.bot-pipeline-state"
+          APP="$ROOT/guide/IT-bot-guide-v2"
+          DATA="$WORK/data"
+          CONFIG="$WORK/config"
+          rm -rf "$WORK"
+          mkdir -p "$DATA" "$WORK/build/media" "$CONFIG" "$STATE"
+          python tools/bot_db_tool.py export "$ROOT/bot.db" "$DATA"
+          for f in applied.json media.json aliases.json; do
+            if [ -f "$STATE/$f" ]; then
+              cp "$STATE/$f" "$DATA/$f"
+            elif [ ! -f "$DATA/$f" ]; then
+              printf '{}\\n' > "$DATA/$f"
+            fi
+          done
+          if [ -d "$STATE/provenance" ]; then
+            cp -a "$STATE/provenance" "$DATA/provenance"
+          fi
+          cp "$APP/config/subjects.json" "$CONFIG/subjects.json"
+          if [ -f "$STATE/sources.json" ]; then
+            cp "$STATE/sources.json" "$CONFIG/sources.json"
+          elif [ -f "$APP/config/sources.json" ]; then
+            cp "$APP/config/sources.json" "$CONFIG/sources.json"
+          else
+            printf '{}\\n' > "$CONFIG/sources.json"
+          fi
+          echo "Exported the current root bot.db into a temporary working copy."
+
+      - name: Ingest approved PDF inbox files and register lecture text
+        working-directory: guide/IT-bot-guide-v2
+        env:
+          ROOT: ${{ github.workspace }}
+        run: |
+          set -euo pipefail
+          WORK="$ROOT/.bot-pipeline"
+          python tools/ingest_inbox.py \
+            --data "$WORK/data" \
+            --inbox "$ROOT/inbox" \
+            --sources "$ROOT/sources" \
+            --config "$WORK/config" \
+            --keep-pdf \
+            --report "$WORK/inbox-report.md"
+          python tools/register_sources.py \
+            --data "$WORK/data" \
+            --sources "$ROOT/sources" \
+            --config "$WORK/config"
+
+      - name: Apply pending answers and question imports to a temporary data copy
+        working-directory: guide/IT-bot-guide-v2
+        env:
+          ROOT: ${{ github.workspace }}
+        run: |
+          set -euo pipefail
+          WORK="$ROOT/.bot-pipeline"
+          python tools/apply_pending.py \
+            --data "$WORK/data" \
+            --root "$ROOT" \
+            --lectures lectures \
+            --config "$WORK/config/subjects.json" \
+            --apply \
+            --report "$WORK/report.md"
+          cat "$WORK/report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Build candidate bot.db and validate Telegram-visible questions
+        working-directory: guide/IT-bot-guide-v2
+        env:
+          ROOT: ${{ github.workspace }}
+        run: |
+          set -euo pipefail
+          WORK="$ROOT/.bot-pipeline"
+          mkdir -p "$WORK/build/media"
+          if [ -d "$ROOT/media" ]; then cp -a "$ROOT/media/." "$WORK/build/media/"; fi
+          python tools/bot_db_tool.py build "$WORK/data" "$WORK/build/bot.db" --force --media-dir "$ROOT/media"
+          python tools/check_bot.py "$WORK/build/bot.db" --compare "$ROOT/bot.db" --media-json "$WORK/data/media.json" --strict | tee "$WORK/check-report.txt"
+          cat "$WORK/check-report.txt" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Commit the rebuilt database and deduplication state to main
+        if: ${{ github.event_name != 'pull_request' }}
+        working-directory: guide/IT-bot-guide-v2
+        env:
+          ROOT: ${{ github.workspace }}
+        run: |
+          set -euo pipefail
+          WORK="$ROOT/.bot-pipeline"
+          STATE="$ROOT/.bot-pipeline-state"
+          DATA="$WORK/data"
+          mkdir -p "$STATE"
+          cp "$DATA/applied.json" "$STATE/applied.json"
+          cp "$DATA/media.json" "$STATE/media.json"
+          cp "$DATA/aliases.json" "$STATE/aliases.json"
+          cp "$WORK/config/sources.json" "$STATE/sources.json"
+          if [ -d "$DATA/provenance" ]; then
+            rm -rf "$STATE/provenance"
+            cp -a "$DATA/provenance" "$STATE/provenance"
+          fi
+          python - "$ROOT/bot.db" "$WORK/build/bot.db" <<'PY'
+          import shutil, sqlite3, sys
+
+          old_path, new_path = sys.argv[1:3]
+          def snapshot(path):
+              con = sqlite3.connect(path)
+              names = [r[0] for r in con.execute(
+                  "SELECT name FROM sqlite_master WHERE type='table' AND name NOT LIKE 'sqlite_%' ORDER BY name"
+              )]
+              result = []
+              for name in names:
+                  quoted = '"' + name.replace('"', '""') + '"'
+                  info = list(con.execute(f"PRAGMA table_info({quoted})"))
+                  pk = [r[1] for r in sorted((r for r in info if r[5]), key=lambda r: r[5])]
+                  order = pk or [r[1] for r in info]
+                  order_sql = ", ".join('"' + c.replace('"', '""') + '"' for c in order)
+                  rows = [tuple(r) for r in con.execute(f"SELECT * FROM {quoted} ORDER BY {order_sql}")]
+                  result.append((name, tuple(tuple(r) for r in info), rows))
+              con.close()
+              return result
+
+          if snapshot(old_path) != snapshot(new_path):
+              shutil.copy2(new_path, old_path)
+              print("bot.db changed logically; updated the root database.")
+          else:
+              print("No logical database changes; retained the existing bot.db file.")
+          PY
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add bot.db .bot-pipeline-state
+          if [ -d "$ROOT/sources" ]; then git add -A -- sources; fi
+          if git diff --cached --quiet; then
+            echo "No database/state/source changes to commit."
+          else
+            git commit -m "bot: apply approved student submissions" -m "$(head -n 18 "$WORK/report.md")"
+            git push origin HEAD:main
+          fi
