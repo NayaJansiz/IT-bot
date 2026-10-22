@@ -23,6 +23,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: read
 
 concurrency:
   group: student-submissions-bot-db
@@ -224,21 +225,24 @@ jobs:
         working-directory: guide/IT-bot-guide-v2
         env:
           ROOT: ${{ github.workspace }}
-          MERGE_MESSAGE: ${{ github.event.head_commit.message }}
+          GH_TOKEN: ${{ github.token }}
         run: |
           set -euo pipefail
           WORK="$ROOT/.bot-pipeline"
           # A verified lecture answer that conflicts with the stored answer is
-          # reported for the owner during PR review. Once a normal GitHub PR merge
-          # reaches main, that merge is the explicit approval to replace it.
+          # reported for the owner during PR review. Only a commit associated
+          # with a merged GitHub PR is allowed to replace such an answer.
           APPROVAL_FLAGS=()
           if [ "$GITHUB_EVENT_NAME" = "push" ]; then
-            MERGE_MESSAGE="${MERGE_MESSAGE:-}"
-            if [[ "$MERGE_MESSAGE" =~ Merge\ pull\ request\ #[0-9]+ ]] || [[ "$MERGE_MESSAGE" =~ \(\#[0-9]+\)$ ]]; then
-              APPROVAL_FLAGS+=(--approved-lecture-overwrites)
-              echo "A merged pull request was detected; verified lecture-answer conflicts may now be applied."
+            if MERGED_PR="$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/pulls" --jq 'any(.[]; .merged_at != null)')"; then
+              if [ "$MERGED_PR" = "true" ]; then
+                APPROVAL_FLAGS+=(--approved-lecture-overwrites)
+                echo "A merged pull request was verified; approved lecture-answer conflicts may now be applied."
+              else
+                echo "This push is not associated with a merged pull request; conflicting stored answers will be preserved."
+              fi
             else
-              echo "No standard PR-merge marker in the push commit message; conflicting stored answers will be preserved."
+              echo "::warning::Could not verify PR approval through GitHub API; conflicting stored answers will be preserved."
             fi
           fi
           python tools/apply_pending.py \
