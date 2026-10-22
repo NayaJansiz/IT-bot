@@ -179,6 +179,47 @@ jobs:
             --sources "$ROOT/sources" \
             --config "$WORK/config"
 
+          # The website may use trusted supplemental lecture text from its own repo
+          # (e.g. sources/9/wp-lecture-3.md). Make the same explicitly configured
+          # text available to this validator, without requiring students to upload it
+          # again. A source already included in the bot PR always takes precedence.
+          python - "$WORK/config/subjects.json" "$WORK/config/sources.json" "$ROOT/guide/IT-bot-guide-v2/sources" "$ROOT/sources" <<'PY'
+          import json
+          import os
+          import shutil
+          import sys
+
+          subjects_path, extra_path, trusted_root, bot_root = sys.argv[1:5]
+          cfg = json.load(open(subjects_path, encoding="utf-8"))
+          slugs = {}
+          for sid, item in cfg.items():
+              if sid.startswith("_") or not isinstance(item, dict):
+                  continue
+              slugs[str(sid)] = list(item.get("sources", []))
+          if os.path.isfile(extra_path):
+              extra = json.load(open(extra_path, encoding="utf-8"))
+              for sid, names in extra.items():
+                  if sid.startswith("_"):
+                      continue
+                  current = slugs.setdefault(str(sid), [])
+                  current.extend(x for x in names if x not in current)
+
+          copied = []
+          for sid, names in slugs.items():
+              for slug in names:
+                  name = slug if slug.endswith(".md") else slug + ".md"
+                  target = os.path.join(bot_root, sid, name)
+                  trusted = os.path.join(trusted_root, sid, name)
+                  if os.path.isfile(target) or not os.path.isfile(trusted):
+                      continue
+                  os.makedirs(os.path.dirname(target), exist_ok=True)
+                  shutil.copy2(trusted, target)
+                  copied.append(f"{sid}/{name}")
+
+          print("Configured supplemental lecture sources available for verification:",
+                ", ".join(copied) if copied else "none needed")
+          PY
+
       - name: Apply pending answers and question imports to a temporary data copy
         working-directory: guide/IT-bot-guide-v2
         env:
@@ -186,14 +227,34 @@ jobs:
         run: |
           set -euo pipefail
           WORK="$ROOT/.bot-pipeline"
+          # A verified lecture answer that conflicts with the stored answer is
+          # reported for the owner during PR review. Once a normal GitHub PR merge
+          # reaches main, that merge is the explicit approval to replace it.
+          APPROVAL_FLAGS=()
+          if [ "$GITHUB_EVENT_NAME" = "push" ]; then
+            MERGE_MESSAGE="${GITHUB_EVENT_HEAD_COMMIT_MESSAGE:-}"
+            if [[ "$MERGE_MESSAGE" =~ Merge\ pull\ request\ #[0-9]+ ]] || [[ "$MERGE_MESSAGE" =~ \(\#[0-9]+\)$ ]]; then
+              APPROVAL_FLAGS+=(--approved-lecture-overwrites)
+              echo "A merged pull request was detected; verified lecture-answer conflicts may now be applied."
+            else
+              echo "No standard PR-merge marker in the push commit message; conflicting stored answers will be preserved."
+            fi
+          fi
           python tools/apply_pending.py \
             --data "$WORK/data" \
             --root "$ROOT" \
             --lectures lectures \
             --config "$WORK/config/subjects.json" \
             --apply \
-            --report "$WORK/report.md"
+            --report "$WORK/report.md" \
+            "${APPROVAL_FLAGS[@]}"
           cat "$WORK/report.md" >> "$GITHUB_STEP_SUMMARY"
+          # Do not allow a claimed lecture citation that fails server-side quote
+          # verification to pass pre-merge checks as a harmless warning.
+          if [ "$GITHUB_EVENT_NAME" = "pull_request" ] && grep -q "quote not found word-for-word" "$WORK/report.md"; then
+            echo "::error title=Lecture citation verification failed::At least one LECTURE answer cites text that is not present in the configured lecture files. Correct the quote or source selection before merging."
+            exit 1
+          fi
 
       - name: Build candidate bot.db and validate Telegram-visible questions
         working-directory: guide/IT-bot-guide-v2
