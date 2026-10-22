@@ -330,7 +330,6 @@ jobs:
 
       - name: Commit the rebuilt database and deduplication state to main
         if: ${{ github.event_name != 'pull_request' }}
-        working-directory: guide/IT-bot-guide-v2
         env:
           ROOT: ${{ github.workspace }}
         run: |
