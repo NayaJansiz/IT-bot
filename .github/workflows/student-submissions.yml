@@ -30,7 +30,7 @@ concurrency:
 
 jobs:
   process:
-    if: ${{ github.event_name == 'pull_request' || github.ref == 'refs/heads/main' }}
+    if: ${{ github.event_name == 'pull_request' || (github.ref == 'refs/heads/main' && github.actor != 'github-actions[bot]') }}
     runs-on: ubuntu-latest
     steps:
       - name: Check out IT-bot (the database source of truth)
