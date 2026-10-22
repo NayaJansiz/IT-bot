@@ -53,7 +53,7 @@ jobs:
               ["git", "diff", "--name-status", "-z", f"{base}...{head}"],
               text=True,
           )
-          tokens = raw.split("\\0")
+          tokens = raw.split("\0")
           changes, i = [], 0
           while i < len(tokens) and tokens[i]:
               status = tokens[i]
@@ -97,7 +97,7 @@ jobs:
                   errors.append(f"{path}: not an allowed student-submission path.")
           if errors:
               print("PR rejected by the submission path guard:")
-              print("\\n".join("- " + x for x in errors))
+              print("\n".join("- " + x for x in errors))
               sys.exit(1)
           print(f"Path guard passed: {len(changes)} new submission file(s); no existing files or bot code changed.")
           PY
@@ -144,7 +144,7 @@ jobs:
             if [ -f "$STATE/$f" ]; then
               cp "$STATE/$f" "$DATA/$f"
             elif [ ! -f "$DATA/$f" ]; then
-              printf '{}\\n' > "$DATA/$f"
+              printf '{}\n' > "$DATA/$f"
             fi
           done
           if [ -d "$STATE/provenance" ]; then
@@ -156,7 +156,7 @@ jobs:
           elif [ -f "$APP/config/sources.json" ]; then
             cp "$APP/config/sources.json" "$CONFIG/sources.json"
           else
-            printf '{}\\n' > "$CONFIG/sources.json"
+            printf '{}\n' > "$CONFIG/sources.json"
           fi
           echo "Exported the current root bot.db into a temporary working copy."
 
