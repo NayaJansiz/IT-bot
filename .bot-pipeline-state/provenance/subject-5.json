@@ -12,16 +12,11 @@
   "student": true
  },
  "y1:p156": {
-  "a0": null,
   "date": "2026-11-02",
-  "e_edited": false,
   "file": null,
   "quote": null,
-  "reason": null,
   "ref": null,
-  "src": "STUDENT",
-  "src0": null,
-  "student": true
+  "src": "INFERRED"
  },
  "y1:p157": {
   "a0": null,
@@ -84,16 +79,11 @@
   "student": true
  },
  "y1:p162": {
-  "a0": null,
   "date": "2026-11-02",
-  "e_edited": false,
   "file": null,
   "quote": null,
-  "reason": null,
   "ref": null,
-  "src": "STUDENT",
-  "src0": null,
-  "student": true
+  "src": "INFERRED"
  },
  "y1:p163": {
   "a0": null,
@@ -192,16 +182,11 @@
   "student": true
  },
  "y1:p171": {
-  "a0": null,
   "date": "2026-11-02",
-  "e_edited": false,
   "file": null,
   "quote": null,
-  "reason": null,
   "ref": null,
-  "src": "STUDENT",
-  "src0": null,
-  "student": true
+  "src": "INFERRED"
  },
  "y1:p172": {
   "a0": null,
@@ -348,16 +333,11 @@
   "student": true
  },
  "y1:p184": {
-  "a0": null,
   "date": "2026-11-02",
-  "e_edited": false,
   "file": null,
   "quote": null,
-  "reason": null,
   "ref": null,
-  "src": "STUDENT",
-  "src0": null,
-  "student": true
+  "src": "INFERRED"
  },
  "y1:p185": {
   "a0": null,
