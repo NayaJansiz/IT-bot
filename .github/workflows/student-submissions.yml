@@ -259,8 +259,12 @@ jobs:
           # are intentionally retained as LECTURE_PARAPHRASE and surfaced for human review;
           # they must not fail a PR merely because their wording differs from the source.
           # A lecture-based answer without a lecture name AND page/heading is still incomplete.
+          if [ "$GITHUB_EVENT_NAME" = "pull_request" ] && grep -q "quote not found word-for-word" "$WORK/report.md"; then
+            echo "::error title=Lecture quote mismatch::A reply marked LECTURE must contain a verifiable exact quote. If the lecture supports the answer in different wording, label it LECTURE_PARAPHRASE and include lec plus ref."
+            exit 1
+          fi
           if [ "$GITHUB_EVENT_NAME" = "pull_request" ] && grep -q "NEEDS SOURCE DETAILS" "$WORK/report.md"; then
-            echo "::error title=Lecture reference missing::A lecture-based answer must include the lecture name (lec) and page/heading (ref). Paraphrases are accepted; invented or missing references are not."
+            echo "::error title=Lecture reference missing::A paraphrased lecture answer must include the lecture name (lec) and page/heading (ref). Paraphrases are accepted; invented or missing references are not."
             exit 1
           fi
 
