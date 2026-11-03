@@ -1,1 +1,226 @@
-{}
+{
+ "y1:p10": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p11": {
+  "date": "2026-11-03",
+  "file": "برمجة-1-نظري-اسامة-مـ1.md",
+  "lecture": "برمجة-1-نظري-اسامة-مـ1.md",
+  "quote": null,
+  "ref": "p4",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y1:p12": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p13": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p14": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p15": {
+  "date": "2026-11-03",
+  "file": "برمجة-1-نظري-مـ3.md",
+  "lecture": "برمجة-1-نظري-مـ3.md",
+  "quote": null,
+  "ref": "p9",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y1:p16": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p19": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p22": {
+  "date": "2026-11-03",
+  "file": "برمجة-1-نظري-مـ4.md",
+  "lecture": "برمجة-1-نظري-مـ4.md",
+  "quote": null,
+  "ref": "p20",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y1:p23": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p24": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p25": {
+  "date": "2026-11-03",
+  "file": "برمجة-1-نظري-مـ4.md",
+  "lecture": "برمجة-1-نظري-مـ4.md",
+  "quote": null,
+  "ref": "p25",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y1:p26": {
+  "date": "2026-11-03",
+  "file": "برمجة-1-نظري-مـ4.md",
+  "lecture": "برمجة-1-نظري-مـ4.md",
+  "quote": null,
+  "ref": "p25",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y1:p27": {
+  "date": "2026-11-03",
+  "file": "برمجة-1-نظري-مـ4.md",
+  "lecture": "برمجة-1-نظري-مـ4.md",
+  "quote": null,
+  "ref": "p25, p27-p29",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y1:p28": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p29": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p31": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p32": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p33": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p35": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p36": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p37": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p38": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p4": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p5": {
+  "date": "2026-11-03",
+  "file": "برمجة-1-نظري-اسامة-مـ1.md",
+  "lecture": "برمجة-1-نظري-اسامة-مـ1.md",
+  "quote": null,
+  "ref": "p4",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y1:p6": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p7": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y1:p8": {
+  "date": "2026-11-03",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ }
+}
