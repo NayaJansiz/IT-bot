@@ -275,6 +275,49 @@ def save_in_background(run_id, rows, chat_id, subject_id, final):
     PENDING[run_id] = bg(job())
 
 
+_PROVENANCE_CACHE = {}
+
+def lecture_marker_for_question(subject_id, question_key):
+    """Get the lecture number from the accepted-answer provenance record."""
+    if subject_id not in _PROVENANCE_CACHE:
+        path = os.path.join(BASE, ".bot-pipeline-state", "provenance", f"subject-{subject_id}.json")
+        try:
+            with open(path, encoding="utf-8") as f:
+                _PROVENANCE_CACHE[subject_id] = json.load(f)
+        except (OSError, ValueError):
+            _PROVENANCE_CACHE[subject_id] = {}
+    source = _PROVENANCE_CACHE[subject_id].get(question_key) or {}
+    if source.get("src") not in {"LECTURE", "LECTURE_PARAPHRASE"}:
+        return None
+    filename = source.get("file") or source.get("lecture")
+    if not filename:
+        return None
+    stem = os.path.splitext(os.path.basename(filename))[0]
+    groups = []
+    current = ""
+    for char in stem:
+        if char.isdigit():
+            current += char
+        elif current:
+            groups.append(current)
+            current = ""
+    if current:
+        groups.append(current)
+    if not groups:
+        return None
+    return f"(م{int(groups[-1])})"
+
+
+def question_explanation(q, subject_id):
+    """Make lecture-backed explanations end with the agreed (مN) marker."""
+    explanation = (q["explanation"] or "").strip()
+    marker = lecture_marker_for_question(subject_id, q["key"])
+    if not marker:
+        return explanation
+    if explanation.endswith("(مراجعة مرجع محاضرة)"):
+        explanation = explanation[:-len("(مراجعة مرجع محاضرة)")].rstrip()
+    return f"{explanation} {marker}".strip()
+
 async def send_batch(chat_id, context, subject_id, offset=0):
     """
     إرسال أسئلة المادة على دفعات (BATCH = 10 أسئلة).
@@ -357,7 +400,7 @@ async def send_batch(chat_id, context, subject_id, offset=0):
                 type=PollType.QUIZ,
                 is_anonymous=False,
                 correct_option_id=q["correct_index"],
-                explanation=clip(q["explanation"] or "", 200) or None,
+                explanation=clip(question_explanation(q, subject_id), 200) or None,
             )
             row = (msg.poll.id, chat_id, run_id, q["key"], subj["id"], subj["name"],
                    subj["year"], subj["semester"], q["correct_index"])
