@@ -40,7 +40,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Reject anything except new student-submission files
+      - name: Reject changes outside student submissions
         if: ${{ github.event_name == 'pull_request' }}
         env:
           PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
@@ -93,22 +93,24 @@ jobs:
           if not changes:
               errors.append("The PR contains no changed files to validate.")
           for status, path in changes:
-              # Students may revise an existing answer + its matching summary.
-              # Intake exports, lecture sources, media and PDFs remain add-only.
-              is_answer_revision = (
+              # Students may revise existing question imports and answers.
+              # Lecture sources, media and PDFs remain add-only.
+              is_submission_revision = (
                   status == "M"
-                  and path.startswith("replies/")
-                  and path.lower().endswith((".jsonl", ".summary.md"))
+                  and (
+                      (path.startswith("intake/") and path.lower().endswith(".json"))
+                      or (path.startswith("replies/") and path.lower().endswith((".jsonl", ".summary.md")))
+                  )
               )
-              if status != "A" and not is_answer_revision:
-                  errors.append(f"{status} {path}: only answer files (.jsonl) and their summaries may be updated; other accepted files are add-only.")
+              if status != "A" and not is_submission_revision:
+                  errors.append(f"{status} {path}: only intake (.json), answer (.jsonl), and matching summary (.summary.md) files may be updated; sources, media, PDFs and other files are add-only.")
               elif not allowed(path):
                   errors.append(f"{path}: not an allowed student-submission path.")
           if errors:
               print("PR rejected by the submission path guard:")
               print("\n".join("- " + x for x in errors))
               sys.exit(1)
-          print(f"Path guard passed: {len(changes)} new submission file(s); no existing files or bot code changed.")
+          print(f"Path guard passed: {len(changes)} submission file change(s); protected files and bot code were not changed.")
           PY
 
       - name: Check out the website's trusted answer-processing tools
