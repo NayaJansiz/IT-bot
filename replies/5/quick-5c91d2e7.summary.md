@@ -1,11 +1,29 @@
-# Programming 2 — owner-confirmed answer submission
+# ملخص التغييرات
 
-- Subject: برمجة 2 (subject ID 5)
-- Pack: quick
-- Questions: 35 (y1:p155–y1:p189)
-- Answer status: all 35 answers explicitly confirmed by the repository owner before import.
-- Import classification: STUDENT (owner-reviewed answers); lecture citations are not claimed as machine-verified.
-- Explanations: retained from the submitted answer pack.
-- Images: no image bindings included.
+- الطالب (GitHub): (غير مكتوب)
+- المادة: برمجة 2 (5)
+- الحزمة: `quick`
+- المحاضرات: برمجة-2-نظري-مـ1.md, برمجة-2-نظري-مـ3.md, برمجة-2-نظري-مـ4.md, برمجة-2-نظري-مــ5.md, برمجة-2-نظري-مـ6.md, برمجة-2-نظري-مـ7.md, برمجة-2-نظري-مــ8.md, برمجة-2-نظري-مــ9.md, برمجة-2-نظري-مـ10.md, برمجة-2-نظري-مــ11.md, برمجة-2-نظري-مــ12.md
+- التاريخ: 2026-11-02
+- ملف الرد: `quick-5c91d2e7.jsonl`
 
-This is a corrected resubmission. The previous submission was placed under subject ID 1 (برمجة 1); the repository's subject registry identifies برمجة 2 as subject ID 5. The answer IDs and answer text are unchanged.
+## الأعداد
+- موثّق من المحاضرة: 31
+- استنتاج: 4
+- جواب طالب بلا اقتباس موثّق: 0
+- من شكل (غير موثّق آلياً): 0
+- لم يوجد: 0
+- أجوبة غيّرها الطالب: 0
+- شروح عدّلها الطالب: 0
+
+## أجوبة تغيّرت
+لا يوجد
+
+## شروح عُدّلت
+لا يوجد
+
+## تحتاج قراراً من المشرفين
+لا يوجد
+
+## ربط الصور
+لا يوجد
