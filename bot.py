@@ -312,8 +312,8 @@ def question_explanation(q, subject_id):
     marker = lecture_marker_for_question(subject_id, q["key"])
     if not marker:
         return explanation
-    explanation = re.sub(r"\s*\\(مراجعة مرجع محاضرة\\)\s*$", "", explanation)
-    explanation = re.sub(r"\s*\\(م\\d+\\)\s*$", "", explanation)
+    explanation = re.sub(r"\s*\(مراجعة مرجع محاضرة\)\s*$", "", explanation)
+    explanation = re.sub(r"\s*\(م\d+\)\s*$", "", explanation)
     return f"{explanation} {marker}".strip()
 
 
