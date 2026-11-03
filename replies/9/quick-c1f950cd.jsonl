@@ -1,0 +1,36 @@
+{"id":"y2:p37","a":"A","src":"LECTURE_PARAPHRASE","lec":"ويب-نظري-مـ5.md","ref":"p30","e":"في GET تظهر البيانات في شريط العنوان كسلسلة استعلام، أما POST فتُخفى البيانات، فالطلب من النوع GET."}
+{"id":"y2:p45","a":"A","src":"LECTURE_PARAPHRASE","lec":"ويب-نظري-مـ5.md","ref":"p36","e":"خاصية pattern تحدد تعبيراً نمطياً؛ Aabc12 يطابق حرفاً كبيراً ثم 3 صغيرة ثم رقمين، وaAbc34 لا يطابق."}
+{"id":"y2:p47","a":"B","src":"LECTURE_PARAPHRASE","lec":"ويب-نظري-مـ5.md","ref":"p38","e":"عنصر select يُستخدم لاختيار عنصر واحد؛ أزرار radio لا تتنافى إلا إذا اشتركت في نفس name وهنا اختلفت."}
+{"id":"y2:p58","a":"A","src":"LECTURE_PARAPHRASE","lec":"ويب-نظري-مـ5.md","ref":"p9","e":"colspan يمد الخلية على عدة أعمدة وrowspan على عدة صفوف؛ الكود يعطي Staff بعمودين وLocation بصفين كما في الجدول."}
+{"id":"y2:p28","a":"D","src":"INFERRED","e":"عنصر form من العناصر الكتلية (block-level) بينما img وsup وlabel عناصر ضمن السطر (inline)."}
+{"id":"y2:p29","a":"B","src":"INFERRED","e":"أول خطوة هي ترجمة اسم النطاق إلى عنوان IP عبر DNS، ثم يُرسل طلب HTTP بعدها."}
+{"id":"y2:p30","a":"A","src":"INFERRED","e":"الخاصية border-radius بقيمة 50% تجعل حواف الإطار دائرية."}
+{"id":"y2:p31","a":"B","src":"INFERRED","e":"الفائدة الأساسية للعناصر الدلالية هي تحسين البنية الدلالية وإمكانية الوصول وفهم محركات البحث، لا تقليل الحجم."}
+{"id":"y2:p32","a":"D","src":"INFERRED","e":"list-style-image وlist-style-type يُستخدمان لتنسيق القوائم، أما list-type وlist-color فغير موجودتين."}
+{"id":"y2:p33","a":"B","src":"INFERRED","e":"التفكيك Destructuring في ES6 يستخرج عناصر المصفوفة بأسلوب مختصر."}
+{"id":"y2:p34","a":"C","src":"INFERRED","e":"TCP مسؤول عن النقل الموثوق للبيانات، أما IP فللعنونة وHTTP بروتوكول تطبيقي."}
+{"id":"y2:p35","a":"A","src":"INFERRED","e":"رموز 2xx تعني النجاح، و4xx أخطاء العميل، و5xx أخطاء الخادم، فالعبارتان B وC خاطئتان."}
+{"id":"y2:p36","a":"C","src":"INFERRED","e":"section للفئات (رياضة، اقتصاد، سياسة) وarticle لكل خبر مستقل."}
+{"id":"y2:p38","a":"C","src":"INFERRED","e":"القيم الصادقة (truthy) هي Hello وtrue و5، أما 0 وundefined والنص الفارغ فكاذبة، فالعدد 3."}
+{"id":"y2:p39","a":"A","src":"INFERRED","e":"slice(4,-4) تعطي 'Develop'، وآخر ظهور للحرف e في الفهرس 3."}
+{"id":"y2:p40","a":"B","src":"INFERRED","e":"كل استدعاء لـ Symbol ينشئ قيمة فريدة غير قابلة للتغيير مستقلة عن الوصف."}
+{"id":"y2:p41","a":"D","src":"INFERRED","e":"الاستدعاءات الثلاثة تمرر القيم 10 و10 و2 أو 5 و15 و2، وكلها تعطي (x+y)*z = 40."}
+{"id":"y2:p42","a":"B","src":"INFERRED","e":"substring(7,10) تعطي 'Jav' التي لا تحتوي 'Java' فتكون النتيجة false."}
+{"id":"y2:p43","a":"C","src":"INFERRED","e":"text-transform: uppercase للأحرف الكبيرة وfont-weight: bold للخط الغامق."}
+{"id":"y2:p44","a":"C","src":"INFERRED","e":"المتغير city محلي داخل الدالة، فالوصول إليه خارجها يسبب ReferenceError."}
+{"id":"y2:p46","a":"B","src":"INFERRED","e":"الرابط الصحيح للاتصال برقم هاتف يستخدم المخطط tel: داخل href."}
+{"id":"y2:p48","a":"A","src":"INFERRED","e":"padding يحدد الهوامش الداخلية، أما margin فيحدد الهوامش الخارجية."}
+{"id":"y2:p49","a":"A","src":"INFERRED","e":"المحدد thead tr:hover يلوّن صفوف الرأس عند تمرير الفأرة بالخاصية background-color."}
+{"id":"y2:p50","a":"B","src":"INFERRED","e":"reverse تعطي [z,y,x]، وunshift تضيف w في البداية، وpop تحذف الأخير فتصبح [w,z,y]."}
+{"id":"y2:p52","a":"A","src":"INFERRED","e":"ol من النوع I مع ul بأنماط disc وcircle وsquare يعطي القائمة المعروضة في الشكل."}
+{"id":"y2:p53","a":"C","src":"INFERRED","e":"الدالة greet ترفع بالكامل فتعمل، أما sayHi فمتغير var قيمته undefined قبل الإسناد فاستدعاؤه TypeError."}
+{"id":"y2:p54","a":"D","src":"INFERRED","e":"الدوال السهمية لا تملك الكائن arguments فيحدث ReferenceError."}
+{"id":"y2:p55","a":"C","src":"INFERRED","e":"لم تُمرَّر وسائط فـ arguments[1] تساوي undefined، بينما name تأخذ القيمة الافتراضية Guest."}
+{"id":"y2:p56","a":"C","src":"INFERRED","e":"nums2 تشير إلى المصفوفة نفسها (مرجع)، فتظهر فيها القيمة المضافة 50."}
+{"id":"y2:p59","a":"D","src":"INFERRED","e":"[class$=\"intro\"] تعني ينتهي بـ intro، وعلامة > للابن المباشر، وa[href] لعنصر يملك href."}
+{"id":"y2:p60","a":"B","src":"INFERRED","e":"let وvar داخل الدالة محليان، فالوصول إلى population خارجها يسبب ReferenceError."}
+{"id":"y2:p61","a":"A","src":"INFERRED","e":"المحدد ~ يعني الأخ غير المباشر، و#highlight span~strong يلتقط strong الذي يلي span داخل العنصر."}
+{"id":"y2:p62","a":"B","src":"INFERRED","e":"نشر fruitList يعطي عنصرين، ثم pear، ثم args وهي مصفوفة ['orange']."}
+{"id":"y2:p64","a":"C","src":"INFERRED","e":"X يأخذ #focus الأخير: أحمر مائل مع خط سفلي وخلفية صفراء؛ Y بلا خط؛ Z خلفية رمادية."}
+{"id":"y2:p65","a":"A","src":"INFERRED","e":"splice(2,1,7) تُرجع المحذوف [9]، وبعدها المصفوفة [3,6,7,12] وفيها 3 أقل من 5 فالنتيجة true."}
+{"id":"y2:p66","a":"B","src":"INFERRED","e":"fill تعطي [6,1,1,1,9]، ثم copyWithin(1,3) تنسخ [1,9] إلى الفهرس 1 فتصبح [6,1,9,1,9]."}
