@@ -93,8 +93,17 @@ jobs:
           if not changes:
               errors.append("The PR contains no changed files to validate.")
           for status, path in changes:
-              if status != "A":
-                  errors.append(f"{status} {path}: accepted submission files are immutable; add a new file instead.")
+              # Allow revisions to existing question imports and answer files.
+              # Lecture sources, media, PDFs and code remain add-only/protected.
+              is_submission_revision = (
+                  status == "M"
+                  and (
+                      (path.startswith("intake/") and path.lower().endswith(".json"))
+                      or (path.startswith("replies/") and path.lower().endswith((".jsonl", ".summary.md")))
+                  )
+              )
+              if status != "A" and not is_submission_revision:
+                  errors.append(f"{status} {path}: only intake (.json), answer (.jsonl), and matching summary (.summary.md) files may be updated; sources, media, PDFs and other files are add-only.")
               elif not allowed(path):
                   errors.append(f"{path}: not an allowed student-submission path.")
           if errors:
