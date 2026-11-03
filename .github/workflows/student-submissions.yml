@@ -40,7 +40,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Reject anything except new student-submission files
+      - name: Reject changes outside student submissions
         if: ${{ github.event_name == 'pull_request' }}
         env:
           PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
@@ -101,7 +101,7 @@ jobs:
               print("PR rejected by the submission path guard:")
               print("\n".join("- " + x for x in errors))
               sys.exit(1)
-          print(f"Path guard passed: {len(changes)} new submission file(s); no existing files or bot code changed.")
+          print(f"Path guard passed: {len(changes)} submission file change(s); protected files and bot code were not changed.")
           PY
 
       - name: Check out the website's trusted answer-processing tools
