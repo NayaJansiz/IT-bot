@@ -299,7 +299,7 @@ def lecture_marker_for_question(subject_id, question_key):
     stem = os.path.splitext(os.path.basename(filename))[0]
     # Capture the number immediately after the Arabic lecture marker "م".
     # For "مـ6-2", this returns 6 (not the trailing part number 2).
-    match = re.search(r"م[ـ\\s]*([0-9٠-٩]+)", stem)
+    match = re.search(r"م[ـ\s]*([0-9٠-٩]+)", stem)
     if not match:
         return None
     digits = match.group(1).translate(str.maketrans("٠١٢٣٤٥٦٧٨٩", "0123456789"))
@@ -312,8 +312,8 @@ def question_explanation(q, subject_id):
     marker = lecture_marker_for_question(subject_id, q["key"])
     if not marker:
         return explanation
-    explanation = re.sub(r"\\s*\\(مراجعة مرجع محاضرة\\)\\s*$", "", explanation)
-    explanation = re.sub(r"\\s*\\(م\\d+\\)\\s*$", "", explanation)
+    explanation = re.sub(r"\s*\\(مراجعة مرجع محاضرة\\)\s*$", "", explanation)
+    explanation = re.sub(r"\s*\\(م\\d+\\)\s*$", "", explanation)
     return f"{explanation} {marker}".strip()
 
 
