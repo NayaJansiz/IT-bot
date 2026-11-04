@@ -1,0 +1,97 @@
+{
+ "y2:p71": {
+  "date": "2026-11-03",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "خصائص الاحتمال: الحدث المتمم",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p72": {
+  "date": "2026-11-03",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "الاحتمال الشرطي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p73": {
+  "date": "2026-11-03",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "الاحتمال الشرطي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p74": {
+  "date": "2026-11-03",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "خصائص التباين: V(C)=0",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p75": {
+  "date": "2026-11-03",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "الانحراف المعياري",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p76": {
+  "date": "2026-11-03",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "مقاييس النزعة المركزية: الوسط الحسابي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p77": {
+  "date": "2026-11-03",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "التكرار النسبي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p78": {
+  "date": "2026-11-03",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "مخطط الساق والورقة",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p79": {
+  "date": "2026-11-03",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "الاستقلال العشوائي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p80": {
+  "date": "2026-11-03",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "القيمة المتوقعة E(X)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p81": {
+  "date": "2026-11-03",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "طرق حساب الوسيط — البيانات غير المبوبة",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y2:p82": {
+  "date": "2026-11-03",
+  "file": "par2.md",
+  "quote": "اذا لم تتكرر اية قيمة فلا يوجد منوال.",
+  "ref": "المنوال",
+  "src": "LECTURE"
+ }
+}
