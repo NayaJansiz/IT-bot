@@ -1,0 +1,27 @@
+{"id":"y3:p175","a":"C","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"التحليل التصاعدي Shift-Reduce","e":"يعتمد LR على عملية الاختزال Reduce لإعادة بناء الاشتقاق من الأوراق نحو رمز البداية."}
+{"id":"y3:p176","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Lexical Analysis","e":"المحلل المفرداتي يحوّل الشيفرة المصدرية إلى سلسلة وحدات صغرى هي tokens."}
+{"id":"y3:p177","a":"C","src":"LECTURE","lec":"par1.md","ref":"تعريف اللغة","q":"L ⊆ V* (The Closure of V)","e":"اللغة مجموعة كلمات وجمل مبنية من الأبجدية V، أي L جزء من V* الغلق الكليني."}
+{"id":"y3:p178","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"اللغات والقواعد النحوية","e":"القواعد G تتألف من رموز نهائية ولا نهائية ورمز بداية وقواعد إنتاج φ."}
+{"id":"y3:p179","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Symbol Table / Syntactical Analysis","e":"يبني التحليل القواعدي شجرة Parse Tree/AST ويستخدم جدول الرموز في المراحل."}
+{"id":"y3:p180","a":"C","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"ACTION/GOTO: Shift k","e":"عند Shift k يُدفع الرمز مع الحالة k إلى المكدس ويُقرأ الرمز التالي."}
+{"id":"y3:p181","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"2. لماذا ندرس المترجمات؟ (Our Goal)","e":"هدف دراسة المترجمات معرفة كيفية بناء البرامج وأدوات البرمجة."}
+{"id":"y3:p182","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"Top-Down vs Bottom-Up","e":"التحليل Top-Down يبدأ من رمز البداية Start Symbol (الجذر) باتجاه الأوراق."}
+{"id":"y3:p184","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Semantic Analysis","e":"المحلل الدلالي يبني التمثيل الوسيط intermediate representation للبرنامج."}
+{"id":"y3:p185","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Symbol Table","e":"جدول الرموز يخزن معلومات المعرِّفات (النوع، النطاق، القيمة)."}
+{"id":"y3:p186","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"مثال التحليل القواعدي — if-then-else","e":"التحليل القواعدي يتحقق من بنية الجملة if-then-else وأجزائها."}
+{"id":"y3:p187","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"17. القواعد السياق-حرة (CFG)","e":"قواعد S→aCa, C→aCa, C→b تولّد aba وa²ba² أي {aⁿbaⁿ}."}
+{"id":"y3:p189","a":"B","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"تتبع التنفيذ: Bottom-Up لـ W=cabd","e":"ab→A فتصبح cAd ثم cAd→S، أي cabd→cAd→S."}
+{"id":"y3:p190","a":"B","src":"LECTURE","lec":"par3.md","ref":"أنواع أخطاء وقت الترجمة","q":"Syntactic → Sentence Structure","e":"الخطأ النحوي هو خطأ في بنية الجملة ويكشفه المحلل القواعدي."}
+{"id":"y3:p191","a":"A","src":"LECTURE","lec":"par3.md","ref":"أنواع أخطاء وقت الترجمة","q":"Semantic → Type mismatching","e":"عدم تطابق الأنواع Type mismatching خطأ دلالي يكشفه المحلل الدلالي."}
+{"id":"y3:p192","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"لماذا هذا مهم؟","e":"التعابير المنتظمة تصف tokens لكن الجمل المتداخلة مثل if-then-else تحتاج CFG."}
+{"id":"y3:p193","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Stack Machine / LOAD","e":"LOAD يجلب قيمة x من الذاكرة (في آلة المكدس يدفعها إلى المكدس)."}
+{"id":"y3:p194","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Stack Machine / STORE","e":"STORE a في آلة المكدس يسحب القيمة من المكدس ويخزنها في العنوان a."}
+{"id":"y3:p197","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"أنواع أخطاء وقت الترجمة","e":"المحلل القواعدي يكشف الأخطاء النحوية Syntactic أي خطأ بنية الجملة."}
+{"id":"y3:p198","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"شجرة (A+B)*(C+D)","e":"التعبير الحسابي يُمثَّل في التحليل القواعدي بشجرة Parse Tree."}
+{"id":"y3:p199","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"تعريف المترجم","e":"المترجم يحوّل لغة المصدر عالية المستوى إلى لغة هدف (لغة الآلة) يفهمها الحاسوب."}
+{"id":"y3:p200","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Lexical Analysis","e":"التحليل المفرداتي يعالج الكود كسلسلة كلمات ويحوّلها إلى tokens."}
+{"id":"y3:p201","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"2.1. دالة Closure","e":"I0 = Closure({E1 → .E}) يضيف كل قواعد E بنقطة في بدايتها."}
+{"id":"y3:p202","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"2. أنواع الاشتقاق: Leftmost vs Rightmost","e":"Leftmost يستبدل أقصى Nonterminal يساراً أولاً، وRightmost يستبدل الأيمن أولاً."}
+{"id":"y3:p203","a":"B","src":"LECTURE","lec":"par3.md","ref":"أنواع أخطاء وقت الترجمة","q":"Syntactic → Sentence Structure","e":"الخطأ في بنية الجملة Sentence Structure يكشفه المحلل القواعدي."}
+{"id":"y3:p204","a":"B","src":"LECTURE","lec":"par5.md","ref":"Reduce k","q":"pop 2 * (Length of the right side of production k)","e":"عند Reduce يُسحب 2n عنصراً لأن المكدس يحمل رمزاً وحالة لكل موقع."}
+{"id":"y3:p205","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"3.2. Loop Unrolling","e":"Loop Unrolling يحوّل الحلقة إلى تعليمات صريحة مكررة، وليس ما ذُكر في A أو B."}
