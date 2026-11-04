@@ -1,0 +1,214 @@
+{
+ "y3:p175": {
+  "date": "2026-11-04",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "التحليل التصاعدي Shift-Reduce",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p176": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Lexical Analysis",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p177": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "quote": "L ⊆ V* (The Closure of V)",
+  "ref": "تعريف اللغة",
+  "src": "LECTURE"
+ },
+ "y3:p178": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "اللغات والقواعد النحوية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p179": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Symbol Table / Syntactical Analysis",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p180": {
+  "date": "2026-11-04",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "ACTION/GOTO: Shift k",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p181": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "2. لماذا ندرس المترجمات؟ (Our Goal)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p182": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "Top-Down vs Bottom-Up",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p184": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Semantic Analysis",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p185": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Symbol Table",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p186": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "مثال التحليل القواعدي — if-then-else",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p187": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "17. القواعد السياق-حرة (CFG)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p189": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "تتبع التنفيذ: Bottom-Up لـ W=cabd",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p190": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "quote": "Syntactic → Sentence Structure",
+  "ref": "أنواع أخطاء وقت الترجمة",
+  "src": "LECTURE"
+ },
+ "y3:p191": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "quote": "Semantic → Type mismatching",
+  "ref": "أنواع أخطاء وقت الترجمة",
+  "src": "LECTURE"
+ },
+ "y3:p192": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "لماذا هذا مهم؟",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p193": {
+  "date": "2026-11-04",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "Stack Machine / LOAD",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p194": {
+  "date": "2026-11-04",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "Stack Machine / STORE",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p197": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "أنواع أخطاء وقت الترجمة",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p198": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "شجرة (A+B)*(C+D)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p199": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "تعريف المترجم",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p200": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Lexical Analysis",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p201": {
+  "date": "2026-11-04",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "2.1. دالة Closure",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p202": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "2. أنواع الاشتقاق: Leftmost vs Rightmost",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p203": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "quote": "Syntactic → Sentence Structure",
+  "ref": "أنواع أخطاء وقت الترجمة",
+  "src": "LECTURE"
+ },
+ "y3:p204": {
+  "date": "2026-11-04",
+  "file": "par5.md",
+  "lecture": null,
+  "quote": "pop 2 * (Length of the right side of production k)",
+  "ref": "Reduce k",
+  "src": "LECTURE"
+ },
+ "y3:p205": {
+  "date": "2026-11-04",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "3.2. Loop Unrolling",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
