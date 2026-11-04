@@ -1,0 +1,41 @@
+{"id":"y3:p120","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Counter","e":"Counter(iterable) من collections يعدّ تكرار كل عنصر تلقائياً؛ الكتابة الصحيحة بحرف C كبير دون بادئة pd أو np."}
+{"id":"y3:p121","a":"B","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"2.2 Filtering","q":"ml = df[(df['sex'] == ' Male')]","e":"تصفية DataFrame بقناع منطقي df[(df['sex']=='Male')] تُرجع صفوف الرجال، ثم تُحسب أعدادهم بـ shape."}
+{"id":"y3:p122","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"مجموعة بيانات Adult","e":"هدف بيانات Adult بناء نموذج تصنيف ثنائي للتنبؤ بعمود income (أكثر أو أقل من 50K)، فهو الـ target."}
+{"id":"y3:p123","a":"C","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"2.1 قراءة الملف يدوياً","e":"الحقول الرقمية المحوّلة إلى int ستة (age, fnlwgt, education_num, capital_gain, capital_loss, hr_per_week)، وتصلح للتحليل مباشرة."}
+{"id":"y3:p125","src":"NOT-FOUND"}
+{"id":"y3:p126","a":"C","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Handling missing values","q":"edu.dropna(how='any', subset=[\"Value\"])","e":"dropna() هي دالة pandas لحذف الصفوف التي تحتوي قيماً مفقودة (NaN)، بينما fillna تعوّضها بقيمة."}
+{"id":"y3:p128","a":"B","src":"LECTURE_PARAPHRASE","lec":"par10.md","ref":"4.1 النجاة الإجمالية","e":"المقارنة وحدها تُنتج قناعاً منطقياً فقط؛ لمعرفة عدد الناجين تُطبَّق داخل titanic_train[...] ثم تُحسب len."}
+{"id":"y3:p129","a":"B","src":"LECTURE_PARAPHRASE","lec":"par10.md","ref":"فحص القيم المفقودة","q":"titanic_train.isnull().sum()","e":"isnull() وحدها تعطي جدول True/False؛ لعدّ الخلايا الفارغة يُستخدم isnull().sum()."}
+{"id":"y3:p130","a":"A","src":"LECTURE_PARAPHRASE","lec":"par10.md","ref":"النجاة حسب الجنس","q":"titanic_train.groupby('Sex').Survived.value_counts()","e":"هذا الأمر يعطي عدد الناجين وغير الناجين لكل جنس (male: 109 ناجٍ)، فالعبارة صحيحة."}
+{"id":"y3:p131","a":"B","src":"LECTURE_PARAPHRASE","lec":"par10.md","ref":"النجاة حسب الجنس","e":"المقارنة ==1 تُرجع قناعاً فقط؛ نسبة النجاة (فرصة النجاة) تُحسب بمتوسط عمود Survived mean()."}
+{"id":"y3:p133","a":"C","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"read_csv","q":"pd.read_csv(path)","e":"pd.read_csv() تقرأ ملف CSV وتحوّله إلى DataFrame، وهي الطريقة الأساسية لتحميل البيانات."}
+{"id":"y3:p134","a":"C","src":"LECTURE_PARAPHRASE","lec":"par9.md","ref":"Regression on tips","e":"في تحليل tips يُتنبأ بـ tip من total_bill (y='tip')، فهو المتغير الناتج (المستجيب)."}
+{"id":"y3:p135","a":"C","src":"LECTURE_PARAPHRASE","lec":"par10.md","ref":"فحص القيم المفقودة","e":"الفراغات تُحصى بالفرق عن 244: total_bill 3 + smoker 2 + size 3 = 8، وهي ما يكشفه isnull().sum()."}
+{"id":"y3:p136","src":"NOT-FOUND"}
+{"id":"y3:p137","src":"NOT-FOUND"}
+{"id":"y3:p138","src":"NOT-FOUND"}
+{"id":"y3:p139","src":"NOT-FOUND"}
+{"id":"y3:p140","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"defaultdict و Counter","q":"any new key starts at 0 automatically","e":"defaultdict(int) ينشئ المفتاح غير الموجود بقيمة int() وهي 0 بدل رفع KeyError."}
+{"id":"y3:p141","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Arrays","q":"nums = array(\"i\", [])","e":"array('i', []) ينشئ مصفوفة فارغة، والرمز 'i' يعني أن كل عنصر عدد صحيح (integer) فقط."}
+{"id":"y3:p142","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"zip و enumerate","e":"zip تدمج عدة قوائم عنصراً بعنصر في قائمة أزواج (tuples)، ويمكن عكسها بـ zip(*pairs)."}
+{"id":"y3:p143","a":"C","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"Saving plots","q":"plt.savefig('squares_plot.png', bbox_inches='tight')","e":"plt.savefig() تحفظ الرسم في ملف صورة مثل squares_plot.png."}
+{"id":"y3:p144","a":"B","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"Histogram","q":"histogram = Counter(min(grade // 10 * 10, 90) for grade in grades)","e":"Counter في مثال الهستوجرام يعدّ تكرار كل قيمة (فئة) في البيانات، ثم تُرسم الأعمدة بـ plt.bar."}
+{"id":"y3:p145","a":"B","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"26. seaborn — lmplot","e":"sns.lmplot() يرسم scatter plot مع خط انحدار خطي (linear regression) وحدود ثقة تلقائياً."}
+{"id":"y3:p146","a":"A","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"DataFrame من قاموس","q":"pd.DataFrame(data, index=['A', 'B', 'C', 'D', 'E'])","e":"pd.DataFrame(data) تبني جدولاً من قاموس حيث يصبح كل مفتاح عموداً."}
+{"id":"y3:p147","a":"B","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"read_csv و na_values","e":"na_values=':' تُخبر pandas بأن أي خلية قيمتها ':' تُعدّ قيمة مفقودة NaN."}
+{"id":"y3:p148","a":"B","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Grouping","e":"groupby('column') تجمع الصفوف التي تشترك بنفس قيمة العمود المحدد وتطبّق عليها دالة تجميع مثل mean()."}
+{"id":"y3:p149","a":"E","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"خطوات تحضير البيانات","e":"خطوات تحضير البيانات الأربع: Obtaining وParsing وCleaning وBuilding data structures، وليس منها تنفيذ خوارزميات تعلم الآلة."}
+{"id":"y3:p150","a":"B","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"Data Distribution","e":"PMF هو الهستوجرام بعد التطبيع (density=1) فيمثل كل عمود نسبة بدل عدد خام."}
+{"id":"y3:p151","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Skewness","e":"الالتواء skewness يقيس عدم تناظر التوزيع، أي هل ذيله أطول يميناً أم يساراً."}
+{"id":"y3:p152","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Covariance و Correlation","e":"معامل Pearson يطبّع covariance ليصبح بين -1 و1، ويقيس قوة واتجاه العلاقة الخطية بين متغيرين."}
+{"id":"y3:p153","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Standardization","q":"بلا وحدة قياس (dimensionless)","e":"Standardization (z-score) تجعل البيانات بلا وحدة قياس، بمتوسط 0 وتباين 1، فتصبح المتغيرات قابلة للمقارنة."}
+{"id":"y3:p154","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"bootstrap","e":"في bootstrap تُسحب n نقطة من العينة الأصلية مع السماح بالتكرار (with replacement)."}
+{"id":"y3:p155","a":"C","src":"LECTURE_PARAPHRASE","lec":"par10.md","ref":"ملء Age الناقص","q":"[mean - std, mean + std]","e":"قيم Age الناقصة (177) مُلئت بأعداد عشوائية بين mean-std وmean+std للحفاظ على التوزيع."}
+{"id":"y3:p156","a":"B","src":"LECTURE_PARAPHRASE","lec":"par11.md","ref":"RandomWalk Class","e":"كلاس RandomWalk يولّد مساراً عشوائياً ثنائي الأبعاد بخطوات باتجاه ومسافة عشوائيين ثم يرسمه بـ scatter."}
+{"id":"y3:p157","a":"B","src":"LECTURE_PARAPHRASE","lec":"par10.md","ref":"Titanic - الهدف","q":"Predict whether a passenger survived or not","e":"هدف مشروع Titanic التنبؤ هل نجا الراكب أم لا (تصنيف ثنائي: 0 لم ينجُ، 1 نجا)."}
+{"id":"y3:code31","a":"B","src":"LECTURE_PARAPHRASE","lec":"par11.md","ref":"الطقس لسنة كاملة","q":"dates, highs, lows = [], [], []","e":"القوائم الثلاث بالترتيب dates وhighs وlows، فالفراغ 31 هو lows."}
+{"id":"y3:code32","a":"C","src":"LECTURE_PARAPHRASE","lec":"par11.md","ref":"الطقس لسنة كاملة","q":"high = int(row[2])","e":"الدرجة العظمى تُحوَّل من نص إلى عدد بـ int(row[2])، فالفراغ 32 هو int."}
+{"id":"y3:code33","a":"C","src":"LECTURE_PARAPHRASE","lec":"par11.md","ref":"الطقس لسنة كاملة","q":"low = int(row[4])","e":"الدرجة الصغرى تُحوَّل بـ int(row[4])، فالفراغ 33 هو int."}
+{"id":"y3:code34","a":"A","src":"LECTURE_PARAPHRASE","lec":"par11.md","ref":"الطقس لسنة كاملة","q":"plt.plot(dates, highs, c='red')","e":"الخط الأحمر يرسم الدرجات العظمى highs مقابل dates."}
+{"id":"y3:code35","a":"B","src":"LECTURE_PARAPHRASE","lec":"par11.md","ref":"الطقس لسنة كاملة","q":"plt.plot(dates, lows, c='blue')","e":"الخط الأزرق يرسم الدرجات الصغرى lows مقابل dates."}
+{"id":"y3:code36","a":"E","src":"LECTURE_PARAPHRASE","lec":"par11.md","ref":"الطقس لسنة كاملة","q":"plt.show()","e":"ينتهي الكود بـ plt.show() لعرض الرسم."}
