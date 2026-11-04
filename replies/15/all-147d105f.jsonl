@@ -1,0 +1,12 @@
+{"id":"y3:p160","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Propositional Logic: Syntax","e":"الـ proposition جملة خبرية تكون صحيحة أو خاطئة؛ \"number 2 is odd\" كذلك، أما السؤال والأمر فليسا proposition."}
+{"id":"y3:p161","a":"A","src":"LECTURE","lec":"par4.md","ref":"التكميم الوجودي (Existential Quantification)","q":"∃x At(x,Stanford) ∧ Smart(x)","e":"التكميم الوجودي ∃ يُستخدم مع الرابط ∧، لا مع ⇒، فتكون الصيغة ∃x P(x) ∧ ∃x N(x)."}
+{"id":"y3:p162","a":"C","src":"LECTURE","lec":"par10.md","ref":"أنواع التعلم — Types of Learning","q":"Reinforcement learning: Rewards from sequence of actions","e":"التعلم المعزز (Reinforcement) هو التعلم من المكافآت الناتجة عن تسلسل من الأفعال."}
+{"id":"y3:p163","a":"C","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Resolution","e":"D(A) مع ¬D(y)∨¬L(y) يعطي ¬L(A)، ثم مع ¬R(x)∨L(x) يعطي ¬R(A)؛ ومع I(A) نحصل على I(z)∧¬R(z)."}
+{"id":"y3:p164","a":"A","src":"LECTURE","lec":"par11.md","ref":"Linear Regression — convex J()","q":"its second derivative is always nonnegative","e":"الدالة محدّبة (convex) إذا كان مشتقها الثاني دائماً غير سالب، وليس سالباً؛ لذلك العبارة خاطئة."}
+{"id":"y3:p165","a":"D","src":"LECTURE","lec":"par10.md","ref":"When Do We Use ML?","q":"Humans can't explain their expertise","e":"المحاضرة تذكر الحالات الثلاث كلها: غياب الخبرة البشرية، وتعذّر شرحها، والحاجة لنماذج مخصصة؛ فالجواب كلها."}
+{"id":"y3:p166","src":"NOT-FOUND"}
+{"id":"y3:p168","src":"NOT-FOUND"}
+{"id":"y3:p169","src":"NOT-FOUND"}
+{"id":"y3:p170","a":"B","src":"LECTURE","lec":"par10.md","ref":"Various Function Representations","q":"Symbolic functions: Decision trees","e":"تُصنَّف الأشجار القرارية (Decision trees) ضمن الدوال الرمزية Symbolic functions."}
+{"id":"y3:p171","a":"A","src":"LECTURE","lec":"par10.md","ref":"تعريف Tom Mitchell — Defining the Learning Task","q":"A well-defined learning task is given by ⟨P, T, E⟩","e":"مهمة التعلم تُعرَّف بثلاثية ⟨P,T,E⟩: الأداء Performance والمهمة Task والخبرة Experience."}
+{"id":"y3:p172","a":"C","src":"LECTURE","lec":"par10.md","ref":"Evolutionary Computation","q":"Evolutionary Computation: Genetic Algorithms (GAs)","e":"الخوارزميات الجينية GAs تنتمي إلى الحوسبة التطورية Evolutionary Computation."}
