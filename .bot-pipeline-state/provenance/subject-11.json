@@ -1,0 +1,233 @@
+{
+ "y3:p10": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "مزايا الاتصالات الرقمية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p11": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "ضمان واستقرار الاتصالات",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p12": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "PWM (ص9)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p13": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "أخذ العينات",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p14": {
+  "date": "2026-11-04",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "التباعد على المدار وتخصيص الترددات",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p15": {
+  "date": "2026-11-04",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "أنواع الألياف",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p16": {
+  "date": "2026-11-04",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "الانعكاس الكلي الداخلي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p17": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "الاتصالات الرقمية: المزايا والعيوب",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p18": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "أسس اختيار أنظمة الاتصال",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p19": {
+  "date": "2026-11-04",
+  "file": "par2-sec1.md",
+  "lecture": "par2-sec1.md",
+  "quote": null,
+  "ref": "7.4 تحويل فورييه ومعكوسه",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p21": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "التعديل المطالي AM",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p22": {
+  "date": "2026-11-04",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "7. التسليم Handoff",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p23": {
+  "date": "2026-11-04",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "أسباب الفقد في الليف",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p25": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": null,
+  "quote": "تعتبر الاتصالات المحرك والعامل الأساسي المسبب للنمو الاقتصادي",
+  "ref": "الاتصالات والنمو الاقتصادي",
+  "src": "LECTURE"
+ },
+ "y3:p26": {
+  "date": "2026-11-04",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "4.1 معادلة تردد الحاملة للـ Super Group",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p27": {
+  "date": "2026-11-04",
+  "file": "par6.md",
+  "quote": "هي 6/4 GHz و 14/12 GHz",
+  "ref": "5. التباعد على المدار وتخصيص الترددات",
+  "src": "LECTURE"
+ },
+ "y3:p28": {
+  "date": "2026-11-04",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "أنواع الألياف: Single Mode",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p29": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "4.2 دارة Sample and Hold",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p30": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "تعريف التعديل",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p31": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "النقل الرقمي - إشارة المنبع",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p33": {
+  "date": "2026-11-04",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "جدول المدارات: المدار المتزامن GEO",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p34": {
+  "date": "2026-11-04",
+  "file": "par2-sec1.md",
+  "lecture": "par2-sec1.md",
+  "quote": null,
+  "ref": "4. الإشارات غير المحددة - الصدفية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p36": {
+  "date": "2026-11-04",
+  "file": "par2-sec1.md",
+  "lecture": "par2-sec1.md",
+  "quote": null,
+  "ref": "تصنيف الإشارة حسب القيم والزمن",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p37": {
+  "date": "2026-11-04",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "أسس اختيار أنظمة الاتصال",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p38": {
+  "date": "2026-11-04",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "مقارنة TDMA vs CDMA",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p5": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "المخطط الصندوقي لـ PCM (ص10)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p6": {
+  "date": "2026-11-04",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "نظرية شانون",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p8": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "تعريف التعديل",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y3:p9": {
+  "date": "2026-11-04",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "الحاجة إلى التعديل",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
