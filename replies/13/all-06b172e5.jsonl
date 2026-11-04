@@ -1,0 +1,33 @@
+{"id":"y3:p85","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"CRC — تمثيل G كثير حدود","e":"G(x)=x⁵+x³+1: معاملات x⁵..x⁰ = 1,0,1,0,0,1 فيكون المولّد 101001."}
+{"id":"y3:p86","a":"B","src":"LECTURE","lec":"par5.md","ref":"Transport Layer","q":"Ensures pieces all arrive correctly at receiver and reassembles them into the original order","e":"طبقة النقل (Transport) هي التي تتأكد من وصول القطع وإعادة تجميعها بالترتيب الأصلي."}
+{"id":"y3:p87","a":"D","src":"LECTURE","lec":"par8.md","ref":"Ethernet — Terminators / Repeaters","q":"a device that receives a signal, regenerates it, and transmits it","e":"الـ Repeater يستقبل الإشارة ثم يجدّدها ثم يرسلها، فالجواب جميع ما سبق."}
+{"id":"y3:p88","a":"B","src":"LECTURE","lec":"par7.md","ref":"Sliding Window Protocol","q":"If the maximum window size is 1, it becomes the stop and wait protocol","e":"عندما يكون أقصى حجم للنافذة 1 يصبح البروتوكول Stop-and-Wait."}
+{"id":"y3:p89","a":"D","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"CIA Triad — Confidentiality","e":"السرية تعني عدم كشف المعلومات لغير المخوّلين، وهي ركيزة مستقلة عن Integrity وAvailability، فلا خيار صحيحاً."}
+{"id":"y3:p90","a":"B","src":"LECTURE","lec":"par4.md","ref":"Encryption / Decryption","q":"Decryption - restore the original information from the encrypted form","e":"فك التشفير (Decryption) يستعيد المعلومة الأصلية من الشكل المشفّر."}
+{"id":"y3:p91","a":"C","src":"LECTURE","lec":"par8.md","ref":"Ethernet — Terminator","q":"Terminators: prevents reflection on coax","e":"الـ Terminator يمتص الإشارة في نهاية كبل coax ويمنع الانعكاس."}
+{"id":"y3:p92","a":"D","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Data Link Layer","e":"CRC وHamming تُستخدم لكشف وتصحيح الأخطاء في طبقة Data Link، وهي ليست بين الخيارات."}
+{"id":"y3:p93","a":"C","src":"LECTURE","lec":"par1.md","ref":"Microwave","q":"Microwave: Requires no obstacles between transmitter and receiver","e":"الميكروويف يعتمد على الرؤية المباشرة Line of Sight بلا عوائق بين المرسل والمستقبل."}
+{"id":"y3:p94","a":"A","src":"LECTURE","lec":"par5.md","ref":"Data Link Layer","q":"Data Link Layer: Defines frames. Sends and receives frames","e":"طبقة Data Link تتعامل مع الإطارات (frames)."}
+{"id":"y3:p95","a":"A","src":"LECTURE","lec":"par5.md","ref":"Presentation Layer","q":"May provide security services such as encryption and decryption","e":"طبقة العرض (Presentation) قد توفّر خدمات الأمن كالتشفير وفك التشفير."}
+{"id":"y3:p96","a":"C","src":"LECTURE","lec":"par5.md","ref":"WAN - wide area network","q":"Covers a larger area such as a city/municipal region, country, or the world","e":"المحاضرة تعرّف WAN بأنها تغطي منطقة أكبر مثل مدينة أو دولة أو العالم."}
+{"id":"y3:p97","a":"A","src":"LECTURE","lec":"par2.md","ref":"Nyquist Theorem — Telephone","q":"Resolution is – 64 Kbps","e":"الهاتف: 8000 عيّنة/ث × 8 بت = 64 Kbps."}
+{"id":"y3:p98","a":"D","src":"LECTURE","lec":"par5.md","ref":"ISO's OSI Model","q":"Layered protocol model. Each layer performs specific functions","e":"OSI نموذج طبقي، ولكل طبقة وظيفة محددة، فكل الخيارات صحيحة."}
+{"id":"y3:p99","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Data Integrity","e":"Data Integrity هو ضمان أن البيانات المستقبَلة مطابقة للمرسَلة، أي اكتشاف تغيّرها أثناء الإرسال."}
+{"id":"y3:p100","a":"A","src":"LECTURE","lec":"par7.md","ref":"Flow Control & Error Control","q":"The protocols for flow control and error control belong to data link layer","e":"بروتوكولات التحكم في التدفق والأخطاء تنتمي إلى طبقة Data Link."}
+{"id":"y3:p101","a":"C","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"CSMA","e":"CSMA: تستمع المحطة للقناة، فإن كانت حرة أرسلت وإلا انتظرت، فالعبارتان صحيحتان."}
+{"id":"y3:p102","a":"A","src":"LECTURE","lec":"par7.md","ref":"Flow Control","q":"Flow control: Defines the way multiple frames are sent and tracked","e":"Flow Control يحدّد كيفية إرسال الإطارات المتعددة وتتبعها ومتى نرسل ومتى نتوقف."}
+{"id":"y3:p103","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Asynchronous Transmission","e":"الإرسال غير المتزامن (Asynchronous) يستخدم بتات start وstop لكل بايت."}
+{"id":"y3:p104","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Odd Parity","e":"Odd Parity يجعل عدد الـ1s فردياً، وكل الخيارات A وB وC فيها عددان زوجيان من الـ1s."}
+{"id":"y3:p105","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Even Parity","e":"Even Parity يجعل عدد الـ1s زوجياً؛ الخيار 1010 0 فيه عددان من الـ1s فقط."}
+{"id":"y3:p106","a":"D","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"Aloha — Packet Radio","e":"هذا وصف بروتوكول Aloha (راديو حزم)، وهو غير موجود بين الخيارات."}
+{"id":"y3:p107","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Half-Duplex","e":"Half-Duplex: الإرسال في اتجاهين لكن بالتناوب وليس معاً."}
+{"id":"y3:p108","a":"C","src":"LECTURE","lec":"par6.md","ref":"Contention vs Non-contention","q":"Non contention access: Dedicated lines, Multiplexing","e":"الوصول اللاتنافسي يشمل الخطوط المخصصة والتعديد (Multiplexing)."}
+{"id":"y3:p109","a":"C","src":"LECTURE","lec":"par2.md","ref":"Signals — Encoding","q":"Encoding – Assigning a meaning to signals","e":"الترميز (Encoding) هو إسناد معنى للإشارات."}
+{"id":"y3:p110","a":"C","src":"LECTURE","lec":"par5.md","ref":"Star Topology","q":"Star Topology: Control is centralised","e":"في الطوبولوجيا النجمية التحكم مركزي عبر الحاسوب المركزي."}
+{"id":"y3:p111","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"Bit-Level Cipher","e":"Bit-Level Cipher هو تشفير على مستوى البتات باستخدام XOR بين البيانات والمفتاح."}
+{"id":"y3:p112","a":"B","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"Authorization","e":"Authorization هو تحديد ما يُسمح للمستخدم بفعله بعد إثبات هويته (حقوق الوصول)."}
+{"id":"y3:p113","a":"C","src":"LECTURE","lec":"par1.md","ref":"Communication — Telecommunications","q":"Telecommunications - exchange of information over long distance","e":"Telecommunications هو تبادل المعلومات عبر مسافات طويلة."}
+{"id":"y3:p114","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"CSMA/CD — Binary Exponential Backoff","e":"بعد التصادم ينتظر وقتاً عشوائياً وفق Binary Exponential Backoff ثم يكرر الخطوات؛ العبارة صحيحة."}
+{"id":"y3:p115","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Parallel & Serial Transmission","e":"Parallel أسرع لكنه أقل موثوقية للمسافات الطويلة، فهو مناسب للمسافات القصيرة."}
+{"id":"y3:p116","a":"B","src":"LECTURE","lec":"par5.md","ref":"OSI — Service, Interface, Protocol","q":"Interface - defines how the layers above and below interact with it","e":"الـ Interface يحدّد كيف تتفاعل الطبقتان العليا والسفلى معها."}
+{"id":"y3:p117","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"UTP مقابل STP","e":"STP محمي بغلاف معدني: تشويش أقل وCrosstalk منخفض، وهو يحتاج grounding."}
