@@ -1,0 +1,145 @@
+{
+ "y4:p31": {
+  "date": "2026-11-04",
+  "file": "l7.md",
+  "lecture": "l7.md",
+  "quote": null,
+  "ref": "Lossless Compression Algorithms",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p32": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p33": {
+  "date": "2026-11-04",
+  "file": "l2.md",
+  "lecture": "l2.md",
+  "quote": null,
+  "ref": "p6-p9 8-bit Gray-level Images / Bit-Plane Slicing",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p34": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p35": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p36": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p37": {
+  "date": "2026-11-04",
+  "file": "l5.md",
+  "lecture": "l5.md",
+  "quote": null,
+  "ref": "p14 Audio File Formats",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p38": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p39": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p40": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p41": {
+  "date": "2026-11-04",
+  "file": "l7.md",
+  "lecture": "l7.md",
+  "quote": null,
+  "ref": "p6 LZW (compression ratio)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p42": {
+  "date": "2026-11-04",
+  "file": "l7.md",
+  "lecture": "l7.md",
+  "quote": null,
+  "ref": "p22-p25 Lossless JPEG (predictor)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p43": {
+  "date": "2026-11-04",
+  "file": "l7.md",
+  "lecture": "l7.md",
+  "quote": null,
+  "ref": "p12 Arithmetic Coding",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p44": {
+  "date": "2026-11-04",
+  "file": "l3.md",
+  "lecture": "l3.md",
+  "quote": null,
+  "ref": "Signal to Quantization Noise Ratio",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p45": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p46": {
+  "date": "2026-11-04",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p47": {
+  "date": "2026-11-04",
+  "file": "l8.md",
+  "lecture": "l8.md",
+  "quote": null,
+  "ref": "p2 Transform Coding",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p48": {
+  "date": "2026-11-04",
+  "file": "l5.md",
+  "quote": "vary the mapping of bits to difference dynamically",
+  "ref": "p22 ADPCM",
+  "src": "LECTURE"
+ }
+}
