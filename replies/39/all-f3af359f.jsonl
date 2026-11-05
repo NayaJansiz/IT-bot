@@ -1,0 +1,26 @@
+{"id":"y5:p325","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8-sec1.md","ref":"Leave-One-Out","e":"في Leave-One-Out قيمة k تساوي عدد التُوبلات الكلي وليس عدد الفئات، لذا العبارة خاطئة."}
+{"id":"y5:p326","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6-sec1.md","ref":"Information Gain","e":"تُختار السمة ذات أعلى Information Gain (0.6) للتقسيم."}
+{"id":"y5:p327","a":"C","src":"LECTURE_PARAPHRASE","lec":"par8-sec1.md","ref":"Accuracy & Error Rate (Resubstitution Error)","e":"المصنّف يحفظ نمط بيانات التدريب، لذا الخطأ المحسوب عليها متفائل (Resubstitution Error)."}
+{"id":"y5:p328","a":"B","src":"LECTURE_PARAPHRASE","lec":"par6-sec2.md","ref":"Training/Test Error vs complexity","e":"خطأ التدريب ينخفض مع التعقيد بينما خطأ الاختبار يشكّل منحنى U، فالعلاقة ليست عكسية دائماً."}
+{"id":"y5:p329","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Data Mining vs Machine Learning (Scalability)","e":"تنقيب تدفق لا نهائي من قراءات المستشعرات يوضح مشكلة Scalability."}
+{"id":"y5:p330","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7-sec3.md","ref":"حساب w من نقاط الدعم","e":"W=Σαiyixi=0.25(1,1)+0.25(-1)(-1,-1)=(0.5,0.5) فالوزن 0.5."}
+{"id":"y5:p331","a":"D","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"IQR والقيم الشاذة","e":"Q1=30 وQ3=60 وIQR=30، والحدود [-15,105] فلا توجد قيمة خارجها."}
+{"id":"y5:p332","a":"A","src":"LECTURE_PARAPHRASE","lec":"par9_sec1.md","ref":"Jaccard Coefficient","e":"Jaccard=q/(q+r+s)=3/5=0.6."}
+{"id":"y5:p333","a":"","src":"NOT-FOUND"}
+{"id":"y5:p334","a":"D","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"Sequential Data","e":"Sequential Data هي امتداد لبيانات المعاملات مثل تاريخ شراء العميل، والحالة الاجتماعية Nominal وليست Ordinal."}
+{"id":"y5:p335","a":"","src":"NOT-FOUND"}
+{"id":"y5:p336","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6-sec2.md","ref":"Decision Regions & Overfitting","e":"مناطق القرار الصغيرة جداً مؤشر Overfitting بسبب التقاط الضوضاء والقيم الشاذة."}
+{"id":"y5:p338","a":"","src":"NOT-FOUND"}
+{"id":"y5:p339","a":"A","src":"INFERRED","e":"انحدار خطي بخمسة مدخلات يعطي مخرجاً واحداً ونموذجه hyperplane وليس curve."}
+{"id":"y5:p340","a":"A","src":"LECTURE_PARAPHRASE","lec":"par9_sec2.md","ref":"k-Medoids (PAM)","e":"الـ Medoid نقطة حقيقية فهو أقل حساسية للقيم الشاذة من المتوسط في k-Means."}
+{"id":"y5:p341","a":"","src":"NOT-FOUND"}
+{"id":"y5:p342","a":"A","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"Distribution و Sparsity","e":"بيانات الشراء ذات الآلاف من القيم معظمها صفر تعاني من Sparsity."}
+{"id":"y5:p343","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Z-Score Normalization","e":"Z-Score مفيد عند وجود قيم شاذة تهيمن على Min-Max."}
+{"id":"y5:p344","a":"","src":"NOT-FOUND"}
+{"id":"y5:p347","a":"C","src":"INFERRED","e":"تتأثر مخرجات نماذج التعلّم الآلي بالقيم الشاذة، بينما ML لا تقتصر على البيانات المهيكلة ولا تُبرمج يدوياً."}
+{"id":"y5:p348","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"How Do Machines Learn?","e":"جودة النموذج تعتمد على البيانات وخوارزمية التعلم هي التي تبني النموذج."}
+{"id":"y5:p349","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8-sec2.md","ref":"AdaBoost","e":"خطأ 0.6>0.5 يُرفض المصنّف وتُعاد الأوزان إلى 1/d=0.1 لكل العينات."}
+{"id":"y5:p350","a":"A","src":"INFERRED","e":"في Apriori يأتي التقليم (prune) بعد توليد المرشحات (candidate generation)."}
+{"id":"y5:p351","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Data Cleaning","e":"تحديد وإزالة القيم الشاذة جزء من Data Cleaning."}
+{"id":"y5:p352","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8-sec1.md","ref":"Which Metric Should You Use","e":"عندما يكون تفويت الاحتيال (FN) مكلفاً يجب رفع Recall."}
+{"id":"y5:p353","a":"","src":"NOT-FOUND"}
