@@ -1,0 +1,31 @@
+{"id":"y5:p287","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Transparency","e":"Access transparency تتيح الوصول للموارد المحلية والبعيدة بنفس العمليات."}
+{"id":"y5:p288","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"RPC","e":"RPC = Remote Procedure Call: استدعاء إجراء في عملية أخرى على الخادم."}
+{"id":"y5:p289","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"RMI software","e":"الـ proxy عند العميل، أما skeleton وdispatcher فعند الخادم."}
+{"id":"y5:p290","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Remote method invocation","e":"RMI هو استدعاء طرائق بين أغراض في عمليات مختلفة، سواء على نفس الحاسوب أم لا."}
+{"id":"y5:p291","a":"D","src":"INFERRED","e":"القراءة والكتابة عند موضع محدد والإضافة إلى مجموعة متحايدة؛ الترجمة هي الخيار الأقرب لغير المتحايد. الحسم هنا استنتاجي وليس نصاً في المحاضرة."}
+{"id":"y5:p292","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Resource sharing","e":"الدافع الأساسي لبناء النظم الموزعة هو مشاركة الموارد."}
+{"id":"y5:p293","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Failure transparency","e":"البريد يُسلَّم رغم تعطل الخوادم أو الروابط، فهذا إخفاء للأعطال."}
+{"id":"y5:p294","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Heterogeneity","e":"بروتوكولات الإنترنت والـ middleware والكود المتنقل كلها أمثلة على إخفاء الاختلاف."}
+{"id":"y5:p295","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Architectural models","e":"المتطلبات: Reliable وManageable وAdaptable وCost-effective، فالخيارات الثلاثة كلها منها."}
+{"id":"y5:p296","a":"A","src":"INFERRED","e":"في نموذج خادم-عميل يكون المورد مركزياً ويسهل فرض الحماية عليه، بخلاف الند-للند حيث الموارد موزعة بين عقد غير موثوقة."}
+{"id":"y5:p297","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Failure Handling","e":"Recovery from failure تتحقق بآليات Rollback."}
+{"id":"y5:p298","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Client-Server model","e":"محرك البحث خادم للمتصفحات وعميل لخوادم الويب عبر الـ Web Crawlers."}
+{"id":"y5:p299","a":"B","src":"INFERRED","e":"حقوق الوصول Access rights هي التي تحدد من يحق له تنفيذ عمليات على الغرض."}
+{"id":"y5:p301","a":"D","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"Failure model","e":"أنواع الفشل: omission وtiming وarbitrary، فالخيارات كلها صحيحة."}
+{"id":"y5:p302","a":"D","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"Failure model","e":"الاستدعاء قد يعاني من crash وomission وarbitrary، فكل الخيارات صحيحة."}
+{"id":"y5:p303","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"External data representation","e":"XML وJava serialization وCORBA CDR كلها أمثلة على تمثيل البيانات الخارجي."}
+{"id":"y5:p304","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Request-reply message structure","e":"الرسالة تحوي messageType وrequestId وobjectReference وmethodId وarguments، ولا يوجد dataType."}
+{"id":"y5:p305","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Invocation semantics","e":"At-least-once مع عملية غير متحايدة قد تنفذ أكثر من مرة فتسبب arbitrary failures."}
+{"id":"y5:p306","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"RPC building blocks","e":"للعميل client stub procedure لكل إجراء في واجهة الخدمة وليس واحداً للجميع."}
+{"id":"y5:p307","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Request-reply protocols RRA","e":"في RRA يؤكد العميل استلام الرد فيمسح الخادم النتيجة المخزنة من الـ history."}
+{"id":"y5:p308","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Failure model of request-reply","e":"الاستدعاء عن بعد قد يفشل بضياع الرسائل وبفشل العمليات، فالاثنان صحيحان."}
+{"id":"y5:p309","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Remote object table","e":"المرجع يشير إلى proxy أو remote object، وإن لم يوجد في الجدول يُنشأ proxy جديد."}
+{"id":"y5:p310","a":"D","src":"INFERRED","e":"دلالات التسليم المعتادة في Publish/Subscribe: Unreliable وReliable وReal-time؛ لذا الخيار الأقرب 'غير ذلك'. استنتاج وليس نصاً في المحاضرة."}
+{"id":"y5:p311","a":"B","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Monolithic kernel vs Microkernel","e":"الـ monolithic أسرع لأن الوظائف داخل النواة بلا تبديل سياق، والـ microkernel يميل للمرونة."}
+{"id":"y5:p312","a":"C","src":"INFERRED","e":"المزامنة الخارجية ضمن T لكل ساعة تعني فرقاً أقصى بين ساعتين يساوي 2T. الصياغة 'أقل' ملتبسة وقد تعني 0، فالحسم هنا استنتاجي."}
+{"id":"y5:p313","a":"B","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Network Operating Systems","e":"المستخدمون يفضلون درجة من الاستقلالية على أجهزتهم وبرامجهم الحالية."}
+{"id":"y5:p314","a":"A","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Thread manager","e":"الـ Thread manager ينشئ الخيوط ويزامنها ويجدولها، أما الاتصال فمن Communication manager."}
+{"id":"y5:p315","a":"D","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Server threading architectures","e":"البنى الثلاث: thread-per-request وper-connection وper-object."}
+{"id":"y5:p319","a":"D","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"Lamport vs Vector Clocks","e":"A خاطئ، وLamport اتجاه واحد فقط (a→b ⟹ L(a)<L(b))، والساعات الشعاعية تختلف عنه."}
+{"id":"y5:p320","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"NTP","e":"NTP مزامنة خارجية مع UTC وليست داخلية؛ باقي العبارات صحيحة."}
+{"id":"y5:p324","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"Vector Clocks","e":"لا يوجد ترتيب بين المتجهين (3<4 لكن 0<1 والثالث 2>1)، فالحدثان متزامنان e1||e2."}
