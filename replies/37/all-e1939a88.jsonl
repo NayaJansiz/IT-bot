@@ -1,0 +1,38 @@
+{"id":"y5:p247","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"docker-compose: اسم الخدمة يصبح hostname داخل الشبكة","e":"في شبكة Docker المخصصة يُستخدم اسم الخدمة أو الحاوية كـ hostname للتواصل بين الحاويات."}
+{"id":"y5:p248","src":"NOT-FOUND"}
+{"id":"y5:p249","a":"D","src":"INFERRED","e":"تغيير package.json يُبطل cache لطبقة COPY، فتُعاد بناء كل الطبقات التي بعدها (npm install وCopy)."}
+{"id":"y5:p250","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"Risk Mitigation: Sharing / Transfer","e":"Transfer ينقل الخطر لطرف ثالث (كالتأمين)، وSharing يوزّع الخطر بالشراكة مع أطراف أخرى."}
+{"id":"y5:p251","a":"A","src":"INFERRED","e":"Float = LS − ES = 8 − 5 = 3، فالعبارة صحيحة."}
+{"id":"y5:p252","a":"D","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"مخطط التدفّق التراكمي (CFD)","e":"CFD يعرض عدد الـ issues في كل status عبر الزمن."}
+{"id":"y5:p253","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"Board / Workflow columns","e":"كل عمود في Kanban يمثّل خطوة (status) من مراحل سير العمل."}
+{"id":"y5:p254","a":"B","src":"INFERRED","e":"المسار الحرج هو أطول مسار في شبكة المهام وليس الأقصر، وهو يحدد أقل مدة للمشروع."}
+{"id":"y5:p255","a":"A","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"5.2 User Story","e":"الصيغة القياسية: As a.. I want.. so that.. مع فائدة واضحة للمستخدم."}
+{"id":"y5:p256","a":"C","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"مخطط التدفّق التراكمي (CFD)","e":"النموذج المعتمد في Kanban لإظهار الـ issues لكل حالة مع الزمن هو Cumulative Flow Diagram."}
+{"id":"y5:p257","a":"B","src":"INFERRED","e":"عند توفر تفاصيل كاملة للمهام الرئيسية والفرعية يناسب Bottom-up estimation لأنه يجمع تقدير كل مهمة."}
+{"id":"y5:p258","a":"C","src":"INFERRED","e":"A تكتب كـ root فتمنع صلاحيات الملفات المستخدم B من القراءة، فالمشكلة في file permissions."}
+{"id":"y5:p259","src":"NOT-FOUND"}
+{"id":"y5:p260","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"volumes: بقاء البيانات حتى لو حُذفت الحاوية","e":"Volumes تحفظ البيانات على المضيف فتبقى بعد حذف الحاوية."}
+{"id":"y5:p261","a":"C","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"2.4 مخاطر المشروع مقابل المخاطر التنظيمية","e":"نجاح التنفيذ مع فشل الجدوى التجارية بسبب السوق هو خطر تنظيمي."}
+{"id":"y5:p262","a":"D","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Issue Types: Epic","e":"Epic هو issue كبير يضم issues فرعية (الخيار D \"Ecp\" يُقرأ Epic)."}
+{"id":"y5:p263","a":"B","src":"INFERRED","e":"المسار الحرج هو أطول مسار وليس أقصر مسار."}
+{"id":"y5:p264","a":"C","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"7.5 stash / rebase","e":"rebase يعيد كتابة التاريخ ليصبح خطياً بدل merge commits، وهو الخيار الوحيد المتضمن rebase."}
+{"id":"y5:p265","a":"C","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"Checkout: commit أو stash أولاً","e":"stash يحفظ التعديلات غير المثبتة ثم checkout للفرع الآخر دون commit."}
+{"id":"y5:p266","a":"B","src":"INFERRED","e":"احتياطي الإدارة (management reserve) تتحكم به الإدارة العليا لا مدير المشروع؛ المدير يتحكم بـ contingency."}
+{"id":"y5:p267","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"6.1 Board Filter","e":"فلتر اللوحة JQL يحدد المشاريع الثلاثة مع AND للـ assignee والـ priority."}
+{"id":"y5:p268","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"volumes: بقاء البيانات حتى لو حُذفت الحاوية","e":"Volume يُستخدم لحفظ بيانات الحاوية بشكل دائم."}
+{"id":"y5:p269","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"Board / Workflow columns","e":"أعمدة Kanban تمثّل مراحل مختلفة من سير العمل."}
+{"id":"y5:p270","a":"A","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"Risk Mitigation: Sharing / Transfer","e":"Sharing يوزّع الخطر مع شركاء، وTransfer ينقله لطرف ثالث مثل التأمين."}
+{"id":"y5:p271","a":"A","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"Checkout: commit أو stash أولاً","e":"للتبديل العاجل مع تعديلات غير مثبتة نستخدم stash ثم checkout."}
+{"id":"y5:p272","a":"A","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"أ) التجنّب (Avoidance)","e":"اختيار تقنية قديمة ومجرّبة بدل خيار مخاطر هو تجنّب للخطر (Avoidance)."}
+{"id":"y5:p273","a":"A","src":"INFERRED","e":"الاستعلام الصحيح يتطلب changed من \"In Progress\" إلى المرحلة المطلوبة مع during لآخر 14 يوماً، والخيار المعروض لا يناسب."}
+{"id":"y5:p274","a":"A","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Agile Manifesto principles","e":"Simplicity مذكور صراحة ضمن مبادئ Agile الـ 12."}
+{"id":"y5:p275","a":"A","src":"INFERRED","e":"نص السؤال ناقص، والخيار الوحيد المعروض يشير إلى خطأ في مسار الـ mount."}
+{"id":"y5:p278","a":"A","src":"INFERRED","e":"في المناقصات يلزم تقدير دقيق وتفصيلي لكل مهمة، فيناسب Bottom-up."}
+{"id":"y5:p279","a":"A","src":"INFERRED","e":"عند مشاركة named volume بين حاويتين تكون المشكلة غالباً في صلاحيات الملفات (File permissions)."}
+{"id":"y5:p280","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Images are immutable","e":"حذف الحاوية قبل حفظ البيانات يضيّعها، فالنسخة الاحتياطية تكون فارغة."}
+{"id":"y5:p281","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Images are immutable","e":"الصورة immutable للقراءة فقط، أما الحاوية فيمكن التعديل داخلها."}
+{"id":"y5:p282","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"WIP Limits","e":"تحديد WIP يقلل تعدد المهام ويمنع الاختناقات ويضمن تدفقاً سلساً."}
+{"id":"y5:p283","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Volume عادي مقابل Volume للقراءة فقط (:ro)","e":"المسار المنتهي بـ :ro للقراءة فقط، فلا يمكن الكتابة عليه."}
+{"id":"y5:p284","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"2.1 التكامل المستمر (CI)","e":"CI يدمج الكود بشكل متكرر فيكشف مشاكل التكامل مبكراً."}
+{"id":"y5:p285","a":"B","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Product Owner / Scrum Master","e":"المسؤول عن تحديد الميزات والمتطلبات هو Product Owner وليس الـ stakeholder."}
+{"id":"y5:p286","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"6.1 Board Filter","e":"لكل Board فلتر (JQL) يحدد الـ issues التي تظهر عليها."}
