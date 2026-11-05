@@ -1,0 +1,24 @@
+{"id":"y4:p188","a":"C","src":"LECTURE_PARAPHRASE","lec":"ch_1f.md","ref":"p6 - 1.4 العمليات المعيارية","e":"تابع عضوية التقاطع يُعرَّف بأنه أصغر قيمتين من التابعين، أي MIN، ويقابل بوابة & في الجبر الثنائي."}
+{"id":"y4:p189","src":"NOT-FOUND"}
+{"id":"y4:p190","a":"B","src":"LECTURE_PARAPHRASE","lec":"fl_7_٠٩٢٣١٣.md","ref":"p2-p3 Modifiers","e":"الـ modifier يعدّل تابع انتماء المجموعة بعملية رياضية (رفع لقوة) فينتج مجموعة جديدة بدرجات انتماء مختلفة."}
+{"id":"y4:p191","a":"D","src":"LECTURE_PARAPHRASE","lec":"fl_7_٠٩٢٣١٣.md","ref":"p17 الخاصة الثانية","e":"sup min{A,1-A} = 0.5 وليس 0 أو 1، فلا يكون التقاطع فارغاً ولا الاجتماع يساوي X، فكل العبارات خاطئة."}
+{"id":"y4:p192","a":"B","src":"LECTURE_PARAPHRASE","lec":"fl_7_٠٩٢٣١٣.md","ref":"p4 - M(very^n young) = u^n","e":"very تعني التربيع: 0.5² = 0.25 ثم 0.25² = 0.0625، أي (0.5)⁴."}
+{"id":"y4:p194","a":"C","src":"LECTURE_PARAPHRASE","lec":"ch_1f.md","ref":"p1 - 1.1 مقدمة","e":"المنطق الضبابي يهدف إلى تمثيل ومعالجة المعلومات غير الدقيقة والغامضة رياضياً."}
+{"id":"y4:p196","a":"C","src":"LECTURE_PARAPHRASE","lec":"fl_7_٠٩٢٣١٣.md","ref":"p15 - Total indeterminance","e":"عند x is ¬A (pressure is not big) لا نستطيع استنتاج شيء عن y، فتكون النتيجة unknown."}
+{"id":"y4:p197","a":"B","src":"LECTURE_PARAPHRASE","lec":"fl_7_٠٩٢٣١٣.md","ref":"p16 - Subset","e":"very big ⊂ big، وبحسب خاصية Subset تبقى النتيجة B كما هي: volume is small."}
+{"id":"y4:p198","a":"B","src":"LECTURE_PARAPHRASE","lec":"ch_1f.md","ref":"p2 - توابع العضوية","e":"في المنطق الضبابي تأخذ درجة العضوية قيمة بين 0 و1 (انتماء جزئي)، بخلاف التقليدي الذي يعطي 0 أو 1 فقط."}
+{"id":"y4:p200","a":"D","src":"LECTURE_PARAPHRASE","lec":"fl_7_٠٩٢٣١٣.md","ref":"p6-p7 Truth","e":"fairly true=√u وvery true=u² وvery false=(1-u)²، وكلها معرّفة في المحاضرة فالعبارات الثلاث صحيحة."}
+{"id":"y4:p201","a":"A","src":"LECTURE_PARAPHRASE","lec":"fl_7_٠٩٢٣١٣.md","ref":"p12 - تركيب sup-min","e":"B'(y)=sup min{C(x),R(x,y)}: y1→max(0.2,0.8,0.3)=0.8، y2→1، y3→0.8."}
+{"id":"y4:p203","a":"D","src":"LECTURE_PARAPHRASE","lec":"fl_8_٠٩٢٣٢١.md","ref":"p1 - α-cuts","e":"الـ α-cut مجموعة العناصر التي درجة انتمائها ≥ α، وحدودها نقاط التقاء المستقيم الأفقي α مع منحنيي التابع."}
+{"id":"y4:p207","a":"B","src":"LECTURE_PARAPHRASE","lec":"fl_7_٠٩٢٣١٣.md","ref":"p2 - Mamdani's implication","e":"اقتضاء ممداني هو min{A(x),B(y)}: min(0.4,0.9)=0.4، min(0.4,0.5)=0.4، min(0.4,0.2)=0.2."}
+{"id":"y4:p209","src":"NOT-FOUND"}
+{"id":"y4:p193","a":"C","src":"INFERRED","e":"T-conorm هو الثنائي لـ T-norm وفق دي مورغان: S(a,b)=1-T(1-a,1-b)."}
+{"id":"y4:p195","a":"C","src":"INFERRED","e":"orness=(2×0.8+1×0.2)/2=0.9 وandness=1-orness=0.1."}
+{"id":"y4:p199","a":"A","src":"INFERRED","e":"بالجداء min: القيم 0.3,0.3,0.3,0.4,0.5,0.5؛ الأكبر من 0.4 هما اثنتان فقط."}
+{"id":"y4:p202","a":"A","src":"INFERRED","e":"T-norm تزايدية (monotone) لا متناقصة، وهي تبديلية وتجميعية وعنصرها المحايد 1."}
+{"id":"y4:p204","a":"A","src":"INFERRED","e":"دوال المتوسط (averaging) تبديلية وخاملة ورتيبة، لكنها ليست تجميعية."}
+{"id":"y4:p205","a":"A","src":"INFERRED","e":"نرتب تنازلياً (1,0.7,0.6,0.2): 0.4+0.21+0.12+0.02=0.75."}
+{"id":"y4:p206","a":"B","src":"INFERRED","e":"a+b-ab هو المجموع الاحتمالي، وهو T-conorm (T-conorm الثنائي للجداء)."}
+{"id":"y4:p208","a":"B","src":"INFERRED","e":"بالجداء min: 0.2+0.2+0.4+0.4=1.2."}
+{"id":"y4:p210","a":"A","src":"INFERRED","e":"في OWA يعطي الوزن 1 للعنصر الأكبر (الأول بعد الترتيب التنازلي) دالة max."}
+{"id":"y4:p211","a":"B","src":"INFERRED","e":"دالة المتوسط (averaging) تقع بين الأصغر والأكبر: min ≤ f ≤ max."}
