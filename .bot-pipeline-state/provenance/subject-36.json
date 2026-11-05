@@ -1,0 +1,266 @@
+{
+ "y5:p213": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "AES (Advanced Encryption Standard)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p214": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "٧. التوقيع الالكتروني / الرقمي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p215": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "📌 المقدمة",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p216": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "تحليل الشفرات والمبادئ الأساسية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p217": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "1 مقدمة: Blockchain و DLT",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p218": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "2. المفاهيم الأساسية والبنية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p219": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "6. الهندسة الاجتماعية (Social Engineering)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p220": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "٧. التوقيع الالكتروني / الرقمي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p221": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p222": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "2) نمط CBC (Cipher Block Chaining)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p223": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "🗂️ جدول مقارنة شامل",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p224": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "Stream Cipher",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p225": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "1️⃣ MAC (Message Authentication Code)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p226": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p227": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "User identifier مقابل User authentication",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p228": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p229": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p230": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "1 مقدمة: Blockchain و DLT",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p231": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "8️⃣ Needham-Schroeder Shared-Key Protocol",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p232": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "محتويات الشهادة الرقمية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p233": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "2 تعاريف عامة",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p234": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "جدول ملخّص للتصنيف",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p235": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "٧. التوقيع الالكتروني / الرقمي",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p236": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "٤. دالة أويلر φ(n)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p237": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "1️⃣ MAC (Message Authentication Code)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p238": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p239": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "✅ متطلبات التحكم بالوصول",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p240": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p241": {
+  "date": "2026-11-05",
+  "file": "par9.md",
+  "lecture": "par9.md",
+  "quote": null,
+  "ref": "آليات الأمان",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p242": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "هجمات الحقن Injection Attacks",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p244": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "3 مثلث CIA — الأهداف الأساسية لأمن المعلومات",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p245": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "Cross Site Scripting (XSS)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p246": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "👥 RBAC — التحكم بالوصول القائم على الأدوار",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
