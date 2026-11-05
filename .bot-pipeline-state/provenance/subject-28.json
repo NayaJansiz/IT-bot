@@ -1,0 +1,202 @@
+{
+ "y4:p278": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "async/finish nesting",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p279": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Java Streams",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p280": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "Global isolated Construct",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p281": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "6.1 forallChunked",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p282": {
+  "date": "2026-11-05",
+  "file": "par6-sec1.md",
+  "lecture": "par6-sec1.md",
+  "quote": null,
+  "ref": "5.4 wait/notify",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p283": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Distributed Memory Architecture",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p284": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "2.2 قدرات الـ Actor",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p285": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "Data Flow / asyncAwait",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p286": {
+  "date": "2026-11-05",
+  "file": "par6-sec2.md",
+  "lecture": "par6-sec2.md",
+  "quote": null,
+  "ref": "1. Condition Objects",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p287": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "9.2 Producer-Consumer",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p288": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "Global isolated Construct",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p289": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "8.4 Benign Nondeterminism",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p296": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "Global isolated Construct",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p297": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "RecursiveTask / RecursiveAction",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p298": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Distributed vs Shared Memory / Data Dependencies",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p299": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "next() = SIG + WAIT",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p300": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "Pipeline",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p303": {
+  "date": "2026-11-05",
+  "file": "par6-sec2.md",
+  "lecture": "par6-sec2.md",
+  "quote": null,
+  "ref": "Hand-over-Hand Locking",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p304": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "Pipelined Parallelism",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p305": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "async construct",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p306": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Functional Parallelism / Futures",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p309": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "3.1 Object-based Isolation",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p310": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "9.2-9.3 Producer-Consumer",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p311": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "9.1 Sieve of Eratosthenes",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p312": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Amdahl's Law",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
