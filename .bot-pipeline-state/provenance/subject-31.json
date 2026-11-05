@@ -1,0 +1,183 @@
+{
+ "y4:net1": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-3.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-3.md",
+  "quote": null,
+  "ref": "HSRP Configuration",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net10": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:net11": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-2.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-2.md",
+  "quote": null,
+  "ref": "p73 Violation Modes",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net12": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-2.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-2.md",
+  "quote": null,
+  "ref": "p73 Violation Modes",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net13": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-1.md",
+  "quote": "Dedicated to user-generated traffic",
+  "ref": "p47 Types of VLANs",
+  "src": "LECTURE"
+ },
+ "y4:net14": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:net16": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:net18": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-1.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-1.md",
+  "quote": null,
+  "ref": "IEEE 802.1Q Frame Tagging",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net19": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:net2": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-3.md",
+  "quote": "Uses 224.0.0.18 for hello packets.",
+  "ref": "p28",
+  "src": "LECTURE"
+ },
+ "y4:net22": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:net23": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-2.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-2.md",
+  "quote": null,
+  "ref": "Overview of Rapid PVST+",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net24": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-1.md",
+  "quote": "forwards the frame immediately after determining the destination MAC",
+  "ref": "p15 Cut-Through Switching",
+  "src": "LECTURE"
+ },
+ "y4:net25": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-1.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-1.md",
+  "quote": null,
+  "ref": "p84 Switch spoofing Attack",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net26": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-2.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-2.md",
+  "quote": null,
+  "ref": "DHCP Snooping",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net27": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:net3": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-3.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-3.md",
+  "quote": null,
+  "ref": "p29",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net4": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-3.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-3.md",
+  "quote": null,
+  "ref": "p31",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net5": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-3.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-3.md",
+  "quote": null,
+  "ref": "p31, p35",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net6": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-2.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-2.md",
+  "quote": null,
+  "ref": "p57 VTP Modes",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net7": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-2.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-2.md",
+  "quote": null,
+  "ref": "VTP Protocol",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net8": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-1.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-1.md",
+  "quote": null,
+  "ref": "p75 Trunking Modes",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:net9": {
+  "date": "2026-11-05",
+  "file": "تحليل-وتصميم-نظري-قسم-1.md",
+  "lecture": "تحليل-وتصميم-نظري-قسم-1.md",
+  "quote": null,
+  "ref": "p75 Trunking Modes",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
