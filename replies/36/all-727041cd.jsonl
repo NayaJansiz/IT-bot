@@ -1,0 +1,34 @@
+{"id":"y5:p213","a":"B","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"AES (Advanced Encryption Standard)","e":"طول الكتلة ثابت 128 بت بينما طول المفتاح متغير (128/192/256)، فالصحيح طول كتلة ثابت فقط."}
+{"id":"y5:p214","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"٧. التوقيع الالكتروني / الرقمي","e":"التشفير بالمفتاح الخاص هو أساس التوقيع الرقمي، ولا يحقق السرية لأن المفتاح العام متاح للجميع."}
+{"id":"y5:p215","a":"B","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"📌 المقدمة","e":"عناصر التحكم بالوصول: Subject وObject وAccess Rights."}
+{"id":"y5:p216","a":"B","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"تحليل الشفرات والمبادئ الأساسية","e":"مبدأ كيرشوف: الخوارزمية معلنة ويعتمد الأمان على سرية المفتاح فقط."}
+{"id":"y5:p217","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"1 مقدمة: Blockchain و DLT","e":"أمان Blockchain يعتمد على التوقيعات الرقمية (مفتاح عام) ودوال الهاش معاً."}
+{"id":"y5:p218","a":"D","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"2. المفاهيم الأساسية والبنية","e":"الكتلة تحوي بيانات/سجل الأحداث وهاش الكتلة السابقة والحالية، فكل الخيارات صحيحة."}
+{"id":"y5:p219","a":"A","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"6. الهندسة الاجتماعية (Social Engineering)","e":"التحدث مع الموظفين لانتزاع المعلومات هو الهندسة الاجتماعية، أما Phishing فهو أسلوب محدد."}
+{"id":"y5:p220","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"٧. التوقيع الالكتروني / الرقمي","e":"ما شُفّر بالمفتاح الخاص لا يُفك إلا بالمفتاح العام المقابل."}
+{"id":"y5:p221","a":"A","src":"INFERRED","e":"في CFB يؤثر الخطأ في الكتلة الحالية والتالية فقط، أما OFB وCTR فلا ينتشر فيهما الخطأ."}
+{"id":"y5:p222","a":"A","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"2) نمط CBC (Cipher Block Chaining)","e":"CBC تسلسلي يعتمد على الكتلة المشفرة السابقة وغير متوازي في التشفير، ويحتاج IV."}
+{"id":"y5:p223","a":"C","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"🗂️ جدول مقارنة شامل","e":"من الخيارات المتاحة فقط CTR يسمح بالتشفير المتوازي (ECB أيضاً لكنه غير مذكور)."}
+{"id":"y5:p224","a":"B","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"Stream Cipher","e":"يولّد PRNG بذرة المفتاح K تدفق مفاتيح بطول الرسالة ليُجرى XOR مع كل بايت."}
+{"id":"y5:p225","a":"B","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"1️⃣ MAC (Message Authentication Code)","e":"إرسال الرسالة مع hash(M,K) هو MAC ويضمن السلامة والتحقق من المصدر دون السرية."}
+{"id":"y5:p226","a":"B","src":"INFERRED","e":"أفضل ممارسات كلمات المرور: الطول الكبير (12 محرفاً فأكثر) يصعّب هجمات القاموس والقوة الغاشمة."}
+{"id":"y5:p227","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"User identifier مقابل User authentication","e":"كلمة المرور معلومات مصادقة تثبت الهوية (User authentication) وليست المعرّف نفسه."}
+{"id":"y5:p228","a":"A","src":"INFERRED","e":"Stream cipher يعالج بت/بايت بعملية XOR بسيطة فهو أسرع عموماً من Block cipher."}
+{"id":"y5:p229","a":"A","src":"INFERRED","e":"قد يحدث DoS دون قصد، مثل تدفق مفاجئ لمستخدمين شرعيين (Flash crowd) أو خطأ برمجي."}
+{"id":"y5:p230","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"1 مقدمة: Blockchain و DLT","e":"Blockchain تعتمد على شبكة لا مركزية Peer-to-Peer."}
+{"id":"y5:p231","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"8️⃣ Needham-Schroeder Shared-Key Protocol","e":"في Needham-Schroeder المتناظر يولّد مركز توزيع المفاتيح KDC المفتاح الجلسة المشترك."}
+{"id":"y5:p232","a":"B","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"محتويات الشهادة الرقمية","e":"الشهادة تربط الهوية بالمفتاح العام للمالك وتُوقَّع بمفتاح CA الخاص دون أن تحتويه."}
+{"id":"y5:p233","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"2 تعاريف عامة","e":"غياب التحقق من المدخلات ضعف في النظام، أي Vulnerability، يستغله التهديد."}
+{"id":"y5:p234","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"جدول ملخّص للتصنيف","e":"Snooping (التنصت) هجوم سلبي Passive يهدد السرية."}
+{"id":"y5:p235","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"٧. التوقيع الالكتروني / الرقمي","e":"التوقيع الرقمي يحقق توثيق الرسالة والسلامة وعدم الإنكار معاً."}
+{"id":"y5:p236","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"٤. دالة أويلر φ(n)","e":"11 عدد أولي فـ φ(11)=11-1=10."}
+{"id":"y5:p237","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"1️⃣ MAC (Message Authentication Code)","e":"يُحسب MAC باستخدام مفتاح سري مشترك (Shared key) بين المرسل والمستقبل."}
+{"id":"y5:p238","a":"B","src":"INFERRED","e":"Cipher text هو النص الناتج بعد التشفير، أما الخوارزمية فهي Cipher."}
+{"id":"y5:p239","a":"B","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"✅ متطلبات التحكم بالوصول","e":"السياسة المغلقة تسمح فقط بما هو محدد صراحةً وهي الأكثر أماناً."}
+{"id":"y5:p240","a":"A","src":"INFERRED","e":"يجب أولاً التحقق من الهوية (Authentication) ثم منح الصلاحيات (Authorization) ثم التدقيق (Auditing)."}
+{"id":"y5:p241","a":"A","src":"LECTURE_PARAPHRASE","lec":"par9.md","ref":"آليات الأمان","e":"استخدام Views مع التحكم بالوصول يعزز أمان قواعد البيانات."}
+{"id":"y5:p242","a":"D","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"هجمات الحقن Injection Attacks","e":"SQL injection ينتج من مدخلات المستخدم في عبارات SQL كلها: Select وInsert وUpdate."}
+{"id":"y5:p243","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"4 أهداف أخرى لأمن المعلومات","e":"تُحدد أهداف الحماية من خلال سياسة الأمن Security Policy."}
+{"id":"y5:p244","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"3 مثلث CIA — الأهداف الأساسية لأمن المعلومات","e":"CIA = السرية والسلامة والتوافر."}
+{"id":"y5:p245","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"Cross Site Scripting (XSS)","e":"XSS هجوم يحقن كوداً ضمن صفحات HTML لتطبيقات الويب فينفذ عند مستخدمين آخرين."}
+{"id":"y5:p246","a":"A","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"👥 RBAC — التحكم بالوصول القائم على الأدوار","e":"RBAC يمنح الصلاحيات بناءً على الأدوار المرتبطة بالمستخدمين."}
