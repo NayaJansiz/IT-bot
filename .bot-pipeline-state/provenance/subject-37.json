@@ -1,0 +1,282 @@
+{
+ "y5:p247": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "docker-compose: اسم الخدمة يصبح hostname داخل الشبكة",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p249": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p250": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "Risk Mitigation: Sharing / Transfer",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p251": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p252": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "مخطط التدفّق التراكمي (CFD)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p253": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "Board / Workflow columns",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p254": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p256": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "مخطط التدفّق التراكمي (CFD)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p257": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p258": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p260": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "volumes: بقاء البيانات حتى لو حُذفت الحاوية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p261": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "2.4 مخاطر المشروع مقابل المخاطر التنظيمية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p262": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "Issue Types: Epic",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p263": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p264": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "7.5 stash / rebase",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p265": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "Checkout: commit أو stash أولاً",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p266": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p267": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "6.1 Board Filter",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p268": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "volumes: بقاء البيانات حتى لو حُذفت الحاوية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p269": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "Board / Workflow columns",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p270": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "Risk Mitigation: Sharing / Transfer",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p271": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "Checkout: commit أو stash أولاً",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p272": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "أ) التجنّب (Avoidance)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p273": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p274": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "Agile Manifesto principles",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p275": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p278": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p279": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p280": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Images are immutable",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p281": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Images are immutable",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p282": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "WIP Limits",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p283": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Volume عادي مقابل Volume للقراءة فقط (:ro)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p284": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "2.1 التكامل المستمر (CI)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p285": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "Product Owner / Scrum Master",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p286": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "6.1 Board Filter",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
