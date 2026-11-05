@@ -1,0 +1,218 @@
+{
+ "y5:p287": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Transparency",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p288": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "RPC",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p289": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "RMI software",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p290": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Remote method invocation",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p291": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p292": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Resource sharing",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p294": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Heterogeneity",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p295": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Architectural models",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p296": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p297": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Failure Handling",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p299": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p301": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "Failure model",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p303": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "External data representation",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p304": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Request-reply message structure",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p305": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Invocation semantics",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p306": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "RPC building blocks",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p307": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Request-reply protocols RRA",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p308": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Failure model of request-reply",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p309": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Remote object table",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p310": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p311": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "Monolithic kernel vs Microkernel",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p313": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "Network Operating Systems",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p314": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "Thread manager",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p315": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "Server threading architectures",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p319": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "Lamport vs Vector Clocks",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p320": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "NTP",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p324": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "Vector Clocks",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
