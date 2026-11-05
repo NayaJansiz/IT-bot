@@ -1,0 +1,146 @@
+{
+ "y5:p325": {
+  "date": "2026-11-05",
+  "file": "par8-sec1.md",
+  "lecture": "par8-sec1.md",
+  "quote": null,
+  "ref": "Leave-One-Out",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p326": {
+  "date": "2026-11-05",
+  "file": "par6-sec1.md",
+  "lecture": "par6-sec1.md",
+  "quote": null,
+  "ref": "Information Gain",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p327": {
+  "date": "2026-11-05",
+  "file": "par8-sec1.md",
+  "lecture": "par8-sec1.md",
+  "quote": null,
+  "ref": "Accuracy & Error Rate (Resubstitution Error)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p328": {
+  "date": "2026-11-05",
+  "file": "par6-sec2.md",
+  "lecture": "par6-sec2.md",
+  "quote": null,
+  "ref": "Training/Test Error vs complexity",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p329": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "Data Mining vs Machine Learning (Scalability)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p330": {
+  "date": "2026-11-05",
+  "file": "par7-sec3.md",
+  "lecture": "par7-sec3.md",
+  "quote": null,
+  "ref": "حساب w من نقاط الدعم",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p331": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "IQR والقيم الشاذة",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p332": {
+  "date": "2026-11-05",
+  "file": "par9_sec1.md",
+  "lecture": "par9_sec1.md",
+  "quote": null,
+  "ref": "Jaccard Coefficient",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p336": {
+  "date": "2026-11-05",
+  "file": "par6-sec2.md",
+  "lecture": "par6-sec2.md",
+  "quote": null,
+  "ref": "Decision Regions & Overfitting",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p339": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p340": {
+  "date": "2026-11-05",
+  "file": "par9_sec2.md",
+  "lecture": "par9_sec2.md",
+  "quote": null,
+  "ref": "k-Medoids (PAM)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p342": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "Distribution و Sparsity",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p343": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Z-Score Normalization",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p347": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p348": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "How Do Machines Learn?",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p350": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p351": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Data Cleaning",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p352": {
+  "date": "2026-11-05",
+  "file": "par8-sec1.md",
+  "lecture": "par8-sec1.md",
+  "quote": null,
+  "ref": "Which Metric Should You Use",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
