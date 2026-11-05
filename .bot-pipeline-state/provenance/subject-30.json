@@ -1,0 +1,142 @@
+{
+ "y4:p358": {
+  "date": "2026-11-05",
+  "file": "par3-sec2.md",
+  "lecture": "par3-sec2.md",
+  "quote": null,
+  "ref": "25. الفرصة الثانية (Second Chance Algorithm)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p359": {
+  "date": "2026-11-05",
+  "file": "par3-sec2.md",
+  "lecture": "par3-sec2.md",
+  "quote": null,
+  "ref": "Page Replacement Algorithms (Optimal)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p361": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "quote": "غير آمنة لا تعني استعصاءً حالياً بالضرورة",
+  "ref": "12.3. أمثلة إضافية على حالات آمنة/غير آمنة",
+  "src": "LECTURE"
+ },
+ "y4:p364": {
+  "date": "2026-11-05",
+  "file": "par1-sec3.md",
+  "lecture": "par1-sec3.md",
+  "quote": null,
+  "ref": "3. مشكلة الإيقاظ المفقود (Lost Wakeup Problem)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p365": {
+  "date": "2026-11-05",
+  "file": "par1-sec3.md",
+  "lecture": "par1-sec3.md",
+  "quote": null,
+  "ref": "Semaphore: sleep() و wakeup()",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p366": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p367": {
+  "date": "2026-11-05",
+  "file": "par3-sec3.md",
+  "lecture": "par3-sec3.md",
+  "quote": null,
+  "ref": "Cache Indexing: Direct Mapped",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p369": {
+  "date": "2026-11-05",
+  "file": "par3-sec3.md",
+  "lecture": "par3-sec3.md",
+  "quote": null,
+  "ref": "Cache Addressing Schemes (VV)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p370": {
+  "date": "2026-11-05",
+  "file": "par3-sec3.md",
+  "quote": "homonyms (same address, different data)",
+  "ref": "Homonyms / Synonyms",
+  "src": "LECTURE"
+ },
+ "y4:p378": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p379": {
+  "date": "2026-11-05",
+  "file": "par1-sec2.md",
+  "lecture": "par1-sec2.md",
+  "quote": null,
+  "ref": "جدول مقارنة الحلول (Peterson مقابل TestAndSet)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p380": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "SSTF (Shortest Seek Time First)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p382": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "quote": "توزيع الكتابة على كل الخلايا لإطالة العمر",
+  "ref": "SSD: Wear Leveling",
+  "src": "LECTURE"
+ },
+ "y4:p383": {
+  "date": "2026-11-05",
+  "file": "par3-sec3.md",
+  "quote": "لا توجد بتات index إطلاقاً",
+  "ref": "9. Fully Associative",
+  "src": "LECTURE"
+ },
+ "y4:p387": {
+  "date": "2026-11-05",
+  "file": "par1-sec2.md",
+  "lecture": "par1-sec2.md",
+  "quote": null,
+  "ref": "جدول مقارنة الحلول (TestAndSet)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p388": {
+  "date": "2026-11-05",
+  "file": "par3-sec3.md",
+  "lecture": "par3-sec3.md",
+  "quote": null,
+  "ref": "21. مشكلة Synonyms (Aliases)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p389": {
+  "date": "2026-11-05",
+  "file": "par1-sec4.md",
+  "lecture": "par1-sec4.md",
+  "quote": null,
+  "ref": "7. الاستعصاء، المجاعة، وعكس الأولوية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p391": {
+  "date": "2026-11-05",
+  "file": "par3-sec2.md",
+  "lecture": "par3-sec2.md",
+  "quote": null,
+  "ref": "التجزؤ الداخلي في Paging",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
