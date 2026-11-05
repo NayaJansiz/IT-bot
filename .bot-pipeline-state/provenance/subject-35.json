@@ -1,0 +1,274 @@
+{
+ "y5:p177": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "11 · nftables (الجيل الجديد)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p178": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Transport/Tunnel",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p179": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "Forward / Backward Secrecy",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p180": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "المرحلة 4: فك الارتباط (Disassociation)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p181": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p182": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "IP Source Guard (IPSG) / Dynamic ARP Inspection (DAI)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p183": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "ملاحظة 2 — مشكلة الصندوق الأسود",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p184": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "Individual Key",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p185": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "8 · أوامر وأمثلة iptables",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p186": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "Session Hijacking Attacks / Rogue AP Attacks",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p187": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "معالجة الحزم / SPD (PROTECT)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p188": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p189": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "7 · جداول iptables الثلاثة (NAT)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p190": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p191": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "الاستجواب — Interrogation",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p192": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "آليات إخفاء هوية المرسل (الرسائل الوهمية)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p193": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "WireGuard",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p194": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "مكتبة TinyECC",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p196": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "2 · مقدمة الجدار الناري",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p197": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "13 · الشهادات العالمية",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p198": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "6. Reflexive ACLs",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p200": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "الهندسة الاجتماعية باستخدام التزييف العميق",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p201": {
+  "date": "2026-11-05",
+  "file": "par1.md",
+  "lecture": "par1.md",
+  "quote": null,
+  "ref": "7 · جداول iptables الثلاثة (NAT)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p202": {
+  "date": "2026-11-05",
+  "file": "par2.md",
+  "lecture": "par2.md",
+  "quote": null,
+  "ref": "5. Dynamic Access Control Lists",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p203": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "Anti-Replay Window",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p204": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "SA & SAD & SPD",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p205": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "MS-CHAP (Microsoft CHAP)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p206": {
+  "date": "2026-11-05",
+  "file": "par6.md",
+  "lecture": "par6.md",
+  "quote": null,
+  "ref": "WPA / TKIP و AES-CCMP",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p207": {
+  "date": "2026-11-05",
+  "file": "par7.md",
+  "lecture": "par7.md",
+  "quote": null,
+  "ref": "بروتوكول C-Sec",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p208": {
+  "date": "2026-11-05",
+  "file": "par3.md",
+  "lecture": "par3.md",
+  "quote": null,
+  "ref": "IKE (UDP Port 500)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p209": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p210": {
+  "date": "2026-11-05",
+  "file": "par4.md",
+  "lecture": "par4.md",
+  "quote": null,
+  "ref": "MS-CHAP (Microsoft CHAP)",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p211": {
+  "date": "2026-11-05",
+  "file": "par8.md",
+  "lecture": "par8.md",
+  "quote": null,
+  "ref": "التهديدات الحديثة — Zero-Day",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p212": {
+  "date": "2026-11-05",
+  "file": "par5.md",
+  "lecture": "par5.md",
+  "quote": null,
+  "ref": "الحل — Port Security",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
