@@ -1,0 +1,36 @@
+{"id":"y5:p177","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"11 · nftables (الجيل الجديد)","e":"nftables هو الجيل الجديد البديل لـ iptables/ip6tables/arptables/ebtables في Netfilter."}
+{"id":"y5:p178","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Transport/Tunnel","e":"في transport mode يُحمى الـ payload فقط ويبقى IP header الأصلي كما هو، بخلاف tunnel الذي يُغلَّف فيه."}
+{"id":"y5:p179","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Forward / Backward Secrecy","e":"Forward Secrecy: منع عقدة غادرت الشبكة من قراءة الرسائل اللاحقة؛ أما B فهي Backward Secrecy."}
+{"id":"y5:p180","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"المرحلة 4: فك الارتباط (Disassociation)","e":"إطارات Deauthentication/Disassociation غير محمية فيزيّفها المهاجم لقطع الاتصال وإجبار إعادة الاتصال."}
+{"id":"y5:p181","a":"A","src":"INFERRED","e":"Aireplay-ng هي أداة حقن الحزم وإعادة الإرسال في حزمة aircrack-ng؛ airmon-ng للـ monitor mode وaircrack-ng لكسر المفاتيح."}
+{"id":"y5:p182","a":"A","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"IP Source Guard (IPSG) / Dynamic ARP Inspection (DAI)","e":"IPSG يفلتر حزم IP بمطابقة IP+MAC ضد الانتحال، وDAI يفحص حزم ARP على المنافذ غير الموثوقة."}
+{"id":"y5:p183","a":"A","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"ملاحظة 2 — مشكلة الصندوق الأسود","e":"تعقيد النماذج المتقدمة يصعّب فهم كيفية اتخاذ القرار داخلها، فتُسمى Black Box."}
+{"id":"y5:p184","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Individual Key","e":"Individual Key: مفتاح خاص بكل عقدة معلوم فقط للـ BS ويؤمّن الاتصال بين العقدة والـ BS."}
+{"id":"y5:p185","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"8 · أوامر وأمثلة iptables","e":"! --syn تعني أي حزمة TCP ليست طلب اتصال جديد، فيُحذف FIN وRST وغيرهما، فالخيار D صحيح."}
+{"id":"y5:p186","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"Session Hijacking Attacks / Rogue AP Attacks","e":"الاختطاف يحدث بعد اكتمال المصادقة بإرسال Disassociate مزيف، وRogue AP سببه غياب Mutual Authentication."}
+{"id":"y5:p187","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"معالجة الحزم / SPD (PROTECT)","e":"PROTECT يعني تطبيق AH/ESP عبر SA ثم تمرير الحزمة؛ BYPASS يمررها بلا حماية وDISCARD يحذفها."}
+{"id":"y5:p188","a":"A","src":"INFERRED","e":"في كل ACL توجد قاعدة ضمنية في النهاية deny any، فتُمنع أي حزمة لا تطابق قاعدة permit."}
+{"id":"y5:p189","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"7 · جداول iptables الثلاثة (NAT)","e":"SNAT يغيّر عنوان المصدر عند الخروج إلى عنوان IP ثابت؛ DNAT يغيّر الوجهة."}
+{"id":"y5:p190","a":"D","src":"INFERRED","e":"تحلل خوارزميات الذكاء الاصطناعي بنية النظام والشيفرة وإعدادات الشبكة معاً لاكتشاف الثغرات والأخطاء."}
+{"id":"y5:p191","a":"D","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"الاستجواب — Interrogation","e":"إرسال RTS متكرر يجبر الضحية على إعادة CTS باستمرار فيستنزف مواردها، وهذا هجوم Interrogation في طبقة Data-Link."}
+{"id":"y5:p192","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"آليات إخفاء هوية المرسل (الرسائل الوهمية)","e":"لمنع التمييز الإحصائي يجب أن يحاكي توزيع الرسائل المزيفة توزيع الرسائل الحقيقية."}
+{"id":"y5:p193","a":"C","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"WireGuard","e":"WireGuard يعتمد ChaCha20 وCurve25519 كتشفير حديث."}
+{"id":"y5:p194","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"مكتبة TinyECC","e":"TinyECC صُمّمت لتنفيذ خوارزمية ECC على نظام TinyOS لعقد الاستشعار."}
+{"id":"y5:p195","a":"A","src":"INFERRED","e":"Double Tagging يستغل VLAN 1 كـ native/trusted، فمنع نقل بيانات المستخدمين عبر VLAN 1 يعطل الهجوم."}
+{"id":"y5:p196","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"2 · مقدمة الجدار الناري","e":"يمكن أن يكون الجدار الناري راوتر أو برمجية على حاسوب شخصي أو آلة مصممة خصيصاً."}
+{"id":"y5:p197","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"13 · الشهادات العالمية","e":"CISA (Certified Information Systems Auditor) مخصصة للمدققين والمراقبين لضمان الامتثال."}
+{"id":"y5:p198","a":"B","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"6. Reflexive ACLs","e":"على الواجهة الخارجية تُطبَّق reflect باتجاه Outbound لتسجيل الجلسة، وevaluate باتجاه Inbound للسماح بالرد."}
+{"id":"y5:p199","src":"NOT-FOUND"}
+{"id":"y5:p200","a":"A","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"الهندسة الاجتماعية باستخدام التزييف العميق","e":"Deepfake Social Engineering ينتحل هوية شخص في الشركة لإقناع موظف بتسليم بيانات سرية."}
+{"id":"y5:p201","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"7 · جداول iptables الثلاثة (NAT)","e":"مع IP ثابت يُستخدم SNAT لترجمة مصدر الشبكة المحلية عند الخروج؛ MASQUERADE يناسب العناوين الديناميكية."}
+{"id":"y5:p202","a":"C","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"5. Dynamic Access Control Lists","e":"عند استخدام المهلتين يجب أن يكون Idle Timeout أقل من Absolute Timeout."}
+{"id":"y5:p203","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Anti-Replay Window","e":"بعد 805 تنزلق النافذة إلى 802–805، فالرقم 798 يقع يسارها ويُحذف."}
+{"id":"y5:p204","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"SA & SAD & SPD","e":"SA أحادية الاتجاه ولكل بروتوكول SA مستقلة: 2 بروتوكول × 2 اتجاه = 4."}
+{"id":"y5:p205","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"MS-CHAP (Microsoft CHAP)","e":"MS-CHAP يضيف إمكانية تغيير كلمة المرور أثناء المصادقة ورموز failure codes."}
+{"id":"y5:p206","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6.md","ref":"WPA / TKIP و AES-CCMP","e":"TKIP يتحقق من السلامة عبر MIC (Michael)، وCCMP عبر CBC-MAC."}
+{"id":"y5:p207","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"بروتوكول C-Sec","e":"C-Sec يقلل استهلاك الطاقة بحذف حقول الأمان المنفصلة، وينفذ الخوارزميات في العتاد لا البرمجيات."}
+{"id":"y5:p208","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"IKE (UDP Port 500)","e":"IKE يعمل عبر UDP 500، وحظره يفشل مفاوضات إنشاء SA ومفاتيح AH/ESP."}
+{"id":"y5:p209","a":"B","src":"INFERRED","e":"iptables يطابق القواعد بالترتيب من الأعلى ويطبق أول مطابقة، فإذا سبق DROP قاعدة ACCEPT رُفض الاتصال."}
+{"id":"y5:p210","a":"D","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"MS-CHAP (Microsoft CHAP)","e":"MS-CHAP يدعم تغيير كلمة المرور ورموز الفشل، مما يجعله أكثر مرونة في إدارة المصادقة من CHAP."}
+{"id":"y5:p211","a":"A","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"التهديدات الحديثة — Zero-Day","e":"Zero-Day ثغرات لم تُكتشف أو توثَّق، فلا توجد لها توقيعات ولا تصحيح."}
+{"id":"y5:p212","a":"A","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"الحل — Port Security","e":"Port Security يقفل المنفذ عند وصول MAC غير مصرح به، أي يدخل حالة err-disable."}
