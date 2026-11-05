@@ -1,0 +1,236 @@
+{
+ "y5:p10": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ5.md",
+  "quote": "deducts money from the user's bank account instantly",
+  "ref": "p4",
+  "src": "LECTURE"
+ },
+ "y5:p12": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p13": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p14": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ6.md",
+  "quote": "injecting malicious code",
+  "ref": "p21",
+  "src": "LECTURE"
+ },
+ "y5:p15": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ7.md",
+  "lecture": "تجارة-نظري-مـ7.md",
+  "quote": null,
+  "ref": "p3",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p16": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ6.md",
+  "quote": "DDoS is performed from multiple devices or a botnet",
+  "ref": "p18",
+  "src": "LECTURE"
+ },
+ "y5:p17": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ7.md",
+  "lecture": "تجارة-نظري-مـ7.md",
+  "quote": null,
+  "ref": "p3",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p18": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p19": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ7.md",
+  "lecture": "تجارة-نظري-مـ7.md",
+  "quote": null,
+  "ref": "p2",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p20": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ7.md",
+  "quote": "Threats: External factors that may pose a challenge or risk",
+  "ref": "p3",
+  "src": "LECTURE"
+ },
+ "y5:p21": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ7.md",
+  "quote": "outdated technology",
+  "ref": "p3",
+  "src": "LECTURE"
+ },
+ "y5:p22": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ7.md",
+  "lecture": "تجارة-نظري-مـ7.md",
+  "quote": null,
+  "ref": "p5",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p23": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p24": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ6.md",
+  "quote": "Ransomware – prevents users from accessing their system or personal files",
+  "ref": "p12",
+  "src": "LECTURE"
+ },
+ "y5:p25": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ1.md",
+  "lecture": null,
+  "quote": "e-Business does not include commercial transactions that generate revenue",
+  "ref": "p6",
+  "src": "LECTURE"
+ },
+ "y5:p27": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ4.md",
+  "quote": "3PL refers to third-party companies",
+  "ref": "p13",
+  "src": "LECTURE"
+ },
+ "y5:p28": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p30": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ2.md",
+  "quote": "Effective firewalls protect against online threats such as XSS",
+  "ref": "p16",
+  "src": "LECTURE"
+ },
+ "y5:p32": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ7.md",
+  "quote": "Multivariate testing",
+  "ref": "p21",
+  "src": "LECTURE"
+ },
+ "y5:p33": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ3.md",
+  "quote": "Any marketing message that appears online is referred to as online advertising",
+  "ref": "p25",
+  "src": "LECTURE"
+ },
+ "y5:p34": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p35": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ7.md",
+  "lecture": "تجارة-نظري-مـ7.md",
+  "quote": null,
+  "ref": "p5",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p36": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p37": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p38": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ3.md",
+  "quote": "People, Objectives, Strategy, Technology",
+  "ref": "p17",
+  "src": "LECTURE"
+ },
+ "y5:p4": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ5.md",
+  "lecture": "تجارة-نظري-مـ5.md",
+  "quote": null,
+  "ref": "p8",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:p5": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ3.md",
+  "quote": "Reaching the right audience",
+  "ref": "p5",
+  "src": "LECTURE"
+ },
+ "y5:p6": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:p7": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ4.md",
+  "quote": "The provider ships the order directly to the customer",
+  "ref": "p15",
+  "src": "LECTURE"
+ },
+ "y5:p8": {
+  "date": "2026-11-05",
+  "file": "تجارة-نظري-مـ6.md",
+  "quote": "buyers can’t deny the legitimacy of a recorded transaction",
+  "ref": "p3",
+  "src": "LECTURE"
+ },
+ "y5:p9": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ }
+}
