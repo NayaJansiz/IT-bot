@@ -1,0 +1,34 @@
+{"id":"y4:p317","a":"C","src":"LECTURE","lec":"تخصصية-2-نظري-مـ5.md","ref":"p17 Lifecycle Callbacks - onPause()","q":"don't use onPause() to save application or user data, make network calls, or execute database transactions","e":"لا تُنفَّذ معاملات قاعدة البيانات في onPause()، بل تُؤجَّل إلى onStop()."}
+{"id":"y4:p318","a":"D","src":"LECTURE","lec":"تخصصية-2-نظري-مـ3.md","ref":"Inheritance (open keyword)","q":"The open keyword informs the compiler that this class is extendable","e":"الأصناف في Kotlin نهائية افتراضياً، وكلمة open تجعل الصنف الأب قابلاً للوراثة."}
+{"id":"y4:p319","a":"A","src":"LECTURE","lec":"تخصصية-2-نظري-مـ5.md","ref":"p29 Building an Intent - Action","q":"ACTION_VIEW: Used when you have information that an activity can display","e":"ACTION_VIEW تُستخدم لعرض معلومات للمستخدم مثل صورة في تطبيق المعرض."}
+{"id":"y4:p321","src":"NOT-FOUND"}
+{"id":"y4:p322","src":"NOT-FOUND"}
+{"id":"y4:p323","a":"A","src":"LECTURE","lec":"تخصصية-2-نظري-مـ1.md","ref":"p20 Java API Framework - Activity Manager","q":"Provides a common navigation back stack.","e":"مدير الأنشطة Activity Manager هو المسؤول عن مكدس التنقل الخلفي المشترك."}
+{"id":"y4:p324","a":"A","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ3.md","ref":"Generics","e":"الأنواع العامة Generics تسمح لصنف باستخدام نوع بيانات عام كعنصر نائب يُحدَّد عند إنشاء الكائن."}
+{"id":"y4:p325","src":"NOT-FOUND"}
+{"id":"y4:p326","a":"A","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ3.md","ref":"Visibility modifiers","e":"internal يجعل التصريح متاحاً داخل نفس الوحدة Module فقط ويمنع الوصول من خارجها."}
+{"id":"y4:p327","src":"NOT-FOUND"}
+{"id":"y4:p328","a":"C","src":"LECTURE","lec":"تخصصية-2-نظري-مـ4.md","ref":"App Components - Services","q":"For most background work, Google recommends alternative components","e":"Google توصي بـ Kotlin Coroutines وWorkManager بدلاً من Services للعمل الخلفي."}
+{"id":"y4:p329","a":"D","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ4.md","ref":"p3 Application Fundamentals","e":"AAB صيغة نشر لا تُثبَّت على الأجهزة، وتحوي محتويات المشروع من موارد وشيفرة."}
+{"id":"y4:p330","a":"B","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ4.md","ref":"p11 App Components - Services","e":"تشغيل الموسيقى بعد مغادرة التطبيق خدمة Foreground Service مع إشعار للمستخدم."}
+{"id":"y4:p331","a":"A","src":"LECTURE","lec":"تخصصية-2-نظري-مـ1.md","ref":"p21 Java API Framework - Resource Manager","q":"Centralizes access to various application resources","e":"Resource Manager يركّز الوصول إلى الموارد كالتخطيطات والنصوص والصور والألوان والأنماط."}
+{"id":"y4:p332","a":"A","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ5.md","ref":"p41 Intent Resolution - Action test","e":"يمرّ الـ Intent باختبار الإجراء إذا طابق action فيه أحد الإجراءات المعلنة في الـ filter."}
+{"id":"y4:p333","src":"NOT-FOUND"}
+{"id":"y4:p335","a":"B","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ1.md","ref":"p32 Jetpack Compose","e":"عناصر Compose غير قابلة للتعديل بعد إنشائها؛ تُحدَّث بإعادة التركيب بمدخلات جديدة."}
+{"id":"y4:p336","a":"A","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ3.md","ref":"p13 Classes and Objects - Secondary constructor","e":"جسم المُنشئ الثانوي يأتي بعد تهيئة المُنشئ الأساسي، ويجب أن يستدعيه."}
+{"id":"y4:p338","a":"B","src":"LECTURE","lec":"تخصصية-2-نظري-مـ1.md","ref":"p15 Hardware Abstraction Layer (HAL)","q":"provides standard interfaces that expose device hardware capabilities","e":"HAL توفر واجهات قياسية تكشف إمكانيات العتاد لإطار Java API."}
+{"id":"y4:p339","a":"A","src":"LECTURE","lec":"تخصصية-2-نظري-مـ4.md","ref":"p26 The Manifest File","q":"devices that do not have a camera","e":"مع required=true لا يمكن تثبيت التطبيق من Google Play على أجهزة بلا كاميرا."}
+{"id":"y4:p342","a":"B","src":"LECTURE","lec":"تخصصية-2-نظري-مـ5.md","ref":"p16 Lifecycle Callbacks - onPause()","q":"partially visible but not in focus, it remains paused","e":"النشاط المرئي جزئياً وغير المُركَّز عليه يبقى في حالة Paused."}
+{"id":"y4:p343","a":"A","src":"LECTURE","lec":"تخصصية-2-نظري-مـ4.md","ref":"p9 App Components - Activity","q":"A single Activity as a host","e":"التطبيقات الحديثة تستخدم Activity واحدة مضيفة ووجهات واجهة متعددة عبر Compose navigation."}
+{"id":"y4:p345","a":"A","src":"LECTURE","lec":"تخصصية-2-نظري-مـ3.md","ref":"p51 Use a data class","q":"equals() hashCode() toString()","e":"صنف data يولّد المترجم له equals() وhashCode() وtoString() تلقائياً."}
+{"id":"y4:p346","a":"B","src":"LECTURE","lec":"تخصصية-2-نظري-مـ3.md","ref":"p54 Declare objects as companion objects","q":"define a singleton object inside another class using a companion object","e":"الكائن المرافق companion object هو كائن مفرد Singleton داخل صنف آخر."}
+{"id":"y4:p349","a":"D","src":"LECTURE","lec":"تخصصية-2-نظري-مـ5.md","ref":"p26 Building an Intent","q":"additional information that does not affect how it is resolved","e":"Extras وFlags لا تؤثر في تحديد المكوّن المستهدف، فهي ليست خصائص أساسية للحل."}
+{"id":"y4:p350","src":"NOT-FOUND"}
+{"id":"y4:p351","a":"D","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ2.md","ref":"Nullable function types","e":"نوع الدالة القابل للإلغاء يُكتب ((Int) -> String)? كما في extraTreat."}
+{"id":"y4:p352","a":"D","src":"LECTURE_PARAPHRASE","lec":"تخصصية-2-نظري-مـ1.md","ref":"p14 Linux Kernel Standard Services","e":"الخدمات القياسية: security وmemory & process management وfile & network I/O وdevice drivers."}
+{"id":"y4:p320","a":"C","src":"INFERRED","e":"NavController هو الواجهة المركزية التي تنسّق التنقل بين الوجهات وتدير المكدس الخلفي."}
+{"id":"y4:p334","a":"A","src":"INFERRED","e":"mutableStateOf ينشئ حالة قابلة للمراقبة، فيؤدي تغيّرها إلى إعادة التركيب recomposition."}
+{"id":"y4:p337","a":"A","src":"INFERRED","e":"ART يعتمد الترجمة المسبقة AOT عند التثبيت، بخلاف Dalvik الذي اعتمد JIT."}
+{"id":"y4:p341","a":"B","src":"INFERRED","e":"في طور التخطيط تُقاس العُقد الأب قبل أبنائها، ثم يُحدَّد حجمها وموضعها بعد الأبناء."}
+{"id":"y4:p347","a":"C","src":"INFERRED","e":"requiredSize يفرض حجماً ثابتاً للمكوّن بغض النظر عن قيود الأب الواردة."}
+{"id":"y4:p348","a":"A","src":"INFERRED","e":"rememberSaveable يحفظ الحالة المرئية للمستخدم عبر تغيّر الإعدادات مثل تدوير الشاشة."}
