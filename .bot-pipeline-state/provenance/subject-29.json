@@ -1,0 +1,213 @@
+{
+ "y4:p317": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ5.md",
+  "quote": "don't use onPause() to save application or user data, make network calls, or execute database transactions",
+  "ref": "p17 Lifecycle Callbacks - onPause()",
+  "src": "LECTURE"
+ },
+ "y4:p318": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ3.md",
+  "quote": "The open keyword informs the compiler that this class is extendable",
+  "ref": "Inheritance (open keyword)",
+  "src": "LECTURE"
+ },
+ "y4:p319": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ5.md",
+  "quote": "ACTION_VIEW: Used when you have information that an activity can display",
+  "ref": "p29 Building an Intent - Action",
+  "src": "LECTURE"
+ },
+ "y4:p320": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p323": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ1.md",
+  "quote": "Provides a common navigation back stack.",
+  "ref": "p20 Java API Framework - Activity Manager",
+  "src": "LECTURE"
+ },
+ "y4:p324": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ3.md",
+  "lecture": "تخصصية-2-نظري-مـ3.md",
+  "quote": null,
+  "ref": "Generics",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p326": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ3.md",
+  "lecture": "تخصصية-2-نظري-مـ3.md",
+  "quote": null,
+  "ref": "Visibility modifiers",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p328": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ4.md",
+  "quote": "For most background work, Google recommends alternative components",
+  "ref": "App Components - Services",
+  "src": "LECTURE"
+ },
+ "y4:p329": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ4.md",
+  "lecture": "تخصصية-2-نظري-مـ4.md",
+  "quote": null,
+  "ref": "p3 Application Fundamentals",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p330": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ4.md",
+  "lecture": "تخصصية-2-نظري-مـ4.md",
+  "quote": null,
+  "ref": "p11 App Components - Services",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p331": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ1.md",
+  "quote": "Centralizes access to various application resources",
+  "ref": "p21 Java API Framework - Resource Manager",
+  "src": "LECTURE"
+ },
+ "y4:p332": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ5.md",
+  "lecture": "تخصصية-2-نظري-مـ5.md",
+  "quote": null,
+  "ref": "p41 Intent Resolution - Action test",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p334": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p335": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ1.md",
+  "lecture": "تخصصية-2-نظري-مـ1.md",
+  "quote": null,
+  "ref": "p32 Jetpack Compose",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p336": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ3.md",
+  "lecture": "تخصصية-2-نظري-مـ3.md",
+  "quote": null,
+  "ref": "p13 Classes and Objects - Secondary constructor",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p337": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p338": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ1.md",
+  "quote": "provides standard interfaces that expose device hardware capabilities",
+  "ref": "p15 Hardware Abstraction Layer (HAL)",
+  "src": "LECTURE"
+ },
+ "y4:p339": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ4.md",
+  "quote": "devices that do not have a camera",
+  "ref": "p26 The Manifest File",
+  "src": "LECTURE"
+ },
+ "y4:p341": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p342": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ5.md",
+  "quote": "partially visible but not in focus, it remains paused",
+  "ref": "p16 Lifecycle Callbacks - onPause()",
+  "src": "LECTURE"
+ },
+ "y4:p343": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ4.md",
+  "quote": "A single Activity as a host",
+  "ref": "p9 App Components - Activity",
+  "src": "LECTURE"
+ },
+ "y4:p345": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ3.md",
+  "quote": "equals() hashCode() toString()",
+  "ref": "p51 Use a data class",
+  "src": "LECTURE"
+ },
+ "y4:p346": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ3.md",
+  "quote": "define a singleton object inside another class using a companion object",
+  "ref": "p54 Declare objects as companion objects",
+  "src": "LECTURE"
+ },
+ "y4:p347": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p348": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y4:p349": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ5.md",
+  "quote": "additional information that does not affect how it is resolved",
+  "ref": "p26 Building an Intent",
+  "src": "LECTURE"
+ },
+ "y4:p351": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ2.md",
+  "lecture": "تخصصية-2-نظري-مـ2.md",
+  "quote": null,
+  "ref": "Nullable function types",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y4:p352": {
+  "date": "2026-11-05",
+  "file": "تخصصية-2-نظري-مـ1.md",
+  "lecture": "تخصصية-2-نظري-مـ1.md",
+  "quote": null,
+  "ref": "p14 Linux Kernel Standard Services",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
