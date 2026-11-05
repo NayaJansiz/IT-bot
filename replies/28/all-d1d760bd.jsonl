@@ -1,0 +1,35 @@
+{"id":"y4:p278","a":"A","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"async/finish nesting","e":"يمكن تداخل async وfinish بشكل اعتباطي (arbitrarily nested)، لذلك العبارة صحيحة."}
+{"id":"y4:p279","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Java Streams","e":"العمليات الوسيطة في الـ Stream كسولة ولا تنفذ شيئاً حتى الوصول إلى terminal operation."}
+{"id":"y4:p280","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Global isolated Construct","e":"يمكن تداخل isolated constructs، لكن الداخلية تصبح زائدة (redundant)."}
+{"id":"y4:p281","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"6.1 forallChunked","e":"معامل chunkSize يحدد حجم المجموعة، فيتحدد عدد المهام ≈ عدد التكرارات ÷ chunkSize."}
+{"id":"y4:p282","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6-sec1.md","ref":"5.4 wait/notify","e":"wait() تحرر قفل الكائن وتجعل حالة الخيط blocked وتضعه في Wait Set."}
+{"id":"y4:p283","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Distributed Memory Architecture","e":"MPI هو المعيار الأكثر شيوعاً لبرمجة معمارية الذاكرة الموزعة عبر تمرير الرسائل."}
+{"id":"y4:p284","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"2.2 قدرات الـ Actor","e":"الـ Actor يعالج الرسائل ويغير حالته ويرسل رسائل وينشئ Actors جدد (create new actors)."}
+{"id":"y4:p285","a":"B","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Data Flow / asyncAwait","e":"القيمة تؤخذ من Future بـ get() أما put() فتطلق الحدث في نموذج data flow."}
+{"id":"y4:p286","a":"A","src":"LECTURE_PARAPHRASE","lec":"par6-sec2.md","ref":"1. Condition Objects","e":"من نفس ReentrantLock يمكن إنشاء عدة Condition، ولكل منها waiting-set مستقل."}
+{"id":"y4:p287","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"9.2 Producer-Consumer","e":"actor الـ buffer هو المسؤول الوحيد عن الوصول للبيانات وإزالة العنصر وإرساله للمستهلك."}
+{"id":"y4:p288","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Global isolated Construct","e":"isolated يضمن الإقصاء المتبادل: مهمتان لا تنفذان isolated معاً، فتنتظر إحداهما."}
+{"id":"y4:p289","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"8.4 Benign Nondeterminism","e":"Benign nondeterminism: وجود Data Race مع بقاء جميع النتائج المختلفة مقبولة."}
+{"id":"y4:p290","src":"NOT-FOUND"}
+{"id":"y4:p291","src":"NOT-FOUND"}
+{"id":"y4:p292","src":"NOT-FOUND"}
+{"id":"y4:p293","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"8.3 Functional vs Structural Determinism","e":"غياب Data Race يضمن أن البرنامج functionally وstructurally deterministic."}
+{"id":"y4:p295","src":"NOT-FOUND"}
+{"id":"y4:p296","a":"E","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"Global isolated Construct","e":"الأقفال قد تسبب Deadlock، وSpeedup=T1/Tp وليس دائماً Work/Span، فالعبارات كلها خاطئة."}
+{"id":"y4:p297","a":"D","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"RecursiveTask / RecursiveAction","e":"RecursiveTask تعيد قيمة وRecursiveAction لا تعيد؛ والطريقة المعاد تحقيقها هي compute وليس run."}
+{"id":"y4:p298","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"Distributed vs Shared Memory / Data Dependencies","e":"A صحيحة (ذاكرة محلية لكل معالج)؛ ورغم صحة B وD فـC خاطئة فلا يصح E."}
+{"id":"y4:p299","a":"D","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"next() = SIG + WAIT","e":"next() = SIG + WAIT ومسموحة فقط في forallPhased، ويمكن تفريع الحلقات بـ parallel streams."}
+{"id":"y4:p300","a":"A","src":"LECTURE_PARAPHRASE","lec":"par5.md","ref":"Pipeline","e":"زمن Pipeline ≈ 100+6-1=105 مقابل 600 تسلسلياً، فالتسريع ≈5.7 أكبر من 5."}
+{"id":"y4:p301","src":"NOT-FOUND"}
+{"id":"y4:p303","a":"E","src":"LECTURE_PARAPHRASE","lec":"par6-sec2.md","ref":"Hand-over-Hand Locking","e":"synchronized له wait-set واحد، والأقفال تُحرر صراحة (finally)، وHand-over-Hand يزيد التوازي في كامل القائمة."}
+{"id":"y4:p304","a":"E","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"Pipelined Parallelism","e":"أبطأ مرحلة هي عنق الزجاجة (throughput bottleneck) وتُعالج بـ task parallelism داخلها لا بتكبير mailbox."}
+{"id":"y4:p305","a":"C","src":"LECTURE_PARAPHRASE","lec":"par2.md","ref":"async construct","e":"async ينشئ مهمة فرعية (child task) في إطار HJ، أما finish فتنتظر إنهاء المهام."}
+{"id":"y4:p306","a":"B","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Functional Parallelism / Futures","e":"التوازي الوظيفي (Functional Programming) يبنى على Futures: مهام ترجع قيمة."}
+{"id":"y4:p307","src":"NOT-FOUND"}
+{"id":"y4:p308","src":"NOT-FOUND"}
+{"id":"y4:p309","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7.md","ref":"3.1 Object-based Isolation","e":"isolated(obj1,obj2) يحمي الكائنات المشاركة فقط، فيزيد التوازي مقارنة بـ Global isolated."}
+{"id":"y4:p310","a":"D","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"9.2-9.3 Producer-Consumer","e":"الحل: actor لكل منتج (p) وactor لكل مستهلك (c) وactor واحد لإدارة الـ buffer."}
+{"id":"y4:p311","a":"B","src":"LECTURE_PARAPHRASE","lec":"par8.md","ref":"9.1 Sieve of Eratosthenes","e":"العدد 7 يمر على actors فلترة 2 و3 و5، فيفحصه 3 actors؛ وعدد الـ actors الكلي ليس 11."}
+{"id":"y4:p312","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3.md","ref":"Amdahl's Law","e":"Amdahl يحسب حد التسريع لـ P معالج مع أخذ الجزء التسلسلي (القابل للتفريع) بالحسبان."}
+{"id":"y4:p313","src":"NOT-FOUND"}
+{"id":"y4:p314","src":"NOT-FOUND"}
