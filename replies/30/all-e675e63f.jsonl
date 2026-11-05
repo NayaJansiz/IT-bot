@@ -1,0 +1,29 @@
+{"id":"y4:p358","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3-sec2.md","ref":"25. الفرصة الثانية (Second Chance Algorithm)","e":"بتتبع الفرصة الثانية على السلسلة المعطاة بـ3 إطارات (الصفحة الجديدة بت=1) ينتج 14 خطأ صفحة."}
+{"id":"y4:p359","a":"C","src":"LECTURE_PARAPHRASE","lec":"par3-sec2.md","ref":"Page Replacement Algorithms (Optimal)","e":"الخوارزمية المثلى تُخرج الصفحة التي لن تُستخدم أبعد مدة؛ بتطبيقها على السلسلة المعطاة ينتج 10 أخطاء."}
+{"id":"y4:p360","src":"NOT-FOUND"}
+{"id":"y4:p361","a":"B","src":"LECTURE","lec":"par2.md","ref":"12.3. أمثلة إضافية على حالات آمنة/غير آمنة","q":"غير آمنة لا تعني استعصاءً حالياً بالضرورة","e":"الحالة غير الآمنة تعني احتمال الاستعصاء فقط وليس حدوثه حتماً، فالعبارة خاطئة."}
+{"id":"y4:p362","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1-sec3.md","ref":"Binary Semaphore (mutex)","e":"المسيّر الثنائي mutex يحقق الإقصاء التبادلي؛ والمحاضرة لا تضمن به التقدم ولا الانتظار المحدود (الترتيب غير محدد)."}
+{"id":"y4:p363","src":"NOT-FOUND"}
+{"id":"y4:p364","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1-sec3.md","ref":"3. مشكلة الإيقاظ المفقود (Lost Wakeup Problem)","e":"count غير محمي فلا إقصاء متبادل، ويحدث Lost Wakeup فتنام العمليتان إلى الأبد (استعصاء)؛ فكل ما سبق صحيح."}
+{"id":"y4:p365","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1-sec3.md","ref":"Semaphore: sleep() و wakeup()","e":"المسيّر يدير رتل الانتظار بـ sleep/wakeup، والمراقب من حلول الإقصاء بدون انتظار شاغل، أما TestAndSet فانتظار شاغل."}
+{"id":"y4:p367","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3-sec3.md","ref":"Cache Indexing: Direct Mapped","e":"في Direct Mapped يوجد سطر واحد لكل فهرس، فيحدث تنازع وانتزاع (Conflict) كثير وتنخفض نسبة الإصابة."}
+{"id":"y4:p369","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3-sec3.md","ref":"Cache Addressing Schemes (VV)","e":"في VIVT الفهرسة والوسم بالعنوان الافتراضي دون انتظار MMU، وهو أسرع تصميم نظرياً."}
+{"id":"y4:p370","a":"A","src":"LECTURE","lec":"par3-sec3.md","ref":"Homonyms / Synonyms","q":"homonyms (same address, different data)","e":"Homonyms: نفس العنوان لبيانات مختلفة؛ Synonyms/Aliases: عناوين مختلفة لنفس البيانات."}
+{"id":"y4:p371","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1-sec4.md","ref":"17. أثر signal() في المراقب عند غياب عملية منتظرة","e":"إذا لم توجد عملية منتظرة تضيع الإشارة بلا أثر ويكمل الكود طبيعياً، فلا مجاعة ولا استعصاء."}
+{"id":"y4:p374","src":"NOT-FOUND"}
+{"id":"y4:p375","src":"NOT-FOUND"}
+{"id":"y4:p376","src":"NOT-FOUND"}
+{"id":"y4:p377","src":"NOT-FOUND"}
+{"id":"y4:p379","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1-sec2.md","ref":"جدول مقارنة الحلول (Peterson مقابل TestAndSet)","e":"بيترسون يحقق الإقصاء والتقدم والانتظار المحدود مباشرة، بينما TestAndSet البسيط لا يحقق الانتظار المحدود."}
+{"id":"y4:p380","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"SSTF (Shortest Seek Time First)","e":"SSTF يخدم الأقرب دائماً من 100: 95 ثم 80 ثم 40 ثم 30 ثم 150 ثم 200، دون المرور بـ 500."}
+{"id":"y4:p381","src":"NOT-FOUND"}
+{"id":"y4:p382","a":"A","src":"LECTURE","lec":"par4.md","ref":"SSD: Wear Leveling","q":"توزيع الكتابة على كل الخلايا لإطالة العمر","e":"Wear Leveling يوزّع الكتابة على الكتل/الخلايا لإطالة عمر القرص."}
+{"id":"y4:p383","a":"C","src":"LECTURE","lec":"par3-sec3.md","ref":"9. Fully Associative","q":"لا توجد بتات index إطلاقاً","e":"في Fully Associative تنتمي كل الأسطر لمجموعة واحدة فلا توجد بتات index (الوسم فقط والإزاحة)."}
+{"id":"y4:p384","src":"NOT-FOUND"}
+{"id":"y4:p386","src":"NOT-FOUND"}
+{"id":"y4:p387","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1-sec2.md","ref":"جدول مقارنة الحلول (TestAndSet)","e":"TestAndSet يحل المنطقة الحرجة لـ N عملية ويحقق الإقصاء والتقدم، لكن نسخته البسيطة لا تضمن الانتظار المحدود."}
+{"id":"y4:p388","a":"A","src":"LECTURE_PARAPHRASE","lec":"par3-sec3.md","ref":"21. مشكلة Synonyms (Aliases)","e":"في الكاش الافتراضي قد تُخزَّن نفس البيانات الفيزيائية في عدة أسطر (Synonyms)، فتبقى النسخ الأخرى قديمة."}
+{"id":"y4:p389","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1-sec4.md","ref":"7. الاستعصاء، المجاعة، وعكس الأولوية","e":"الاستخدام الصحيح للمسيّرات يحقق الإقصاء ويحل السباق؛ أما سوء استخدامها فيسبب الاستعصاء."}
+{"id":"y4:p391","a":"D","src":"LECTURE_PARAPHRASE","lec":"par3-sec2.md","ref":"التجزؤ الداخلي في Paging","e":"الصفحات قد تسبب تجزؤاً داخلياً في آخر صفحة، وتُخزَّن أيضاً على القرص في الذاكرة الافتراضية، فكل الخيارات خاطئة."}
+{"id":"y4:p366","a":"A","src":"INFERRED","e":"التجميع المتغير المتداخل (spanned) يلغي الهدر الناتج عن عدم تطابق السجل مع الكتلة، وهو عيب التجميع الثابت."}
+{"id":"y4:p378","a":"D","src":"INFERRED","e":"خطأ الصفحة يحدث عندما تكون الصفحة غير موجودة في الذاكرة (P=0) بغض النظر عن قيمة D."}
