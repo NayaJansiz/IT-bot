@@ -1,0 +1,15 @@
+{"id":"y5:img4","a":"A","src":"LECTURE_PARAPHRASE","lec":"تخصصية-3-نظري-مـ9.md","ref":"Input: Enable/Disable – Toggle","e":"صُنع المفتاح Toggle ليكون أكبر من مربع الاختيار الصغير، وانتشر مع واجهات اللمس، فيسهل اختياره بالأصابع."}
+{"id":"y5:img6","a":"C","src":"LECTURE_PARAPHRASE","lec":"تخصصية-3-نظري-مـ4.md","ref":"3 - 3 Screen / Impaired Design: Poor Vision","e":"الشاشة محدودة في الجوال، وبعض التطبيقات تثبّت حجم الخط ولا تتبع تكبير النظام، فاجتمع السببان."}
+{"id":"y5:img7","a":"C","src":"LECTURE_PARAPHRASE","lec":"تخصصية-3-نظري-مـ5.md","ref":"p9 - The Challenges of Web UI: Locale","e":"Locale مجموعة قواعد تحدد العملة وصيغة التاريخ وشكل الأرقام واتجاه النص وأولويات الفرز بحسب موقع المستخدم."}
+{"id":"y5:img8","a":"D","src":"LECTURE_PARAPHRASE","lec":"تخصصية-3-نظري-مـ7.md","ref":"p7 - Number of Clicks","e":"الإجراءات الأهم يجب أن تكون على بعد 0 نقرة، كزر الحفظ في Office، وهذا مفهوم Number of Clicks."}
+{"id":"y5:img10","a":"A","src":"LECTURE","lec":"تخصصية-3-نظري-مـ8.md","ref":"Scale: Static and fluid elements","q":"Fluid elements scale to a specified percentage of it’s container.","e":"العناصر المرنة Fluid تتحجّم بنسبة مئوية محددة من حاويتها، بعكس العناصر الثابتة Static."}
+{"id":"y5:m85","a":"B","src":"LECTURE_PARAPHRASE","lec":"تخصصية-3-نظري-مـ8.md","ref":"Gestalt Principles: Proximity, Common region","e":"الفلاتر بلا حدود تخالف Common Region، والمخطط غير المجمّع يخالف Proximity، والأزرار المتطابقة تخالف Scale."}
+{"id":"y5:m103","src":"NOT-FOUND"}
+{"id":"y5:m105","a":"C","src":"LECTURE_PARAPHRASE","lec":"تخصصية-3-نظري-مـ4.md","ref":"2 - Laws in UI Design: Fitt's Law, Proximity","e":"زران متجاوران متطابقان يرفعان خطر النقر الخاطئ حسب Fitt's Law، ويُجمَّعان معًا حسب Proximity."}
+{"id":"y5:m118","a":"D","src":"LECTURE_PARAPHRASE","lec":"تخصصية-3-نظري-مـ6.md","ref":"Google Material Design: Accessibility","e":"M3 يحافظ على حدود WCAG ويحترم تفضيلات التباين لدى المستخدم، فيناسبه سمة وصول اختيارية."}
+{"id":"y5:img1","a":"A","src":"INFERRED","e":"واجهة منفصلة لاختيار الفصل أوضح وأسهل في التصفح من عناصر مزدحمة أو عائمة تشتت القارئ."}
+{"id":"y5:img2","a":"B","src":"INFERRED","e":"الكاميرا الحرارية بالأشعة تحت الحمراء هي الأداة الأساسية للعثور على ناجين تحت الأنقاض، وبها تقوم مهمة المشغّل."}
+{"id":"y5:img3","a":"C","src":"INFERRED","e":"الأسود والذهبي يوحيان بالفخامة والتميّز، ويختلفان عن الأبيض الشائع لدى النادي، فيناسبان موقع مجموعة المشجعين الأخرى."}
+{"id":"y5:img5","a":"A","src":"INFERRED","e":"في الجوال الشاشة صغيرة والمستخدم يريد إنجاز مهمته بسرعة، فتقليل عدد النقرات أهم عنصر UX."}
+{"id":"y5:img9","a":"B","src":"INFERRED","e":"محاكاة ضغط الماء على السد تحتاج تصوّرًا مرئيًا يُظهر توزيع الضغط ليفهمه المهندس، وهذا أهم من السرعة وحدها."}
+{"id":"y5:m119","a":"A","src":"INFERRED","e":"الشفافية بلا ترتيب هرمي واضح للمعلومات تُربك المستخدم رغم شعوره بالأمان، فيزداد الغموض المعرفي."}
