@@ -1,0 +1,56 @@
+{"id":"y4:p214","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"2. طبيعة البيانات (Data Table)","e":"الصفوف (observations) والأعمدة (variables) تشكّل معاً جدول البيانات data table."}
+{"id":"y4:p215","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"2. طبيعة البيانات (Data Table)","e":"كل صف rows في الجدول يمثل مشاهدة واحدة observation، والأعمدة هي المتغيرات."}
+{"id":"y4:p216","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"3. أنواع بُنى البيانات","e":"البيانات إما بوقت واحد (cross-sectional) أو أوقات كثيرة (time series/panel)، فالجواب A و B."}
+{"id":"y4:p217","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"3. أنواع بُنى البيانات","e":"Unbalanced panel: بعض الوحدات رُصدت بفترات أكثر من غيرها."}
+{"id":"y4:p218","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"5. جودة البيانات (Quality of Data)","e":"جودة البيانات مرتبطة بصلاحيتها للتحليل (Garbage-in-garbage-out) وليس بالتصوير البصري."}
+{"id":"y4:p219","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"6. طرق جمع البيانات","e":"طريقة الجمع تؤثر مباشرة على جودة البيانات (التغطية، التحيّز، الصلاحية)."}
+{"id":"y4:p220","a":"E","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"5. جودة البيانات (Quality of Data)","e":"المقاييس الموضوعية: Content وValidity وReliability وCoverage وغيرها، فكلها صحيحة."}
+{"id":"y4:p221","a":"D","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"5. جودة البيانات (Quality of Data)","e":"Coverage: هل تغطي البيانات المجتمع المستهدف، أي نسبة المشاهدات المعنية الموجودة فيها."}
+{"id":"y4:p222","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"5. جودة البيانات (Quality of Data)","e":"Content: ما المحتوى الذي يلتقطه المتغيّر وهل البيانات تحوي المتغيرات المطلوبة."}
+{"id":"y4:p223","a":"B","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"5. جودة البيانات (Quality of Data)","e":"Validity: هل المتغيّر يقيس فعلاً ما يُفترض أن يقيسه، أي قرب المحتوى الفعلي من المقصود."}
+{"id":"y4:p225","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"6. طرق جمع البيانات (Existing Sources)","e":"المصادر الموجودة رخيصة لكن صلاحية المتغيرات قد تكون عالية أو منخفضة، فليست دائماً الأفضل."}
+{"id":"y4:p226","a":"C","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"15. الجوانب القانونية والأخلاقية (GDPR)","e":"GDPR = General Data Protection Regulation، التنظيم العام لحماية البيانات."}
+{"id":"y4:p240","a":"A","src":"LECTURE","lec":"par4.md","ref":"2. مفارقة سيمبسون (Simpson's Paradox)","q":"It occurs due to the presence of lurking or confounding variables.","e":"تحدث مفارقة سيمبسون بسبب وجود متغيّر كامن (lurking/confounding) مع أحجام مجموعات غير متساوية."}
+{"id":"y4:p241","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"2. مفارقة سيمبسون (Simpson's Paradox)","e":"المحاضرة تنسب إلى مفارقة سيمبسون عملية تجميع (aggregation) مجموعات البيانات، وليس لشانون أو تشومسكي."}
+{"id":"y4:p242","a":"B","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"8. المتوسط المتحرك (Moving Average)","e":"يُستخدم بكثرة في التمويل والتحليل الفني، لكن ليس حصراً: هو أداة عامة لتنعيم السلاسل الزمنية."}
+{"id":"y4:p243","a":"B","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"8. المتوسط المتحرك (Moving Average)","e":"يُصفّي ضجيج التقلبات العشوائية قصيرة المدى (short-term) وليس طويلة المدى."}
+{"id":"y4:p244","a":"A","src":"LECTURE_PARAPHRASE","lec":"par4.md","ref":"المتوسط المتحرك: SMA مقابل EMA","e":"SMA هو المتوسط الحسابي البسيط لآخر n نقطة بيانات ضمن نافذة زمنية."}
+{"id":"y4:p245","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7-sec1.md","ref":"1. تفجّر البيانات وعملية اكتشاف المعرفة","e":"هدف Data Mining استخراج معرفة (knowledge) مفيدة من كم هائل من البيانات المخزّنة."}
+{"id":"y4:p246","a":"A","src":"LECTURE","lec":"par7-sec1.md","ref":"Labelled / Unlabelled data","q":"Data of this kind is called labelled","e":"التمييز الأساسي: بيانات موسومة labelled (لها خاصية مستهدفة) وغير موسومة unlabelled."}
+{"id":"y4:p247","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7-sec1.md","ref":"Labelled / Unlabelled data","e":"خاصية مستهدفة تصنيفية للتنبؤ بها لحالات جديدة هي مهمة Classification (والرقمية Regression)."}
+{"id":"y4:p248","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7-sec1.md","ref":"Labelled / Unlabelled data","e":"التعلّم الموجَّه يستخدم بيانات موسومة لبناء نموذج يتنبأ بقيمة الخاصية المستهدفة."}
+{"id":"y4:p249","a":"D","src":"LECTURE_PARAPHRASE","lec":"par7-sec1.md","ref":"Labelled / Unlabelled data","e":"البيانات غير الموسومة تُعالَج بالتعلم غير الموجَّه مثل Clustering لإيجاد مجموعات."}
+{"id":"y4:p250","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7-sec1.md","ref":"Labelled / Unlabelled data","e":"المهام: Classification وNumerical prediction (Regression) وAssociation rules وClustering."}
+{"id":"y4:p251","a":"B","src":"LECTURE","lec":"par7-sec1.md","ref":"Records / Instances","q":"called a record or (more commonly) an instance","e":"المثيل instance هو مجموعة قيم المتغيرات المقابلة لكائن واحد."}
+{"id":"y4:p252","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7-sec1.md","ref":"1. تفجّر البيانات وعملية اكتشاف المعرفة","e":"Data Mining يستخرج معرفة مفيدة من البيانات التي تجمعها مجالات متعددة (أقمار، مستشفيات، بطاقات)."}
+{"id":"y4:p255","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7-sec4.md.md","ref":"Entropy","e":"Entropy مقياس لعدم اليقين (impurity) في توزيع الفئات داخل مجموعة تدريب."}
+{"id":"y4:p256","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7-sec4.md.md","ref":"Entropy","e":"حساب E_start يعتمد على توزيع الفئات، أي كل فئة وعدد حالاتها في المجموعة."}
+{"id":"y4:p257","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7-sec4.md.md","ref":"Entropy","e":"القيمة الدنيا للإنتروبيا صفر وتتحقق عندما تنتمي كل الحالات لفئة واحدة (مجموعة نقية)."}
+{"id":"y4:p258","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7-sec4.md.md","ref":"Information Gain","e":"Information Gain = Estart − Enew، أي أعلى تقليل لعدم اليقين، وهو معيار اختيار الخاصية."}
+{"id":"y4:p259","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7-sec3.md","ref":"Root node","e":"العقدة الجذرية Root node هي أول اختبار يُجرى على كل الحالات."}
+{"id":"y4:p260","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7-sec5.md","ref":"Frequency tables","e":"خلايا جدول التكرار تعدّ توافق الفئة وقيمة الخاصية، فنحسب منها الإنتروبيا."}
+{"id":"y4:p261","a":"C","src":"LECTURE_PARAPHRASE","lec":"par7-sec4.md.md","ref":"Entropy","e":"الإنتروبيا الدنيا (صفر) عند هيمنة فئة واحدة، وتزداد كلما اختلطت الفئات."}
+{"id":"y4:p264","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7-sec6.md","ref":"Confusion Matrix","e":"الصفوف هي الفئة الصحيحة والأعمدة المتوقعة؛ (-,+) هي false positive، أي متوقع موجب وفعلياً سالب."}
+{"id":"y4:p265","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7-sec4.md.md","ref":"Entropy","e":"توزيع 9:1 شبه نقي، والإنتروبيا تقترب من الصفر كلما هيمنت فئة واحدة."}
+{"id":"y4:p266","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7-sec3.md","ref":"Decision tree: leaf node","e":"الورقة leaf هي النتيجة النهائية للمسار، أي فئة التصنيف المتوقعة."}
+{"id":"y4:p267","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7-sec4.md.md","ref":"Information Gain","e":"Information Gain = Estart − Enew، حيث Enew متوسط إنتروبيا المجموعات الفرعية المرجّح."}
+{"id":"y4:p268","a":"A","src":"LECTURE_PARAPHRASE","lec":"par7-sec5.md","ref":"Frequency tables","e":"جدول التكرار يعدّ الفئات مع قيم الخاصية، فيعطي نسب الفئات مباشرة لحساب الإنتروبيا."}
+{"id":"y4:p270","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7-sec4.md.md","ref":"Information Gain","e":"أفضل خاصية للتقسيم هي الأعلى Information Gain، أي الأكثر تقليلاً لعدم النقاء."}
+{"id":"y4:p271","a":"B","src":"LECTURE_PARAPHRASE","lec":"par7-sec3.md","ref":"Decision tree: leaf node","e":"بعد سلسلة اختبارات الخصائص يصل المسار إلى ورقة تحمل تصنيف الفئة."}
+{"id":"y4:m224","a":"A","src":"LECTURE_PARAPHRASE","lec":"par1.md","ref":"6. طرق جمع البيانات / Unbiased selection","e":"عند نقص التغطية يجب أن تشبه المشاهدات المتضمَّنة كل المشاهدات المقصودة لتجنّب selection bias."}
+{"id":"y4:p227","a":"D","src":"INFERRED","e":"مبدأ GDPR: lawfulness, fairness and transparency، فالمعالجة قانونية وعادلة وشفافة."}
+{"id":"y4:p228","a":"A","src":"INFERRED","e":"Data Minimization تعني جمع ومعالجة ما هو ضروري فقط لتحقيق الغرض المحدد."}
+{"id":"y4:p229","a":"B","src":"INFERRED","e":"Purpose Limitation: استخدام البيانات فقط للغرض الصريح المحدد الذي جُمعت لأجله."}
+{"id":"y4:p230","a":"C","src":"INFERRED","e":"الموافقة المستنيرة تقوم على فعل إيجابي واضح وحر؛ الخيار C يبدأ العبارة وD يكملها."}
+{"id":"y4:p231","a":"C","src":"INFERRED","e":"حقوق صاحب البيانات: الوصول والتصحيح والمحو (الحق في النسيان) والاعتراض على المعالجة."}
+{"id":"y4:p232","a":"A","src":"INFERRED","e":"في مرحلة Discovery نتحقق من كفاية المعلومات لصياغة خطة تحليلية."}
+{"id":"y4:p233","a":"C","src":"INFERRED","e":"في Model planning نسأل: هل لدينا فكرة جيدة عن نوع النموذج المناسب للتجربة؟"}
+{"id":"y4:p234","a":"B","src":"INFERRED","e":"في Data prep. نتحقق من توفر بيانات جيدة كافية لبدء بناء النموذج."}
+{"id":"y4:p235","a":"A","src":"INFERRED","e":"التحليل الوصفي Descriptive يتناول ما حدث في الماضي."}
+{"id":"y4:p236","a":"C","src":"INFERRED","e":"التحليل التنبؤي Predictive يتناول ما سيحدث في المستقبل."}
+{"id":"y4:p237","a":"D","src":"INFERRED","e":"التحليل الإرشادي Prescriptive يجيب: كيف نجعل ذلك يحدث، أي الإجراء الأمثل."}
+{"id":"y4:p238","a":"B","src":"INFERRED","e":"التحليل التشخيصي Diagnostic يفسّر لماذا حدث ما حدث في الماضي."}
+{"id":"y4:p239","a":"B","src":"INFERRED","e":"هندسة الخصائص تشمل الترميز one-hot والتحجيم scaling وتقليل الأبعاد."}
+{"id":"y4:p254","a":"B","src":"INFERRED","e":"الكتاب الدراسي يشرح التقنيات بأمثلة محلولة وبشكلية رياضية محدودة."}
+{"id":"y4:p262","a":"B","src":"INFERRED","e":"دقة عالية مع أداء جيد على الفئة الأكثرية وضعيف على الأقلية تدل على سوء معالجة اختلال التوازن."}
+{"id":"y4:p263","a":"B","src":"INFERRED","e":"الدقة قد تبدو عالية مضللة عندما تهيمن فئة واحدة على مجموعة البيانات."}
