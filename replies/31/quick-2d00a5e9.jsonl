@@ -1,0 +1,27 @@
+{"id":"y4:net1","a":"A","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-3.md","ref":"HSRP Configuration","e":"أمر standby preempt يتيح للراوتر الأعلى أولوية استئناف دور الراوتر المُمرِّر (Active)."}
+{"id":"y4:net2","a":"C","src":"LECTURE","lec":"تحليل-وتصميم-نظري-قسم-3.md","ref":"p28","q":"Uses 224.0.0.18 for hello packets.","e":"يستخدم VRRP العنوان 224.0.0.18 لرسائل hello، وهو معيار IETF وليس خاصاً بسيسكو."}
+{"id":"y4:net3","a":"C","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-3.md","ref":"p29","e":"الراوتر الفعّال في VRRP يُسمّى Master وهو من يمرّر الحزم للعنوان الافتراضي، والبقية Backup."}
+{"id":"y4:net4","a":"B","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-3.md","ref":"p31","e":"في GLBP تشارك جميع الراوترات في موازنة الحمل عبر عدة عناوين MAC افتراضية."}
+{"id":"y4:net5","a":"C","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-3.md","ref":"p31, p35","e":"GLBP يعطي كل AVF عنوان MAC افتراضياً مختلفاً فتتقاسم الراوترات الحمل؛ وهو بروتوكول خاص بسيسكو."}
+{"id":"y4:net6","a":"A","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-2.md","ref":"p57 VTP Modes","e":"وضع Server هو الذي ينشئ VLANs ويعدّلها ويحذفها ثم يعمّمها على نطاق VTP."}
+{"id":"y4:net7","a":"A","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-2.md","ref":"VTP Protocol","e":"VTP يحافظ على اتساق إعدادات VLAN في النطاق عبر إضافتها وحذفها شبكياً، فيقلل الإعداد اليدوي."}
+{"id":"y4:net8","a":"C","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-1.md","ref":"p75 Trunking Modes","e":"Dynamic Auto تصبح Trunk إذا كان الجار في وضع trunk أو desirable."}
+{"id":"y4:net9","a":"C","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-1.md","ref":"p75 Trunking Modes","e":"Auto لا تطلب التحويل إلى trunk بل تعلن قدرتها فقط، فإذا كان الطرفان Auto يبقى الرابط غير trunk."}
+{"id":"y4:net11","a":"A","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-2.md","ref":"p73 Violation Modes","e":"في وضع Protect يمرّ ترافيك MAC المعروفة ويُسقط المجهول دون إرسال أي رسالة تنبيه."}
+{"id":"y4:net12","a":"B","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-2.md","ref":"p73 Violation Modes","e":"وضع Restrict يُسقط ترافيك MAC المجهولة ويرسل رسالة تفيد بحدوث مخالفة، بخلاف Protect."}
+{"id":"y4:net13","a":"D","src":"LECTURE","lec":"تحليل-وتصميم-نظري-قسم-1.md","ref":"p47 Types of VLANs","q":"Dedicated to user-generated traffic","e":"Data VLAN مخصصة لترافيك المستخدمين مثل البريد والويب."}
+{"id":"y4:net15","src":"NOT-FOUND"}
+{"id":"y4:net17","src":"NOT-FOUND"}
+{"id":"y4:net18","a":"C","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-1.md","ref":"IEEE 802.1Q Frame Tagging","e":"وسم إطارات VLAN على روابط trunk يتم عبر IEEE 802.1Q وهو المستخدم اليوم."}
+{"id":"y4:net21","src":"NOT-FOUND"}
+{"id":"y4:net23","a":"A","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-2.md","ref":"Overview of Rapid PVST+","e":"RSTP يقدّم منفذاً بديلاً (alternate) في حالة discarding ولا يوجد فيه منافذ blocking، لذا يتقارب أسرع."}
+{"id":"y4:net24","a":"C","src":"LECTURE","lec":"تحليل-وتصميم-نظري-قسم-1.md","ref":"p15 Cut-Through Switching","q":"forwards the frame immediately after determining the destination MAC","e":"Cut-through يمرّر الإطار فور معرفة MAC الوجهة."}
+{"id":"y4:net25","a":"B","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-1.md","ref":"p84 Switch spoofing Attack","e":"المهاجم يشكّل trunk فيصل إلى VLANs غير مصرّح له بها، ويسمى VLAN hopping."}
+{"id":"y4:net26","a":"C","src":"LECTURE_PARAPHRASE","lec":"تحليل-وتصميم-نظري-قسم-2.md","ref":"DHCP Snooping","e":"DHCP Snooping يحدد المنافذ المسموح لها بالرد على طلبات DHCP، فيمنع الخوادم المزيفة."}
+{"id":"y4:net10","a":"C","src":"INFERRED","e":"LACP يكوّن EtherChannel عندما يكون أحد الطرفين Active والآخر Passive؛ Active/Active يعمل أيضاً لكن Passive/Passive لا."}
+{"id":"y4:net14","a":"B","src":"INFERRED","e":"المنفذ المعيّن (Designated) في STP يمرّر الترافيك في المقطع باتجاه الجسر الجذر ويكون في حالة forwarding."}
+{"id":"y4:net16","a":"B","src":"INFERRED","e":"القيمة الافتراضية لمؤقّت Max Age في STP هي 20 ثانية."}
+{"id":"y4:net19","a":"A","src":"INFERRED","e":"يُحذف VLAN في سيسكو بالأمر no vlan vlan-id من وضع الإعداد العام."}
+{"id":"y4:net20","a":"A","src":"INFERRED","e":"الأمر vtp mode يحدد وضع VTP (server/client/transparent) ويفعّل عمل VTP، بينما domain وversion إعدادات مساعدة."}
+{"id":"y4:net22","a":"C","src":"INFERRED","e":"التكرارية (Redundancy) تتيح استمرار عمل الشبكة عند تعطّل جهاز أو رابط عبر مسارات وأجهزة بديلة."}
+{"id":"y4:net27","a":"D","src":"INFERRED","e":"التصادم الذي يُكتشف بعد استقبال أول 64 بايت من الإطار يُسجَّل كـ Late collision."}
