@@ -1,0 +1,81 @@
+{
+ "y5:img10": {
+  "date": "2026-11-05",
+  "file": "تخصصية-3-نظري-مـ8.md",
+  "quote": "Fluid elements scale to a specified percentage of it’s container.",
+  "ref": "Scale: Static and fluid elements",
+  "src": "LECTURE"
+ },
+ "y5:img4": {
+  "date": "2026-11-05",
+  "file": "تخصصية-3-نظري-مـ9.md",
+  "lecture": "تخصصية-3-نظري-مـ9.md",
+  "quote": null,
+  "ref": "Input: Enable/Disable – Toggle",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:img5": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:img6": {
+  "date": "2026-11-05",
+  "file": "تخصصية-3-نظري-مـ4.md",
+  "lecture": "تخصصية-3-نظري-مـ4.md",
+  "quote": null,
+  "ref": "3 - 3 Screen / Impaired Design: Poor Vision",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:img7": {
+  "date": "2026-11-05",
+  "file": "تخصصية-3-نظري-مـ5.md",
+  "lecture": "تخصصية-3-نظري-مـ5.md",
+  "quote": null,
+  "ref": "p9 - The Challenges of Web UI: Locale",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:img8": {
+  "date": "2026-11-05",
+  "file": "تخصصية-3-نظري-مـ7.md",
+  "lecture": "تخصصية-3-نظري-مـ7.md",
+  "quote": null,
+  "ref": "p7 - Number of Clicks",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:m105": {
+  "date": "2026-11-05",
+  "file": "تخصصية-3-نظري-مـ4.md",
+  "lecture": "تخصصية-3-نظري-مـ4.md",
+  "quote": null,
+  "ref": "2 - Laws in UI Design: Fitt's Law, Proximity",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:m118": {
+  "date": "2026-11-05",
+  "file": "تخصصية-3-نظري-مـ6.md",
+  "lecture": "تخصصية-3-نظري-مـ6.md",
+  "quote": null,
+  "ref": "Google Material Design: Accessibility",
+  "src": "LECTURE_PARAPHRASE"
+ },
+ "y5:m119": {
+  "date": "2026-11-05",
+  "file": null,
+  "lecture": null,
+  "quote": null,
+  "ref": null,
+  "src": "INFERRED"
+ },
+ "y5:m85": {
+  "date": "2026-11-05",
+  "file": "تخصصية-3-نظري-مـ8.md",
+  "lecture": "تخصصية-3-نظري-مـ8.md",
+  "quote": null,
+  "ref": "Gestalt Principles: Proximity, Common region",
+  "src": "LECTURE_PARAPHRASE"
+ }
+}
